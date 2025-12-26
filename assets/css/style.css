@@ -1,3 +1,25 @@
 h1 {
     background-color: rebeccapurple;
 }
+
+
+/* Desktop and Mobile Only screen setting */
+.only-mobile {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .only-mobile {
+        display: block !important;
+    }
+}
+
+.only-desktop {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .only-desktop {
+        display: none !important;
+    }
+}
