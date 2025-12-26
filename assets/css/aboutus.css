@@ -1,4 +1,155 @@
 /* style */
+/* hero section design style start */
+.banner {
+    position: relative;
+}
+
+.banner-tagline {
+    position: absolute;
+    top: 64%;
+    left: 3%;
+    z-index: 10;
+    text-align: left;
+    padding-right: 45rem;
+}
+
+.banner-para {
+    position: absolute;
+    bottom: 4%;
+    left: 3%;
+    z-index: 10;
+    text-align: left;
+    padding-right: 45rem;
+}
+
+.banner-tagline h1 {
+    color: #FFFFFF;
+    font-size: 86.05px;
+    line-height: 96.81px;
+}
+
+.banner-para p {
+    color: #FFFFFF;
+    font-size: 32px;
+    line-height: 96.81px;
+    font-weight: 700;
+    font-style: bold;
+}
+
+.bannerimg img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.herobannerdwn {
+    background-color: #E6D1DC;
+    padding: 6rem 3rem 3rem 3rem;
+    border-radius: 0 0 4rem 4rem;
+    text-align: left;
+    margin-bottom: 5rem;
+    margin-top: -3rem;
+    /* z-index: 100 !important; */
+}
+
+.herobannerdwn p {
+    font-size: 20px;
+    line-height: 25px;
+    width: 50%;
+}
+
+/* hero section design style end */
+
+/* howitbeginsec style start */
+
+#howitbeginsec {
+    margin: 4rem 0;
+}
+
+.howitbegincont {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 0;
+    padding: 0 1rem;
+}
+
+.howitbegin {
+    line-height: 90px;
+}
+
+.howitbegin-para {
+    font-size: 20px;
+    line-height: 25px;
+    font-weight: 400;
+    padding-right: 12rem;
+    margin-top: 2rem;
+}
+
+.howitbegintext {
+    margin-left: 3%;
+}
+
+.howitbeginimg img {
+    width: 100%;
+}
+
+/* howitbeginsec style end */
+
+/* Led By a Pioneer section start */
+
+#ledbypioneersec {
+    position: relative;
+}
+
+.ledbypioneerrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.ledbypioneer {
+    position: absolute;
+    top: 10%;
+    left: 25%;
+}
+
+.ledbyfounder {
+    font-size: 23px;
+    line-height: 25px;
+    font-weight: 700;
+    margin: 2rem 0rem;
+}
+
+.ledbypioneerpara {
+    font-size: 23px;
+    line-height: 25px;
+    margin: 2rem 0rem;
+    padding-right: 25rem;
+}
+
+/* Led By a Pioneer section end */
+
+/* General Catalyst section start */
+#generalcatalystsec {
+    margin: 0rem;
+    position: relative;
+}
+
+.generalcatalyst-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 4rem;
+}
+
+.hemant-para {
+    position: absolute;
+    top: 25%;
+    left: 4%;
+}
+
+/* General Catalyst section end */
 
 /* responsive */
 /* 1366px */
