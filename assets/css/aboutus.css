@@ -129,27 +129,350 @@
 }
 
 /* Led By a Pioneer section end */
+.generalcatalyst {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 15%;
+}
 
-/* General Catalyst section start */
-#generalcatalystsec {
-    margin: 0rem;
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1 0 auto;
     position: relative;
 }
 
-.generalcatalyst-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
-    gap: 4rem;
+.text {
+    background-image: url(../images/aboutus/generalsecBackground.png);
+    padding: 100px;
+    width: 600px;
 }
 
-.hemant-para {
+.hemant-logo {
     position: absolute;
-    top: 25%;
-    left: 4%;
+    top: -80%;
 }
+
+.hemant-logo img {
+    width: 100%;
+}
+
+/* General Catalyst section start */
+
 
 /* General Catalyst section end */
+
+/*Slider section 1 start*/
+
+#slidersec {
+    margin: 2rem 0rem;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0;
+    color: white;
+    position: relative;
+    background-color: #7D1D50;
+    border-radius: 25px;
+    position: relative;
+    padding-bottom: 60px;
+}
+
+.carousel-window {
+    width: 80%;
+    overflow: hidden;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 20px;
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0 20px;
+    z-index: 10;
+    transition: transform 0.2s;
+}
+
+.nav-btn:hover {
+    transform: scale(1.2);
+}
+
+.profile-card {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    width: 100%;
+}
+
+.image-section img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.info-section-para {
+    font-size: 23px;
+    line-height: 25px;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.role {
+    margin-bottom: 15px;
+    color: white;
+}
+
+.details-list {
+    font-size: 23px;
+    line-height: 25px;
+    color: white;
+}
+
+.details-list li {
+    position: relative;
+    padding-left: 3px;
+    margin-bottom: 5px;
+}
+
+.description {
+    font-family: Lato;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 23px;
+    line-height: 25px;
+    color: white;
+}
+
+#slidersec .dots-container {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 0;
+    z-index: 20;
+}
+
+#slidersec .dot {
+    height: 12px;
+    width: 12px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s;
+    padding: 0;
+}
+
+#slidersec .dot.active-dot {
+    background-color: white;
+}
+
+#slidersec .dot:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/*Slider section 1 end*/
+
+/*Trusted & recognised section start */
+
+#trustedsec {
+    margin: 5rem 0rem;
+}
+
+.trusted-heading {
+    line-height: 90px;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.construcction {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+}
+
+/*Trusted & recognised section end */
+
+/* Slider section 2 start */
+
+#slidersec2 {
+    margin: 5rem 0rem;
+}
+
+.carousel-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.carousel-wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    user-select: none;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.left-arrow {
+    left: -12rem;
+}
+
+.right-arrow {
+    right: -12rem;
+}
+
+.slides-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide-group {
+    display: flex;
+    gap: 50px;
+    min-width: 100%;
+    flex-shrink: 0;
+    width: 467px;
+}
+
+.card {
+    flex: 1;
+    background: #E6D1DC;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 2rem;
+}
+
+.read-more {
+    color: #8b3a8b;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    text-decoration: underline;
+}
+
+#slidersec2 .dots-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 40px;
+}
+
+#slidersec2 .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: 2px solid #999;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#slidersec2 .dot.active {
+    background: #8b3a8b;
+    border-color: #8b3a8b;
+}
+
+@media (max-width: 768px) {
+    .carousel-container {
+        padding: 0 60px;
+    }
+
+    .left-arrow {
+        left: -60px;
+    }
+
+    .right-arrow {
+        right: -60px;
+    }
+
+    .arrow {
+        width: 50px;
+        height: 50px;
+        font-size: 40px;
+    }
+
+    .slide-group {
+        flex-direction: column;
+    }
+}
+
+/* Slider section 2 end */
 
 /* responsive */
 /* 1366px */

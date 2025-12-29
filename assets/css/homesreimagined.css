@@ -1,0 +1,335 @@
+/* style */
+/* hero section design style start */
+
+.banner {
+    position: relative;
+}
+
+.banner-tagline {
+    position: absolute;
+    top: 44%;
+    left: 2%;
+    z-index: 10;
+    text-align: left;
+    padding-right: 75rem;
+}
+
+.banner-para {
+    position: absolute;
+    bottom: 27%;
+    left: 2%;
+    z-index: 10;
+    text-align: left;
+    padding-right: 45rem;
+}
+
+.banner-tagline h1 {
+    color: #FFFFFF;
+    font-size: 86.05px;
+    line-height: 96.81px;
+}
+
+.banner-para p {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 96.81px;
+    color: white;
+}
+
+.bannerimg img {
+    width: 100%;
+    max-width: 100%;
+}
+
+/* hero section design style end */
+
+/* The living well hub section start */
+#thelivinghub {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20rem;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.side-image {
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.8s ease;
+}
+
+.side-image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.left-image {
+    left: 0;
+    transform: translateX(-50%);
+    opacity: 0.7;
+}
+
+.right-image {
+    right: 0;
+    transform: translateX(50%);
+    opacity: 0.7;
+}
+
+.left-image.visible {
+    transform: translateX(3%);
+    opacity: 1;
+}
+
+.right-image.visible {
+    transform: translateX(-3%);
+    opacity: 1;
+}
+
+.center-content {
+    text-align: center;
+    z-index: 2;
+    max-width: 600px;
+    width: 100%;
+    padding: 0 78px;
+}
+
+.center-content h1 {
+    margin-bottom: 30px;
+    line-height: 90px;
+}
+
+.center-content p {
+    margin-bottom: 15px;
+    font-size: 20px;
+    line-height: 25px;
+    width: 435px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .side-image {
+        width: 300px;
+        height: 450px;
+    }
+
+    .center-content h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .side-image {
+        width: 250px;
+        height: 400px;
+    }
+
+    .center-content {
+        max-width: 500px;
+    }
+
+    .center-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .center-content p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px;
+    }
+
+    .side-image {
+        position: relative;
+        width: 90%;
+        max-width: 350px;
+        left: auto;
+        right: auto;
+    }
+
+    .left-image {
+        transform: translateY(-50px);
+    }
+
+    .right-image {
+        transform: translateY(50px);
+    }
+
+    .left-image.visible,
+    .right-image.visible {
+        transform: translateY(0);
+    }
+
+    .center-content {
+        padding: 0 20px;
+    }
+
+    .center-content h1 {
+        font-size: 2rem;
+    }
+}
+
+/* The living well hub section end */
+
+/* Smart Home & Smart Living section start */
+
+#smarthome {
+    margin-top: 20rem;
+}
+
+.smarthometxt {
+    text-align: center;
+}
+
+.smarthome-cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem 0rem;
+}
+
+.smarthome-voice-card {
+    position: relative;
+    background-color: #F6F6F6;
+    border-radius: 20px;
+}
+
+.voice-card {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+    padding-bottom: 1rem;
+}
+
+.voice-card-txt {
+    text-align: center;
+}
+
+.voice-card-para {
+    font-size: 20px;
+    line-height: 25px;
+    max-width: 330px;
+    width: 100%;
+    padding-left: 15%;
+    padding-bottom: 2rem;
+}
+
+/* Smart Home & Smart Living section end */
+
+/* Designed for safety section start */
+
+/* Designed for safety section end */
+
+/* Kitchens work section start */
+#kitchenwork {
+    /* margin-top: 20rem; */
+}
+
+.kitchenworktxt {
+    text-align: center;
+}
+
+.kitchenwork-cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem 0rem;
+}
+
+.kitchenwork-ergonomic-card {
+    position: relative;
+    background-color: #F6F6F6;
+    border-radius: 20px;
+}
+
+.ergonomic-card {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+    padding-bottom: 1rem;
+}
+
+.ergonomic-card-txt {
+    text-align: center;
+}
+
+.ergonomic-card-para {
+    font-size: 20px;
+    line-height: 25px;
+    max-width: 330px;
+    width: 100%;
+    padding-left: 15%;
+    padding-bottom: 2rem;
+}
+
+/*Kitchens work section end */
+
+/* Bathrooms that think ahead section start*/
+
+/* Bathrooms that think ahead section end*/
+
+/* More than home section start*/
+#morethanhome {
+    /* margin-top: 20rem; */
+}
+
+.morethanhometxt {
+    text-align: center;
+}
+
+.morethanhome-cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem 0rem;
+}
+
+.morethanhome-hobby-card {
+    position: relative;
+    background-color: #F6F6F6;
+    border-radius: 20px;
+}
+
+.hobby-card {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
+    padding-bottom: 1rem;
+}
+
+.hobby-card-txt {
+    text-align: center;
+}
+
+.hobby-card-para {
+    font-size: 20px;
+    line-height: 25px;
+    max-width: 330px;
+    width: 100%;
+    padding-left: 15%;
+    padding-bottom: 2rem;
+}
+/* More than home section end*/
