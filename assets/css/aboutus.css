@@ -224,63 +224,54 @@
 .profile-card {
     display: flex;
     align-items: center;
-    gap: 20px;
-    width: 90%;
-    max-width: 600px;
+    gap: 35px;
+    width: 100%;
 }
 
 .image-section img {
-    width: 110px;
-    height: 110px;
+    width: 100%;
     border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid rgba(255, 255, 255, 0.2);
 }
 
-.info-section h3 {
-    font-size: 1.2rem;
+.info-section-para {
+    font-size: 23px;
+    line-height: 25px;
+    color: white;
     font-weight: 700;
     margin-bottom: 5px;
 }
 
-.info-section .role {
-    font-size: 1rem;
-    font-weight: 400;
-    margin-bottom: 12px;
-    opacity: 0.9;
+.role {
+    margin-bottom: 15px;
+    color: white;
 }
 
 .details-list {
-    list-style: none;
-    font-size: 0.85rem;
-    line-height: 1.5;
-    opacity: 0.9;
+    font-size: 23px;
+    line-height: 25px;
+    color: white;
 }
 
 .details-list li {
     position: relative;
-    padding-left: 15px;
-}
-
-.details-list li::before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    font-size: 1.2rem;
+    padding-left: 3px;
+    margin-bottom: 5px;
 }
 
 .description {
-    font-size: 0.85rem;
-    line-height: 1.5;
-    opacity: 0.9;
+    font-family: Lato;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 23px;
+    line-height: 25px;
+    color: white;
 }
 
-.dots-container {
+#slidersec .dots-container {
     position: absolute;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
-
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -288,7 +279,7 @@
     z-index: 20;
 }
 
-.dot {
+#slidersec .dot {
     height: 12px;
     width: 12px;
     background-color: transparent;
@@ -299,11 +290,11 @@
     padding: 0;
 }
 
-.dot.active-dot {
+#slidersec .dot.active-dot {
     background-color: white;
 }
 
-.dot:hover {
+#slidersec .dot:hover {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -404,47 +395,6 @@
     justify-content: center;
 }
 
-.logo {
-    font-weight: bold;
-    font-size: 18px;
-}
-
-.logo.hindustan-times {
-    color: #0066cc;
-}
-
-.logo.business-standard {
-    color: #cc0000;
-}
-
-.logo.economic-times {
-    color: #000;
-}
-
-.logo.times-india {
-    color: #000;
-}
-
-.logo.financial-express {
-    color: #0066cc;
-}
-
-.logo.mint {
-    color: #ff6600;
-}
-
-.logo.moneycontrol {
-    color: #009933;
-}
-
-.logo.the-hindu {
-    color: #800080;
-}
-
-.logo.indian-express {
-    color: #cc0000;
-}
-
 .card-image {
     width: 100%;
     height: 250px;
@@ -460,32 +410,30 @@
 }
 
 .card-title {
-    font-size: 18px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    color: #333;
-    min-height: 60px;
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 2rem;
 }
 
 .read-more {
     color: #8b3a8b;
-    text-decoration: none;
-    font-weight: 500;
-    display: inline-block;
-}
-
-.read-more:hover {
+    font-family: Montserrat;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
     text-decoration: underline;
 }
 
-.dots-container {
+#slidersec2 .dots-container {
     display: flex;
     justify-content: center;
     gap: 12px;
     margin-top: 40px;
 }
 
-.dot {
+#slidersec2 .dot {
     width: 12px;
     height: 12px;
     border-radius: 50%;
@@ -495,7 +443,7 @@
     transition: all 0.3s;
 }
 
-.dot.active {
+#slidersec2 .dot.active {
     background: #8b3a8b;
     border-color: #8b3a8b;
 }
