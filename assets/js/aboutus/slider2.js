@@ -1,22 +1,22 @@
 let currentSlide = 0;
-const totalSlides = 3;
+const totalSlides = 13;
 const slidesContainer = document.getElementById("slidesContainer");
 const dotsContainer = document.getElementById("dotsContainer");
 
 // Create dots
 for (let i = 0; i < totalSlides; i++) {
-  const dot = document.createElement("div");
-  dot.classList.add("dot");
-  if (i === 0) dot.classList.add("active");
-  dot.onclick = () => goToSlide(i);
-  dotsContainer.appendChild(dot);
+  const dotes = document.createElement("div");
+  dotes.classList.add("dotes");
+  if (i === 0) dotes.classList.add("active");
+  dotes.onclick = () => goToSlide(i);
+  dotsContainer.appendChild(dotes);
 }
 
 function updateSlide() {
   slidesContainer.style.transform = `translateX(-${currentSlide * 100}%)`;
 
   // Update dots
-  const dots = document.querySelectorAll(".dot");
+  const dots = document.querySelectorAll(".dotes");
   dots.forEach((dot, index) => {
     dot.classList.toggle("active", index === currentSlide);
   });
