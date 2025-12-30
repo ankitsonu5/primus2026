@@ -95,110 +95,38 @@
 
 /* howitbeginsec style end */
 
-/* Led By a Pioneer section start */
-
-#ledbypioneersec {
-    position: relative;
-}
-
-.ledbypioneerrow {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5rem;
-}
-
-.ledbypioneer {
-    position: absolute;
-    top: 10%;
-    left: 25%;
-}
-
-.ledbyfounder {
-    font-size: 23px;
-    line-height: 25px;
-    font-weight: 700;
-    margin: 2rem 0rem;
-}
-
-.ledbypioneerpara {
-    font-size: 23px;
-    line-height: 25px;
-    margin: 2rem 0rem;
-    padding-right: 25rem;
-}
-
-/* Led By a Pioneer section end */
-.generalcatalyst {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding-top: 15%;
-}
-
-.content {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    flex: 1 0 auto;
-    position: relative;
-}
-
-.text {
-    background-image: url(../images/aboutus/generalsecBackground.png);
-    padding: 100px;
-    width: 600px;
-}
-
-.hemant-logo {
-    position: absolute;
-    top: -80%;
-}
-
-.hemant-logo img {
-    width: 100%;
-}
-
-/* General Catalyst section start */
-
-
-/* General Catalyst section end */
-
 /*Slider section 1 start*/
 
 #slidersec {
     margin: 2rem 0rem;
 }
 
-.main-container {
+#slidersec .main-container {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding: 30px 0;
+    padding: 125px 0;
     color: white;
     position: relative;
     background-color: #7D1D50;
     border-radius: 25px;
     position: relative;
-    padding-bottom: 60px;
+    /* padding-bottom: 60px; */
 }
 
-.carousel-window {
+#slidersec .carousel-window {
     width: 80%;
     overflow: hidden;
 }
 
-.carousel-track {
+#slidersec .carousel-track {
     display: flex;
     transition: transform 0.5s ease-in-out;
     width: 100%;
 }
 
-.carousel-slide {
+#slidersec .carousel-slide {
     min-width: 100%;
     display: flex;
     gap: 30px;
@@ -206,7 +134,7 @@
     padding: 20px;
 }
 
-.nav-btn {
+#slidersec .nav-btn {
     background: none;
     border: none;
     color: white;
@@ -217,23 +145,32 @@
     transition: transform 0.2s;
 }
 
-.nav-btn:hover {
+#slidersec .nav-btn:hover {
     transform: scale(1.2);
 }
 
-.profile-card {
+#slidersec .profile-card {
     display: flex;
     align-items: center;
     gap: 35px;
     width: 100%;
 }
 
-.image-section img {
+#slidersec .image-section4 {
+    width: 520px;
+}
+
+#slidersec .image-section4 img {
     width: 100%;
     border-radius: 50%;
 }
 
-.info-section-para {
+#slidersec .image-section img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+#slidersec .info-section-para {
     font-size: 23px;
     line-height: 25px;
     color: white;
@@ -241,24 +178,24 @@
     margin-bottom: 5px;
 }
 
-.role {
+#slidersec .role {
     margin-bottom: 15px;
     color: white;
 }
 
-.details-list {
+#slidersec .details-list {
     font-size: 23px;
     line-height: 25px;
     color: white;
 }
 
-.details-list li {
+#slidersec .details-list li {
     position: relative;
     padding-left: 3px;
     margin-bottom: 5px;
 }
 
-.description {
+#slidersec .description {
     font-family: Lato;
     font-weight: 700;
     font-style: Bold;
@@ -306,13 +243,13 @@
     margin: 5rem 0rem;
 }
 
-.trusted-heading {
+#trustedsec .trusted-heading {
     line-height: 90px;
     text-align: center;
     padding-bottom: 1rem;
 }
 
-.construcction {
+#trustedsec .construcction {
     font-family: Montserrat;
     font-weight: 700;
     font-size: 25px;
@@ -324,24 +261,25 @@
 
 /* Slider section 2 start */
 
-#slidersec2 {
+/* #slidersec2 {
     margin: 5rem 0rem;
-}
+} */
 
-.carousel-container {
-    max-width: 1400px;
+#slidersec2 .carousel-container {
+    max-width: 1505px;
+    width: 100%;
     margin: 0 auto;
     position: relative;
 }
 
-.carousel-wrapper {
+#slidersec2 .carousel-wrapper {
     overflow: hidden;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
 
-.arrow {
+#slidersec2 .arrow {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -355,38 +293,39 @@
     transition: all 0.3s;
 }
 
-.left-arrow {
-    left: -12rem;
+#slidersec2 .left-arrow {
+    left: -8rem;
 }
 
-.right-arrow {
-    right: -12rem;
+#slidersec2 .right-arrow {
+    right: -8rem;
 }
 
-.slides-container {
+#slidersec2 .slides-container {
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
 
-.slide-group {
+#slidersec2 .slide-group {
     display: flex;
     gap: 50px;
     min-width: 100%;
     flex-shrink: 0;
-    width: 467px;
+    width: 116px;
 }
 
-.card {
+#slidersec2 .card {
     flex: 1;
     background: #E6D1DC;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
 }
 
-.card-header {
+#slidersec2 .card-header {
     padding: 20px;
     text-align: center;
     border-bottom: 1px solid #eee;
@@ -395,21 +334,38 @@
     justify-content: center;
 }
 
-.card-image {
+#slidersec2 .economic-times {
+    padding: 2rem 0;
+}
+
+#slidersec2 .ist-logo {
+    padding: 20px 0px;
+}
+
+#slidersec2 .theprint-logo {
+    padding: 35px 0px;
+}
+
+#slidersec2 .therealty-logo {
+    padding: 10px 0px;
+}
+
+#slidersec2 .card-image {
     width: 100%;
     height: 250px;
     object-fit: cover;
 }
 
-.card-content {
+#slidersec2 .card-content {
     padding: 25px;
     flex-grow: 1;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.card-title {
+#slidersec2 .card-title {
     font-family: Montserrat;
     font-weight: 400;
     font-size: 22px;
@@ -417,7 +373,7 @@
     margin-bottom: 2rem;
 }
 
-.read-more {
+#slidersec2 .read-more {
     color: #8b3a8b;
     font-family: Montserrat;
     font-weight: 400;
@@ -433,7 +389,7 @@
     margin-top: 40px;
 }
 
-#slidersec2 .dot {
+#slidersec2 .dotes {
     width: 12px;
     height: 12px;
     border-radius: 50%;
@@ -443,7 +399,7 @@
     transition: all 0.3s;
 }
 
-#slidersec2 .dot.active {
+#slidersec2 .dotes.active {
     background: #8b3a8b;
     border-color: #8b3a8b;
 }
