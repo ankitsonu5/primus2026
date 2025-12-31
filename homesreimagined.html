@@ -99,9 +99,8 @@
     <!-- The living well hub section end-->
 
     <!-- Smart Home & Smart Living section start-->
-
-    <div class="container">
-        <section id="smarthome">
+    <section id="smarthome">
+        <div class="container">
             <div class="smarthometxt">
                 <h1 class="primary-heading-font">Smart Homes, Smart Living</h1>
             </div>
@@ -151,17 +150,97 @@
                     </div>
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
     <!-- Smart Home & Smart Living section end-->
 
-    <!-- Designed for safety section start-->
+    <!-- active living, build into every corner of your life start -->
+    <section id="activelivingofyourlifesec">
+        <div class="container">
+            <div class="main-wrapper">
+                <div class="header">
+                    <h1 class="primary-heading-font">Active living, built into every corner of your life.</h1>
+                </div>
 
-    <!-- Designed for safety section end-->
+                <div class="carousel-wrapper">
+                    <button class="arrow arrow-left" onclick="prevSlide()"><img
+                            src="./assets/images/home/activeLivingLife/leftArrow.png" alt=""></button>
+                    <div class="carousel-container">
+                        <div class="carousel-track" id="carouselTrack">
+                            <div class="carousel-item" data-heading="Thoughtful design"
+                                data-text="Details such as anti-skid tiles quietly support everyday ease and safety.">
+                                <img src="./assets/images/home/activeLivingLife/livingOne.png" alt="Smart Storage">
+                            </div>
+                            <div class="carousel-item active" data-heading="Motion Sensors"
+                                data-text="Lights that respond automatically, so nothing is ever missed in the dark.">
+                                <img src="./assets/images/home/activeLivingLife/livingTwo.png" alt="Motion Sensors">
+                            </div>
+                            <div class="carousel-item" data-heading="Smart Switches"
+                                data-text="Easy-to-use controls that make daily living simpler and safer.">
+                                <img src="./assets/images/home/activeLivingLife/livingThree.png" alt="Smart Control">
+                            </div>
+                            <div class="carousel-item" data-heading="Fall Detection"
+                                data-text="Immediate alerts that ensure help reaches you when it matters most.">
+                                <img src="./assets/images/home/activeLivingLife/livingFour.png" alt="Climate Control">
+                            </div>
+                            <div class="carousel-item" data-heading="Home Security System"
+                                data-text="Round-the-clock protection that keeps your home secure without feeling intrusive.">
+                                <img src="./assets/images/home/activeLivingLife/livingfive.png" alt="Security System">
+                            </div>
+                            <div class="carousel-item" data-heading="Gas Leak Sensors"
+                                data-text="Early detection that prevents risks before they become concerns.">
+                                <img src="./assets/images/home/activeLivingLife/livingsix.png" alt="Energy Efficiency">
+                            </div>
+                            <div class="carousel-item" data-heading="Entrance Video Door Phone"
+                                data-text="See and speak to visitors before opening the door.">
+                                <img src="./assets/images/home/activeLivingLife/livingseven.png"
+                                    alt="Energy Efficiency">
+                            </div>
+                            <div class="carousel-item" data-heading="Smoke Detector"
+                                data-text="Early alerts that protect your home from unseen risks.">
+                                <img src="./assets/images/home/activeLivingLife/livingeight.png"
+                                    alt="Energy Efficiency">
+                            </div>
+                            <div class="carousel-item" data-heading="Two Eye Viewers"
+                                data-text="A wider, clearer view of who's outside your door.">
+                                <img src="./assets/images/home/activeLivingLife/livingnine.png" alt="Energy Efficiency">
+                            </div>
+                            <div class="carousel-item" data-heading="Community Dining"
+                                data-text="Nutritious, thoughtfully prepared meals enjoyed together, because good food tastes better in good company.">
+                                <img src="./assets/images/home/activeLivingLife/livingten.png" alt="Energy Efficiency">
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="arrow arrow-right" onclick="nextSlide()"><img
+                            src="./assets/images/home/activeLivingLife/rightArrow.png" alt=""></button>
+                </div>
+
+                <div class="content-section">
+                    <h2 id="contentHeading">Motion Sensors</h2>
+                    <p id="contentText">Lights that respond automatically, so nothing is ever missed in the dark.</p>
+                </div>
+
+                <div class="pagination" id="pagination">
+                    <div class="dot" onclick="goToSlide(0)"></div>
+                    <div class="dot active" onclick="goToSlide(1)"></div>
+                    <div class="dot" onclick="goToSlide(2)"></div>
+                    <div class="dot" onclick="goToSlide(3)"></div>
+                    <div class="dot" onclick="goToSlide(4)"></div>
+                    <div class="dot" onclick="goToSlide(5)"></div>
+                    <div class="dot" onclick="goToSlide(6)"></div>
+                    <div class="dot" onclick="goToSlide(7)"></div>
+                    <div class="dot" onclick="goToSlide(8)"></div>
+                    <div class="dot" onclick="goToSlide(9)"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- active living, build into every corner of your life end -->
 
     <!-- Kitchens work section start-->
-    <div class="container">
-        <section id="kitchenwork">
+    <section id="kitchenwork">
+        <div class="container">
             <div class="kitchenworktxt">
                 <h1 class="primary-heading-font">Kitchens that Work for All</h1>
             </div>
@@ -196,7 +275,8 @@
                     <div class="ergonomic-card-txt">
                         <h1 class="ergonomic-card">Grip-Friendly
                             Pull-Out Shelves</h1>
-                        <p class="primary-para-fon ergonomic-card-para">Cabinets designed for easy grip and minimal bending.</p>
+                        <p class="primary-para-fon ergonomic-card-para">Cabinets designed for easy grip and minimal
+                            bending.</p>
                     </div>
                 </div>
 
@@ -206,21 +286,19 @@
                     </div>
                     <div class="ergonomic-card-txt">
                         <h1 class="ergonomic-card">Gas Detection Sensor</h1>
-                        <p class="primary-para-fon ergonomic-card-para">Built-in monitoring that keeps your kitchen safe, quietly and constantly.</p>
+                        <p class="primary-para-fon ergonomic-card-para">Built-in monitoring that keeps your kitchen
+                            safe, quietly and constantly.</p>
                     </div>
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
     <!-- Kitchens work safety section end-->
 
-    <!-- Bathrooms that think ahead section start-->
-
-    <!-- Bathrooms that think ahead section end-->
 
     <!-- More than home section start-->
-    <div class="container">
-        <section id="morethanhome">
+    <section id="morethanhome">
+        <div class="container">
             <div class="morethanhometxt">
                 <h1 class="primary-heading-font">More Than a Home. A Lifestyle.</h1>
             </div>
@@ -244,7 +322,7 @@
                     <div class="hobby-card-txt">
                         <h1 class="hobby-card">Intergenerational lounges</h1>
                         <p class="primary-para-fon hobby-card-para">Thoughtful spaces where residents, families,
-                        and grandchildren connect naturally.</p>
+                            and grandchildren connect naturally.</p>
                     </div>
                 </div>
 
@@ -254,7 +332,8 @@
                     </div>
                     <div class="hobby-card-txt">
                         <h1 class="hobby-card">Green balconies</h1>
-                        <p class="primary-para-fon hobby-card-para">Private pockets of nature that invite fresh air, sunlight, and calm into everyday lif</p>
+                        <p class="primary-para-fon hobby-card-para">Private pockets of nature that invite fresh air,
+                            sunlight, and calm into everyday lif</p>
                     </div>
                 </div>
 
@@ -264,12 +343,14 @@
                     </div>
                     <div class="hobby-card-txt">
                         <h1 class="hobby-card">Kid zones</h1>
-                        <p class="primary-para-fon hobby-card-para">Playful, safe areas designed for little visitors because family time matters.</p>
+                        <p class="primary-para-fon hobby-card-para">Playful, safe areas designed for little visitors
+                            because
+                            family time matters.</p>
                     </div>
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
     <!-- More than home section end-->
 
     <!-- footer page design tab section start -->
@@ -314,6 +395,7 @@
     <script src="./assets/js/homesreimagined/homesreimagined.js"></script>
     <!-- navbarmenu script code-->
     <script src="./assets/js/home/navbarmenudsk.js"></script>
+    <script src="./assets/js/home/indexsecondslider.js"></script>
 </body>
 
 </html>
