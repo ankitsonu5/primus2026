@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primus Active Aging</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f5f5;
+            padding: 40px 20px;
+        }
+
+        .slider-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            padding: 0 80px;
+        }
+
+        .slider-container {
+            background: white;
+            border-radius: 20px;
+            padding: 60px 40px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .slider-title {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .slider-title h1 {
+            color: #6b1b4d;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .slider-subtitle {
+            text-align: center;
+            color: #333;
+            margin-bottom: 40px;
+            font-size: 1.1em;
+        }
+
+        .slides {
+            position: relative;
+            width: 100%;
+            min-height: 600px;
+        }
+
+        .slide {
+            display: none;
+            animation: fadeIn 0.5s;
+            min-height: 600px;
+        }
+
+        .slide.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .cards-container {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            flex-wrap: wrap;
+            min-height: 400px;
+            align-items: stretch;
+        }
+
+        .card {
+            background: linear-gradient(135deg, #6b1b4d 0%, #8b2d5d 100%);
+            border-radius: 15px;
+            padding: 0;
+            color: white;
+            flex: 1;
+            min-width: 250px;
+            max-width: 350px;
+            min-height: 380px;
+            box-shadow: 0 5px 20px rgba(107, 27, 77, 0.3);
+            transition: transform 0.3s;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .slide:first-child .card {
+            max-width: 450px;
+            min-height: 380px;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-top {
+            text-align: center;
+            margin-bottom: 0;
+            background: linear-gradient(135deg, #4a1335 0%, #6b1b4d 100%);
+            padding: 30px 30px 25px 30px;
+        }
+
+        .card-top h3 {
+            font-size: 1.4em;
+            margin-bottom: 20px;
+        }
+
+        .icon {
+            font-size: 4em;
+            margin-bottom: 0;
+        }
+
+        .card-bottom {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+        }
+
+        .card-bottom ul {
+            list-style: none;
+            flex-grow: 1;
+        }
+
+        .card-bottom li {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            position: relative;
+            line-height: 1.5;
+        }
+
+        .card-bottom li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #fff;
+            font-weight: bold;
+        }
+
+        .card-bottom p {
+            line-height: 1.6;
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        .nav-arrows {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            left: 0;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+            pointer-events: none;
+            padding: 0;
+        }
+
+        .nav-arrow {
+            background: #6b1b4d;
+            color: white;
+            border: none;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            font-size: 24px;
+            cursor: pointer;
+            pointer-events: all;
+            transition: background 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav-arrow:first-child {
+            margin-left: 0;
+        }
+
+        .nav-arrow:last-child {
+            margin-right: 0;
+        }
+
+        .nav-arrow:hover {
+            background: #8b2d5d;
+        }
+
+        .footer-text {
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 0.95em;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .dot {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #ccc;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .dot.active {
+            background: #6b1b4d;
+        }
+
+        @media (max-width: 768px) {
+            .slider-wrapper {
+                padding: 0 60px;
+            }
+
+            .slider-title h1 {
+                font-size: 1.8em;
+            }
+
+            .card {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slider-wrapper">
+        <div class="slider-container">
+            <div class="slides">
+                <!-- Slide 1: Healthspan vs Lifespan -->
+                <div class="slide active">
+                    <div class="slider-title">
+                        <h1>Think ageing can't be reversed? Think again.</h1>
+                    </div>
+                    <div class="slider-subtitle">Healthspan vs Lifespan</div>
+
+                    <div class="cards-container">
+                        <div class="card">
+                            <div class="card-top">
+                                <h3>Lifespan</h3>
+                                <div class="icon">⏱️</div>
+                            </div>
+                            <div class="card-bottom">
+                                <ul>
+                                    <li>Total number of years lived</li>
+                                    <li>Often extended by medical intervention</li>
+                                    <li>Later years may include illness or dependency</li>
+                                    <li>Focused on survival</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-top">
+                                <h3>Healthspan</h3>
+                                <div class="icon">👑</div>
+                            </div>
+                            <div class="card-bottom">
+                                <ul>
+                                    <li>Years lived in good health</li>
+                                    <li>Built through prevention, movement, and nutrition</li>
+                                    <li>Independence, energy, and joy for longer</li>
+                                    <li>Focused on living well</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-text">
+                        At Primus, we design life to extend Healthspan - so more years are truly lived.
+                    </div>
+
+                    <!-- Pagination Dots -->
+                    <div class="pagination">
+                        <span class="dot active" onclick="goToSlide(0)"></span>
+                        <span class="dot" onclick="goToSlide(1)"></span>
+                        <span class="dot" onclick="goToSlide(2)"></span>
+                    </div>
+                </div>
+
+                <!-- Slide 2: Active Ageing -->
+                <div class="slide">
+                    <div class="slider-title">
+                        <h1>What is Active Ageing?</h1>
+                    </div>
+                    <div class="slider-subtitle">Active ageing is about staying physically mobile, mentally engaged, and
+                        socially connected</div>
+
+                    <div class="cards-container">
+                        <div class="card">
+                            <div class="card-top">
+                                <h3>Move Daily</h3>
+                                <div class="icon">🚶</div>
+                            </div>
+                            <div class="card-bottom">
+                                <p>Gentle, regular movement keeps the body strong, balanced, and independent.</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-top">
+                                <h3>Engage the Mind</h3>
+                                <div class="icon">📚</div>
+                            </div>
+                            <div class="card-bottom">
+                                <p>Learning, hobbies, and conversations keep curiosity alive.</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-top">
+                                <h3>Stay Connected</h3>
+                                <div class="icon">💬</div>
+                            </div>
+                            <div class="card-bottom">
+                                <p>Community, friendships, and shared experiences build emotional wellbeing.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-text">
+                        At Primus, active ageing is built into everyday life - through design, routines, and community.
+                    </div>
+
+                    <!-- Pagination Dots -->
+                    <div class="pagination">
+                        <span class="dot" onclick="goToSlide(0)"></span>
+                        <span class="dot active" onclick="goToSlide(1)"></span>
+                        <span class="dot" onclick="goToSlide(2)"></span>
+                    </div>
+                </div>
+
+                <!-- Slide 3: Blue Zone Living -->
+                <div class="slide">
+                    <div class="slider-title">
+                        <h1>Blue Zone Living</h1>
+                    </div>
+                    <div class="slider-subtitle">Blue Zones are regions of the world where people live longer, healthier
+                        lives — naturally.</div>
+
+                    <div class="cards-container">
+                        <div class="card">
+                            <div class="card-top">
+                                <h3>Natural Movement</h3>
+                                <div class="icon">🧘</div>
+                            </div>
+                            <div class="card-bottom">
+                                <p>Daily movement built into routine life — not workouts, but habits.</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-top">
+                                <h3>Purposeful Living</h3>
+                                <div class="icon">🎯</div>
+                            </div>
+                            <div class="card-bottom">
+                                <p>Having a reason to wake up every morning brings longevity and joy.</p>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-top">
+                                <h3>Community & Belonging</h3>
+                                <div class="icon">👥</div>
+                            </div>
+                            <div class="card-bottom">
+                                <p>Strong social connections reduce stress and build emotional wellbeing.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="footer-text">
+                        At Primus, Blue Zone principles are woven into homes, routines, food, and community life.
+                    </div>
+
+                    <!-- Pagination Dots -->
+                    <div class="pagination">
+                        <span class="dot" onclick="goToSlide(0)"></span>
+                        <span class="dot" onclick="goToSlide(1)"></span>
+                        <span class="dot active" onclick="goToSlide(2)"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <div class="nav-arrows">
+            <button class="nav-arrow" onclick="changeSlide(-1)">←</button>
+            <button class="nav-arrow" onclick="changeSlide(1)">→</button>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function showSlide(n) {
+            if (n >= slides.length) currentSlide = 0;
+            if (n < 0) currentSlide = slides.length - 1;
+
+            slides.forEach(slide => slide.classList.remove('active'));
+
+            slides[currentSlide].classList.add('active');
+
+            // Update dots in current slide
+            const currentDots = slides[currentSlide].querySelectorAll('.dot');
+            currentDots.forEach((dot, index) => {
+                if (index === currentSlide) {
+                    dot.classList.add('active');
+                } else {
+                    dot.classList.remove('active');
+                }
+            });
+        }
+
+        function changeSlide(direction) {
+            currentSlide += direction;
+            showSlide(currentSlide);
+        }
+
+        function goToSlide(n) {
+            currentSlide = n;
+            showSlide(currentSlide);
+        }
+    </script>
+</body>
+
+</html>
