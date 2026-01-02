@@ -1,0 +1,609 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-heading-font: "Montserrat", sans-serif;
+    --primary-para-font: "Lato", sans-serif;
+}
+
+/* herolifestysec style start */
+#herolifestysec {
+    font-family: var(--primary-para-font);
+}
+
+#herolifestysec .banner-container {
+    width: 100%;
+    height: 90vh;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+        url('../images/contactus/contact_us_bg.png') center/cover;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* contactussec style start */
+#contactussec {
+    font-family: var(--primary-para-font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    margin-top: -5rem;
+}
+
+#contactussec .container {
+    background: #E6D1DC;
+    border-radius: 0 0 30px 30px;
+    padding: 80px 50px 50px 50px;
+}
+
+#contactussec h1 {
+    color: #7d2e68;
+    font-size: 3rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+    font-family: var(--primary-heading-font);
+}
+
+#contactussec #contactForm {
+    width: 1366px;
+    margin: 0 auto;
+}
+
+#contactussec .form-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 30px;
+    /* width: 1200px; */
+    margin: 0 auto;
+}
+
+#contactussec .left-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#contactussec .right-section {
+    display: flex;
+    flex-direction: column;
+}
+
+#contactussec .input-field {
+    width: 100%;
+    padding: 18px 25px;
+    border: none;
+    border-radius: 50px;
+    background: #f5f5f5;
+    font-size: 1rem;
+    color: #333;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#contactussec .input-field:focus {
+    background: #fff;
+    box-shadow: 0 0 0 2px #7d2e68;
+}
+
+#contactussec .input-field::placeholder {
+    color: #666;
+}
+
+#contactussec textarea.input-field {
+    border-radius: 25px;
+    resize: vertical;
+    min-height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px 25px;
+}
+
+#contactussec .button-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 3rem;
+}
+
+#contactussec .btn {
+    padding: 18px 40px;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+}
+
+#contactussec .btn-submit {
+    background: #7d2e68;
+    color: white;
+}
+
+#contactussec .btn-submit:hover {
+    background: #5f2250;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(125, 46, 104, 0.3);
+}
+
+#contactussec .btn-reset {
+    background: #7d2e68;
+    color: white;
+}
+
+#contactussec .btn-reset:hover {
+    background: #5f2250;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(125, 46, 104, 0.3);
+}
+
+/* visitussec style start */
+#visitussec {
+    font-family: var(--primary-heading-font);
+    background-color: #8B1E5C;
+    color: white;
+    padding: 3rem 0;
+}
+
+#visitussec .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+#visitussec .image-section {
+    flex: 1;
+    max-width: 48%;
+}
+
+#visitussec .image-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+#visitussec .content-section {
+    flex: 1;
+    max-width: 500px;
+}
+
+.content-section h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+#visitussec .content-section h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#visitussec .address {
+    line-height: 1.8;
+    font-size: 1rem;
+    margin-bottom: 25px;
+}
+
+#visitussec .hours {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* visitussec style end */
+
+/* contactdetailssec style start */
+#contactdetailssec {
+    font-family: var(--primary-heading-font);
+    background-color: #fff;
+    padding: 5rem 0;
+}
+
+#contactdetailssec .container {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+}
+
+#contactdetailssec .contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+    align-items: start;
+}
+
+#contactdetailssec .contact-card {
+    padding: 40px 30px;
+    text-align: center;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contactdetailssec .icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 20px;
+    stroke: #333;
+    stroke-width: 2;
+    fill: none;
+}
+
+#contactdetailssec .contact-card h2 {
+    color: #1a1a1a;
+    margin-bottom: 15px;
+    font-family: var(--primary-heading-font);
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 35px;
+    line-height: 40px;
+    letter-spacing: 0%;
+
+}
+
+#contactdetailssec .contact-info {
+    color: #333;
+    margin-bottom: 8px;
+    font-family: var(--primary-para-font);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 45px;
+}
+
+#contactdetailssec .contact-details {
+    font-size: 14px;
+    color: #000000;
+    line-height: 1.6;
+
+    font-family: var(--primary-heading-font);
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0%;
+
+}
+
+#contactdetailssec .phone-number,
+#contactdetailssec .email {
+    text-decoration: none;
+    transition: color 0.2s ease;
+    color: #666;
+}
+
+#contactdetailssec .phone-number:hover,
+#contactdetailssec .email:hover {
+    text-decoration: underline;
+}
+
+/* partnerwithussec style start */
+#partnerwithussec {
+    font-family: var(--primary-heading-font);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#partnerwithussec .container {
+    background: #e8d4e8;
+    border-radius: 30px;
+    padding: 10rem;
+    width: 100%;
+}
+
+#partnerwithussec h1 {
+    color: #7d2e68;
+    font-size: 3em;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+#partnerwithussec .form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+#partnerwithussec .left-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#partnerwithussec .input-group {
+    position: relative;
+}
+
+#partnerwithussec input,
+#partnerwithussec textarea {
+    width: 100%;
+    padding: 18px 25px;
+    border: none;
+    border-radius: 50px;
+    /* background: #f5f0f5; */
+    font-size: 1em;
+    color: #7d2e68;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#partnerwithussec textarea {
+    border-radius: 30px;
+    resize: none;
+    height: 100%;
+    min-height: 300px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#partnerwithussec input::placeholder,
+#partnerwithussec textarea::placeholder {
+    color: #a66b94;
+}
+
+#partnerwithussec input:focus,
+#partnerwithussec textarea:focus {
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(125, 46, 104, 0.1);
+}
+
+#partnerwithussec .button-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+#partnerwithussec button {
+    padding: 18px 40px;
+    border: none;
+    border-radius: 50px;
+    background: #7d2e68;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#partnerwithussec button:hover {
+    background: #5f2350;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(125, 46, 104, 0.3);
+}
+
+#partnerwithussec button:active {
+    transform: translateY(0);
+}
+
+/* partnerwithussec style end */
+
+/* locationscrossindiasec style start  */
+#locationscrossindiasec {
+    margin: 3rem 0 5rem 0;
+}
+
+#locationscrossindiasec .tabs-container {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    justify-content: space-evenly;
+}
+
+#locationscrossindiasec .tab {
+    background-color: #E8D4E8;
+    color: #000;
+    border: none;
+    padding: 15px 40px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 200px;
+}
+
+#locationscrossindiasec .tab:hover {
+    background-color: #821A52;
+    color: white;
+}
+
+#locationscrossindiasec .tab.active {
+    background-color: #821A52;
+    color: white;
+}
+
+#locationscrossindiasec .tab-arrow {
+    margin-left: 15px;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+#locationscrossindiasec .tab.active .tab-arrow {
+    transform: rotate(90deg);
+}
+
+#locationscrossindiasec .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    /* margin-top: 5px; */
+    background-color: #E6D1DC;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+#locationscrossindiasec .dropdown.show {
+    display: block;
+}
+
+#locationscrossindiasec .dropdown-item {
+    padding: 15px 20px;
+    background-color: #E8D4E8;
+    color: #000;
+    border: none;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 5px;
+    border-radius: 10px;
+}
+
+#locationscrossindiasec .dropdown-item:nth-child(1) {
+    z-index: 20 !important;
+    position: relative;
+    margin-top: -5px;
+
+}
+
+#locationscrossindiasec .dropdown-item:nth-child(2) {
+    z-index: 19 !important;
+    position: relative;
+    margin-top: -5px;
+}
+
+#locationscrossindiasec .dropdown-item:nth-child(3) {
+    z-index: 18 !important;
+    position: relative;
+    margin-top: -5px;
+}
+
+#locationscrossindiasec .dropdown-item:nth-child(4) {
+    z-index: 17 !important;
+    position: relative;
+    margin-top: -5px;
+}
+
+#locationscrossindiasec .dropdown-item:hover {
+    background-color: #D4C4D4;
+}
+
+#locationscrossindiasec .content-section {
+    display: none;
+}
+
+#locationscrossindiasec .content-section.active {
+    display: block;
+}
+
+#locationscrossindiasec .tab-wrapper {
+    position: relative;
+}
+
+#locationscrossindiasec .map-container {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    height: 500px;
+}
+
+#locationscrossindiasec .map-svg {
+    width: 100%;
+    height: 100%;
+}
+
+#locationscrossindiasec .road {
+    fill: none;
+    stroke: #B8D4E8;
+    stroke-width: 8;
+}
+
+#locationscrossindiasec .highway {
+    fill: #7A9FBF;
+    stroke: #5A7F9F;
+    stroke-width: 2;
+}
+
+#locationscrossindiasec .lake {
+    fill: #A8D8EA;
+}
+
+#locationscrossindiasec .building {
+    fill: #E8E8E8;
+    stroke: #D0D0D0;
+    stroke-width: 1;
+}
+
+#locationscrossindiasec .marker {
+    fill: #DC3545;
+}
+
+#locationscrossindiasec .marker-label {
+    fill: #000;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#locationscrossindiasec .highway-label {
+    fill: #000;
+    font-size: 14px;
+    font-weight: 700;
+    background-color: #FFD700;
+    padding: 2px 6px;
+}
+
+#locationscrossindiasec .location-label {
+    fill: #555;
+    font-size: 12px;
+}
+
+#locationscrossindiasec .highway-badge {
+    fill: #FFD700;
+}
+
+#locationscrossindiasec .locationscrossindiaheading {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 80px;
+    line-height: 65px;
+    letter-spacing: -5%;
+    text-align: center;
+    color: #801B53;
+    padding-bottom: 3rem;
+}
+
+#locationscrossindiasec .locationformorecities {
+    text-align: center;
+    padding-top: 4rem;
+    color: #000;
+    font-family: Montserrat;
+    font-weight: 600;
+    font-style: SemiBold;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0%;
+}
+
+/* location across india section style end  */
+
+/* All responsive style code */
+/* Responsive for 1366px */
+@media screen and (max-width: 1366px) {}
+
+/* Responsive for 1024px */
+@media screen and (max-width: 1024px) {}
+
+/* Additional responsive for smaller screens */
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 480px) {}
