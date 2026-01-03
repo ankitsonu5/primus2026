@@ -908,8 +908,6 @@
     line-height: 50px;
     letter-spacing: 0%;
     text-align: center;
-
-
 }
 
 #activelivingofyourlifesec .content-section p {
@@ -999,6 +997,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 10px;
+    position: relative;
 }
 
 #exploreourcommunitiessec .dropdown-icon {
@@ -1021,6 +1020,10 @@
     display: none;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
     z-index: 100;
+    width: 100%;
+    left: 0;
+    right: auto;
+    box-sizing: border-box;
 }
 
 #exploreourcommunitiessec .regions-dropdown.show {
@@ -1733,6 +1736,106 @@
 }
 
 /* Led By a Pioneer section end */
+
+/* The Primus Difference, as told by Residents style start */
+#primusdifferencesec {
+    margin-top: 5rem;
+}
+
+.primusdifferencechead {
+    margin-bottom: 2rem;
+}
+
+.primusdifferencechead h1 {
+    text-align: center;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 75px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #882a5f;
+}
+
+.primusdifferenceccont {
+    /* background-color  : #801B53; */
+    padding: 3rem 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.primusdifferencecdiv {
+    background-color: #efdfdf;
+    display: flex;
+    align-items: center;
+    padding: 2rem 4rem;
+    gap: 5rem;
+    border-radius: 2rem;
+}
+
+.primusdifferencecdivimg img {
+    border-radius: 50%;
+}
+
+.secitemdivone {
+    position: sticky;
+    top: 5rem;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #53103c;
+    color: #fff;
+}
+
+.secitemdivtwo {
+    position: sticky;
+    top: 10rem;
+    width: 95%;
+    margin: 0 auto;
+    background-color: #821a52;
+    color: #fff;
+}
+
+.secitemdivthree {
+    position: sticky;
+    top: 15rem;
+    width: 100%;
+    margin: 0 auto;
+    border: 3px solid black;
+}
+
+.primusdifferencecdivtext p {
+    font-family: Lato;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 0%;
+}
+
+.primusdifferencecdivtext h4 {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 26px;
+    line-height: 30px;
+    letter-spacing: 0%;
+}
+
+.secitemdivthree h4 {
+    color: #801b53;
+}
+
+.primusdifferencecdivtext p:nth-child(2) {
+    font-family: var(--primary-heading-font);
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0%;
+}
+
+/* The Primus Difference, as told by Residents style end */
 
 /* footer page design tab section start */
 #footersec {

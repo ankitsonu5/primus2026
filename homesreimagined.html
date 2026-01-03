@@ -9,13 +9,15 @@
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/css/homesreimagined.css">
+    <!-- font awesome cdn -->
+    <script src="https://kit.fontawesome.com/0823a66b46.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!-- navbarsec start -->
     <section id="navbarsec">
 
-        <!-- 🔥 spacer (layout jump fix) -->
+        <!-- spacer (layout jump fix) -->
         <div id="navbar-space"></div>
 
         <div class="navbar-wrapper">
@@ -28,17 +30,18 @@
                 </div>
 
                 <ul class="nav-menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="./index.html">Home</a></li>
                     <li><a href="#">Our Communities</a></li>
-                    <li><a href="#">The Primus Lifestyle</a></li>
-                    <li><a href="#">Living Well Hub</a></li>
+                    <li><a href="./lifestyle.html">The Primus Lifestyle</a></li>
+                    <li><a href="./homesreimagined.html">Homes Reimagined</a></li>
                     <li><a href="#">Partner With Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="./aboutus.html">About Us</a></li>
+                    <li><a href="./blogdetails.html">Blogs</a></li>
+                    <li><a href="./contactus.html">Contact Us</a></li>
 
                     <li class="enquiry-container">
                         <button class="enquiry-btn" id="enquiryBtn">
-                            ENQUIRY <span class="arrow">▼</span>
+                            ENQUIRY <span class="arrow"><i class="fa-solid fa-angle-down"></i></span>
                         </button>
 
                         <div class="dropdown" id="dropdown">
@@ -55,24 +58,16 @@
     <!-- navbar section end -->
 
     <!-- desktop banner code -->
-    <div class="container">
-        <section id="header" class="home-header">
-            <div class="banner">
-                <div class="banner-tagline primary-heading-font">
-                    <h1>Your Home
-                        Re - Imagined</h1>
-                </div>
-                <div class="banner-para">
-                    <p>Live in a Home that Grows with You</p>
-                </div>
-
-                <div class="bannerimg">
-                    <img class="bannerimgdesktop" src="./assets/images/homesreimagined/banner-bg.png" />
-                    <!-- <img class="bannerimgmobile" src="./assets/images/aboutus/bannerImage.png" /> -->
+    <section id="heroreimaginesec">
+        <div class="container">
+            <div class="banner-container">
+                <div class="banner-content">
+                    <h1>Welcome to Primus</h1>
+                    <p>A Space that keeps you active, connect and happy</p>
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
     <!-- desktop banner code end -->
 
     <!-- The living well hub section start-->
@@ -159,7 +154,10 @@
         <div class="container">
             <div class="main-wrapper">
                 <div class="header">
-                    <h1 class="primary-heading-font">Active living, built into every corner of your life.</h1>
+                    <h1 class="primary-heading-font">Designed for Safety.
+                        Built for Peace of Mind.</h1>
+                    <p class="activelivingpara">Every feature is built to prevent risks and protect you and your loved
+                        ones.</p>
                 </div>
 
                 <div class="carousel-wrapper">
@@ -295,6 +293,99 @@
     </section>
     <!-- Kitchens work safety section end-->
 
+    <!-- bathroomsthatthinkheadsec start -->
+    <section id="bathroomsthatthinkheadsec">
+        <div class="container">
+            <div class="main-wrapper">
+
+                <div class="header">
+                    <h1 class="primary-heading-font">Bathrooms That Think Ahead</h1>
+                    <p class="activelivingpara">Bathroom Safety & Smart Features</p>
+                </div>
+
+                <div class="carousel-wrapper">
+                    <button class="arrow arrow-left">
+                        <img src="./assets/images/home/activeLivingLife/leftArrow.png" alt="Left">
+                    </button>
+
+                    <div class="carousel-container">
+                        <div class="carousel-track" id="carouselTrack">
+
+                            <div class="carousel-item" data-heading="Thoughtful design"
+                                data-text="Details such as anti-skid tiles quietly support everyday ease and safety.">
+                                <img src="./assets/images/homesreimagined/bathroom/two.png" alt="">
+                            </div>
+
+                            <div class="carousel-item active" data-heading="Motion Sensors"
+                                data-text="Lights that respond automatically, so nothing is ever missed in the dark.">
+                                <img src="./assets/images/homesreimagined/bathroom/three.png" alt="">
+                            </div>
+
+                            <div class="carousel-item" data-heading="Smart Switches"
+                                data-text="Easy-to-use controls that make daily living simpler and safer.">
+                                <img src="./assets/images/homesreimagined/bathroom/four.png" alt="">
+                            </div>
+
+                            <div class="carousel-item" data-heading="Fall Detection"
+                                data-text="Immediate alerts that ensure help reaches you when it matters most.">
+                                <img src="./assets/images/homesreimagined/bathroom/five.png" alt="">
+                            </div>
+
+                            <div class="carousel-item" data-heading="Home Security System"
+                                data-text="Round-the-clock protection that keeps your home secure without feeling intrusive.">
+                                <img src="./assets/images/homesreimagined/bathroom/six.png" alt="">
+                            </div>
+
+                            <div class="carousel-item" data-heading="Gas Leak Sensors"
+                                data-text="Early detection that prevents risks before they become concerns.">
+                                <img src="./assets/images/homesreimagined/bathroom/seven.png" alt="">
+                            </div>
+
+                            <div class="carousel-item" data-heading="Entrance Video Door Phone"
+                                data-text="See and speak to visitors before opening the door.">
+                                <img src="./assets/images/homesreimagined/bathroom/eight.png" alt="">
+                            </div>
+
+                            <div class="carousel-item" data-heading="Smoke Detector"
+                                data-text="Early alerts that protect your home from unseen risks.">
+                                <img src="./assets/images/homesreimagined/bathroom/nine.png" alt="">
+                            </div>
+                            <div class="carousel-item" data-heading="Smoke Detector"
+                                data-text="Early alerts that protect your home from unseen risks.">
+                                <img src="./assets/images/homesreimagined/bathroom/one.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="arrow arrow-right">
+                        <img src="./assets/images/home/activeLivingLife/rightArrow.png" alt="Right">
+                    </button>
+                </div>
+
+                <div class="content-section">
+                    <h2 id="contentHeading">Motion Sensors</h2>
+                    <p id="contentText">
+                        Lights that respond automatically, so nothing is ever missed in the dark.
+                    </p>
+                </div>
+
+                <div class="pagination">
+                    <div class="dot" data-index="0"></div>
+                    <div class="dot active" data-index="1"></div>
+                    <div class="dot" data-index="2"></div>
+                    <div class="dot" data-index="3"></div>
+                    <div class="dot" data-index="4"></div>
+                    <div class="dot" data-index="5"></div>
+                    <div class="dot" data-index="6"></div>
+                    <div class="dot" data-index="7"></div>
+                    <div class="dot" data-index="8"></div>
+                    <div class="dot" data-index="9"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- bathroomsthatthinkheadsec end -->
 
     <!-- More than home section start-->
     <section id="morethanhome">
@@ -353,6 +444,100 @@
     </section>
     <!-- More than home section end-->
 
+    <!-- typicalamenitiessec start -->
+    <section id="typicalamenitiessec">
+        <div class="container">
+            <div class="main-wrapper">
+
+                <div class="header">
+                    <h1 class="primary-heading-font">Bathrooms That Think Ahead</h1>
+                    <p class="activelivingpara">Bathroom Safety & Smart Features</p>
+                </div>
+
+                <div class="carousel-wrapper">
+                    <button class="arrow arrow-left">
+                        <img src="./assets/images/home/activeLivingLife/leftArrow.png" alt="Left">
+                    </button>
+
+                    <div class="carousel-container">
+                        <div class="carousel-track" id="carouselTrack">
+
+                            <div class="carousel-item" data-heading="Thoughtful design"
+                                data-text="Details such as anti-skid tiles quietly support everyday ease and safety.">
+                                <img src="./assets/images/homesreimagined/typicalamenities/one.png" alt="">
+                            </div>
+
+                            <div class="carousel-item active" data-heading="Motion Sensors"
+                                data-text="Lights that respond automatically, so nothing is ever missed in the dark.">
+                                <img src="./assets/images/homesreimagined/typicalamenities/two.png" alt="">
+                            </div>
+
+                            <div class="carousel-item" data-heading="Smart Switches"
+                                data-text="Easy-to-use controls that make daily living simpler and safer.">
+                                <img src="./assets/images/homesreimagined/typicalamenities/three.png" alt="">
+                            </div>
+
+                            <div class="carousel-item" data-heading="Fall Detection"
+                                data-text="Immediate alerts that ensure help reaches you when it matters most.">
+                                <img src="./assets/images/homesreimagined/typicalamenities/four.png" alt="">
+                            </div>
+
+                            <div class="carousel-item" data-heading="Home Security System"
+                                data-text="Round-the-clock protection that keeps your home secure without feeling intrusive.">
+                                <img src="./assets/images/homesreimagined/typicalamenities/six.png" alt="">
+                            </div>
+
+                            <div class="carousel-item" data-heading="Gas Leak Sensors"
+                                data-text="Early detection that prevents risks before they become concerns.">
+                                <img src="./assets/images/homesreimagined/typicalamenities/seven.png" alt="">
+                            </div>
+
+                            <div class="carousel-item" data-heading="Entrance Video Door Phone"
+                                data-text="See and speak to visitors before opening the door.">
+                                <img src="./assets/images/homesreimagined/typicalamenities/eight.png" alt="">
+                            </div>
+
+                            <div class="carousel-item" data-heading="Smoke Detector"
+                                data-text="Early alerts that protect your home from unseen risks.">
+                                <img src="./assets/images/homesreimagined/typicalamenities/nine.png" alt="">
+                            </div>
+                            <div class="carousel-item" data-heading="Smoke Detector"
+                                data-text="Early alerts that protect your home from unseen risks.">
+                                <img src="./assets/images/homesreimagined/typicalamenities/ten.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="arrow arrow-right">
+                        <img src="./assets/images/home/activeLivingLife/rightArrow.png" alt="Right">
+                    </button>
+                </div>
+
+                <div class="content-section">
+                    <h2 id="contentHeading">Motion Sensors</h2>
+                    <p id="contentText">
+                        Lights that respond automatically, so nothing is ever missed in the dark.
+                    </p>
+                </div>
+
+                <div class="pagination">
+                    <div class="dot" data-index="0"></div>
+                    <div class="dot active" data-index="1"></div>
+                    <div class="dot" data-index="2"></div>
+                    <div class="dot" data-index="3"></div>
+                    <div class="dot" data-index="4"></div>
+                    <div class="dot" data-index="5"></div>
+                    <div class="dot" data-index="6"></div>
+                    <div class="dot" data-index="7"></div>
+                    <div class="dot" data-index="8"></div>
+                    <div class="dot" data-index="9"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- typicalamenitiessec end -->
+
     <!-- footer page design tab section start -->
     <footer id="footersec">
         <div class="footercont main-container">
@@ -395,7 +580,9 @@
     <script src="./assets/js/homesreimagined/homesreimagined.js"></script>
     <!-- navbarmenu script code-->
     <script src="./assets/js/home/navbarmenudsk.js"></script>
-    <script src="./assets/js/home/indexsecondslider.js"></script>
+    <script src="./assets/js/home/activelivingofyourlifesec.js"></script>
+    <!-- typicalamenitiessec script code -->
+    <script src="./assets/js/homesreimagined/typicalamenities.js"></script>
 </body>
 
 </html>

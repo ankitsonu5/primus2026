@@ -5,7 +5,7 @@
     const section = document.getElementById('exploreourcommunitiessec');
     if (!section) return;
 
-    // ✅ ELEMENTS (ONLY INSIDE THIS SECTION)
+    // ✅ ELEMENTS
     const tabs = section.querySelectorAll('.tab');
     const propertyCards = section.querySelectorAll('.property-card');
     const dots = section.querySelectorAll('.dot');
@@ -15,36 +15,34 @@
     const regionItems = section.querySelectorAll('.region-item');
 
     let currentSlide = 0;
+    let isRegionSelected = false; // 🔥 IMPORTANT FLAG
 
     // =====================
-    // TAB SWITCHING
+    // TAB CLICK HANDLING
     // =====================
     tabs.forEach(tab => {
         tab.addEventListener('click', (e) => {
 
+            // REGIONS TAB
             if (tab.dataset.tab === 'regions') {
                 e.stopPropagation();
+                isRegionSelected = true;
+
                 dropdown.classList.toggle('show');
                 dropdownIcon.classList.toggle('open');
                 return;
             }
 
-            // Remove active from non-region tabs
-            tabs.forEach(t => {
-                if (t.dataset.tab !== 'regions') {
-                    t.classList.remove('active');
-                }
-            });
+            // OTHER TABS
+            isRegionSelected = false;
 
+            tabs.forEach(t => t.classList.remove('active'));
             tab.classList.add('active');
 
-            // Close dropdown
             dropdown.classList.remove('show');
             dropdownIcon.classList.remove('open');
 
-            // Show slide
-            const slideIndex = parseInt(tab.dataset.slide, 10);
-            showSlide(slideIndex);
+            showSlide(parseInt(tab.dataset.slide, 10));
         });
     });
 
@@ -54,44 +52,37 @@
     regionItems.forEach(item => {
         item.addEventListener('click', () => {
 
-            // Remove active from first two tabs
-            tabs.forEach(t => {
-                if (t.dataset.tab !== 'regions') {
-                    t.classList.remove('active');
-                }
-            });
+            isRegionSelected = true;
 
-            // Activate regions tab
+            tabs.forEach(t => t.classList.remove('active'));
             regionsTab.classList.add('active');
 
-            // Close dropdown
             dropdown.classList.remove('show');
             dropdownIcon.classList.remove('open');
 
-            // Show slide
-            const slideIndex = parseInt(item.dataset.slide, 10);
-            showSlide(slideIndex);
+            showSlide(parseInt(item.dataset.slide, 10));
         });
     });
 
     // =====================
-    // DOT NAVIGATION
+    // DOT NAVIGATION (FIXED)
     // =====================
     dots.forEach(dot => {
         dot.addEventListener('click', () => {
             const slideIndex = parseInt(dot.dataset.dot, 10);
             showSlide(slideIndex);
 
-            // Update active tab
             tabs.forEach(t => t.classList.remove('active'));
 
             if (slideIndex === 0) {
                 tabs[0].classList.add('active');
-            } else if (slideIndex === 1) {
-                tabs[1].classList.add('active');
-            } else {
-                regionsTab.classList.add('active');
+                isRegionSelected = false;
             }
+            else if (slideIndex === 1) {
+                tabs[1].classList.add('active');
+                isRegionSelected = false;
+            }
+            // ❌ REGIONS TAB WILL NOT ACTIVATE HERE
         });
     });
 

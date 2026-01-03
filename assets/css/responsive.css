@@ -11,6 +11,7 @@
     .container {
         max-width: 1366px;
     }
+
 }
 
 /* 1024px */
@@ -136,6 +137,15 @@
     #activelivingofyourlifesec .carousel-item.active img {
         height: 100%;
     }
+
+    #exploreourcommunitiessec .tabs {
+        padding: 0 4rem;
+    }
+
+    #exploreourcommunitiessec .tab {
+        padding: 14px 30px;
+        font-size: 0.95rem;
+    }
 }
 
 /* 1024px */
@@ -182,6 +192,20 @@
         font-size: 0.95rem;
         margin-bottom: 18px;
     }
+
+    #exploreourcommunitiessec .tabs {
+        padding: 0 2rem;
+        gap: 15px;
+    }
+
+    #exploreourcommunitiessec .tab {
+        padding: 14px 25px;
+        font-size: 0.95rem;
+    }
+
+    #exploreourcommunitiessec .property-card {
+        gap: 30px;
+    }
 }
 
 /* 768px */
@@ -207,10 +231,69 @@
         height: 40px;
         font-size: 20px;
     }
+
+    #exploreourcommunitiessec h1 {
+        font-size: 2rem;
+    }
+
+    #exploreourcommunitiessec .tabs {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    #exploreourcommunitiessec .tab {
+        width: 100%;
+        text-align: left;
+    }
+
+    #exploreourcommunitiessec .property-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #exploreourcommunitiessec .property-details {
+        padding: 0;
+    }
 }
 
 /* 480px */
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+    #exploreourcommunitiessec {
+        padding: 30px 15px;
+    }
+
+    #exploreourcommunitiessec h1 {
+        font-size: 1.7rem;
+        margin-bottom: 25px;
+    }
+
+    #exploreourcommunitiessec .content-area {
+        padding: 25px 20px;
+    }
+
+    #exploreourcommunitiessec .tab {
+        font-size: 0.9rem;
+        padding: 12px 20px;
+    }
+
+    #exploreourcommunitiessec .property-details h2 {
+        font-size: 1.6rem;
+    }
+}
 
 /* 345px */
-@media (max-width: 364px) {}
+@media (max-width: 364px) {
+    #exploreourcommunitiessec h1 {
+        font-size: 1.5rem;
+    }
+
+    #exploreourcommunitiessec .tab {
+        font-size: 0.85rem;
+        padding: 10px 15px;
+    }
+
+    #exploreourcommunitiessec .know-more-btn {
+        width: 100%;
+        padding: 12px;
+    }
+}

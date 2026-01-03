@@ -1,48 +1,52 @@
-/* style */
-/* hero section design style start */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-.banner {
+:root {
+    --primary-heading-font: "Montserrat", sans-serif;
+    --primary-para-font: "Lato", sans-serif;
+}
+
+/* herolifestysec style start */
+#heroreimaginesec {
+    font-family: var(--primary-para-font);
+}
+
+#heroreimaginesec .banner-container {
+    width: 100%;
+    height: 90vh;
+    border-radius: 30px;
+    overflow: hidden;
     position: relative;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+        url('../images/homesreimagined/banner-bg.png') center/cover;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-.banner-tagline {
+#heroreimaginesec .banner-content {
     position: absolute;
-    top: 44%;
-    left: 2%;
-    z-index: 10;
-    text-align: left;
-    padding-right: 75rem;
+    left: 80px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    max-width: 900px;
+    z-index: 2;
 }
 
-.banner-para {
-    position: absolute;
-    bottom: 27%;
-    left: 2%;
-    z-index: 10;
-    text-align: left;
-    padding-right: 45rem;
-}
-
-.banner-tagline h1 {
-    color: #FFFFFF;
+#heroreimaginesec .banner-content h1 {
+    margin-bottom: 15px;
+    line-height: 1.2;
+    font-family: Montserrat;
+    font-weight: 700;
     font-size: 86.05px;
     line-height: 96.81px;
 }
 
-.banner-para p {
-    font-family: Montserrat;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 96.81px;
-    color: white;
+#heroreimaginesec .banner-content p {
+    opacity: 0.95;
+    font-family: var(--primary-para-font);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 25px;
 }
-
-.bannerimg img {
-    width: 100%;
-    max-width: 100%;
-}
-
-/* hero section design style end */
 
 /* The living well hub section start */
 #thelivinghub {
@@ -237,9 +241,22 @@
 
 /* Designed for safety section end */
 
+/* activelivingofyourlifesec style start */
+#activelivingofyourlifesec .activelivingpara {
+    font-family: var(--primary-heading-font);
+    font-weight: 600;
+    font-style: Semibold;
+    font-size: 25px;
+    line-height: 25px;
+    letter-spacing: 0%;
+}
+
+/* activelivingofyourlifesec style end */
+
 /* Kitchens work section start */
 #kitchenwork {
-    /* margin-top: 20rem; */
+    padding-top: 10rem;
+    padding-bottom: 10rem;
 }
 
 #kitchenwork .kitchenworktxt {
@@ -284,9 +301,142 @@
 
 /*Kitchens work section end */
 
+
+/* bathroomsthatthinkheadsec style start */
+#bathroomsthatthinkheadsec {
+    background: url('../images/home/activeLivingLife/bgmain.png');
+    background-size: cover;
+    min-height: 100vh;
+    padding: 5rem 0;
+    display: flex;
+    align-items: center;
+    font-family: var(--primary-heading-font);
+}
+
+#bathroomsthatthinkheadsec .main-wrapper {
+    width: 100%;
+}
+
+#bathroomsthatthinkheadsec .header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#bathroomsthatthinkheadsec .header h1 {
+    padding: 0;
+}
+
+#bathroomsthatthinkheadsec .activelivingpara {
+    font-family: var(--primary-heading-font);
+    font-weight: 600;
+    font-style: Semibold;
+    font-size: 25px;
+    line-height: 25px;
+    letter-spacing: 0%;
+}
+
+#bathroomsthatthinkheadsec .header p {
+    padding: 0;
+}
+
+#bathroomsthatthinkheadsec .carousel-wrapper {
+    position: relative;
+    padding: 0 80px;
+    margin-bottom: 60px;
+}
+
+.carousel-container {
+    overflow: hidden;
+}
+
+#bathroomsthatthinkheadsec .carousel-track {
+    display: flex;
+    align-items: center;
+    /* 🔥 CENTER FIX */
+    gap: 30px;
+    transition: transform 0.5s ease-in-out;
+    padding: 20px 0;
+}
+
+#bathroomsthatthinkheadsec .carousel-item {
+    flex: 0 0 calc(33.333% - 20px);
+    opacity: 0.6;
+    transform: scale(0.85);
+    transform-origin: center center;
+    transition: all 0.5s ease;
+}
+
+#bathroomsthatthinkheadsec .carousel-item.active {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 10;
+}
+
+#bathroomsthatthinkheadsec .carousel-item img {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+#bathroomsthatthinkheadsec .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 100;
+}
+
+#bathroomsthatthinkheadsec .arrow-left {
+    left: 10px;
+}
+
+#bathroomsthatthinkheadsec .arrow-right {
+    right: 10px;
+}
+
+#bathroomsthatthinkheadsec .content-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.content-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+#bathroomsthatthinkheadsec .content-section p {
+    font-size: 22px;
+}
+
+#bathroomsthatthinkheadsec .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+#bathroomsthatthinkheadsec .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(107, 36, 86, 0.3);
+    cursor: pointer;
+}
+
+#bathroomsthatthinkheadsec .dot.active {
+    background: #6b2456;
+    transform: scale(1.3);
+}
+
+/* bathroomsthatthinkheadsec style end */
+
+
 /* More than home section start*/
 #morethanhome {
-    /* margin-top: 20rem; */
+    padding-top: 10rem;
+    padding-bottom: 10rem;
 }
 
 #morethanhome .morethanhometxt {
@@ -328,4 +478,135 @@
     padding-left: 15%;
     padding-bottom: 2rem;
 }
+
 /* More than home section end*/
+
+/* typicalamenitiessec style start */
+#typicalamenitiessec {
+    background: url('../images/home/activeLivingLife/bgmain.png');
+    background-size: cover;
+    min-height: 100vh;
+    padding: 5rem 0;
+    display: flex;
+    align-items: center;
+    font-family: var(--primary-heading-font);
+}
+
+#typicalamenitiessec .main-wrapper {
+    width: 100%;
+}
+
+#typicalamenitiessec .header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#typicalamenitiessec .header h1 {
+    padding: 0;
+}
+
+#typicalamenitiessec .activelivingpara {
+    font-family: var(--primary-heading-font);
+    font-weight: 600;
+    font-style: Semibold;
+    font-size: 25px;
+    line-height: 25px;
+    letter-spacing: 0%;
+}
+
+#typicalamenitiessec .header p {
+    padding: 0;
+}
+
+#typicalamenitiessec .carousel-wrapper {
+    position: relative;
+    padding: 0 80px;
+    margin-bottom: 60px;
+}
+
+#typicalamenitiessec .carousel-container {
+    overflow: hidden;
+}
+
+#typicalamenitiessec .carousel-track {
+    display: flex;
+    align-items: center;
+    /* 🔥 CENTER FIX */
+    gap: 30px;
+    transition: transform 0.5s ease-in-out;
+    padding: 20px 0;
+}
+
+#typicalamenitiessec .carousel-item {
+    flex: 0 0 calc(33.333% - 20px);
+    opacity: 0.6;
+    transform: scale(0.85);
+    transform-origin: center center;
+    transition: all 0.5s ease;
+}
+
+#typicalamenitiessec .carousel-item.active {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 10;
+}
+
+#typicalamenitiessec .carousel-item img {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+#typicalamenitiessec .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 100;
+}
+
+#typicalamenitiessec .arrow-left {
+    left: 10px;
+}
+
+#typicalamenitiessec .arrow-right {
+    right: 10px;
+}
+
+#typicalamenitiessec .content-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#typicalamenitiessec .content-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+#typicalamenitiessec .content-section p {
+    font-size: 22px;
+}
+
+#typicalamenitiessec .pagination {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+#typicalamenitiessec .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(107, 36, 86, 0.3);
+    cursor: pointer;
+}
+
+#typicalamenitiessec .dot.active {
+    background: #6b2456;
+    transform: scale(1.3);
+}
+
+/* typicalamenitiessec style end */

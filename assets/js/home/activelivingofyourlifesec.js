@@ -1,9 +1,9 @@
-// activelivingofyourlifesec carousel functionality
+// bathroomsthatthinkheadsec carousel functionality
 
 (function () {
 
     // 🔒 SECTION SCOPE
-    const section = document.getElementById("activelivingofyourlifesec");
+    const section = document.getElementById("bathroomsthatthinkheadsec");
     if (!section) return;
 
     // ELEMENTS (ONLY INSIDE THIS SECTION)
