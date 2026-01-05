@@ -204,6 +204,11 @@
     #exploreourcommunitiessec .property-card {
         gap: 30px;
     }
+
+    #primussupportdivisionsec .cards-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 8rem;
+    }
 }
 
 /* 768px */

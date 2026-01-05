@@ -404,6 +404,21 @@
     border-color: #8b3a8b;
 }
 
+@media (max-width: 1366px) {
+    .banner-tagline h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .banner-para p {
+        font-size: 2rem;
+        line-height: 2rem;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 1024px) {}
+
 @media (max-width: 768px) {
     .carousel-container {
         padding: 0 60px;
