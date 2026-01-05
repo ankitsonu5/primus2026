@@ -1,6 +1,8 @@
+// bathroomsthatthinkheadsec script code
+
 (function () {
 
-    const section = document.getElementById("activelivingofyourlifesec");
+    const section = document.getElementById("bathroomsthatthinkheadsec");
     if (!section) return;
 
     const track = section.querySelector(".carousel-track");
