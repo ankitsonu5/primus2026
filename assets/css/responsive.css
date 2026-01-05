@@ -11,7 +11,6 @@
     .container {
         max-width: 1366px;
     }
-
 }
 
 /* 1024px */
@@ -45,7 +44,6 @@
 
 
 /* index responsive */
-
 /* 1366px */
 @media (max-width: 1366px) {
     #primuswayoflifesec .slide-group {

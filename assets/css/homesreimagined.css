@@ -97,6 +97,7 @@
 #thelivinghub .right-image.visible {
     transform: translateX(-3%);
     opacity: 1;
+
 }
 
 #thelivinghub .center-content {
@@ -531,7 +532,6 @@
 #typicalamenitiessec .carousel-track {
     display: flex;
     align-items: center;
-    /* 🔥 CENTER FIX */
     gap: 30px;
     transition: transform 0.5s ease-in-out;
     padding: 20px 0;
@@ -610,3 +610,31 @@
 }
 
 /* typicalamenitiessec style end */
+
+/* Responsive Design for homesreimagined.css */
+/* 1366px */
+@media (max-width: 1366px) {
+    #thelivinghub .right-image.visible {
+        width: 36%;
+    }
+
+    #thelivinghub .left-image.visible {
+        width: 36%;
+    }
+
+    #thelivinghub .center-content h1 {
+        font-size: 1.8rem;
+    }
+}
+
+/* 1024px */
+@media (max-width: 1024px) {}
+
+/* 768px */
+@media (max-width: 768px) {}
+
+/* 480px */
+@media (max-width: 480px) {}
+
+/* 345px */
+@media (max-width: 364px) {}
