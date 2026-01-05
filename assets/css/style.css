@@ -506,7 +506,7 @@
     margin-right: 0;
 }
 
-0 #primushealthlifeotosec .nav-arrow:hover {
+#primushealthlifeotosec .nav-arrow:hover {
     background: none;
 }
 
@@ -1668,6 +1668,8 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
     background: linear-gradient(135deg, #f5e6e8 0%, #e8d5e0 50%, #d4c5e0 100%);
     background-image: url('../images/home/bgmain.png');
+    background-repeat: no-repeat;
+    object-fit: cover;
     min-height: 100vh;
     display: flex;
     align-items: center;
