@@ -15,7 +15,6 @@
     const regionItems = section.querySelectorAll('.region-item');
 
     let currentSlide = 0;
-    let isRegionSelected = false; // 🔥 IMPORTANT FLAG
 
     // =====================
     // TAB CLICK HANDLING
@@ -23,19 +22,16 @@
     tabs.forEach(tab => {
         tab.addEventListener('click', (e) => {
 
-            // REGIONS TAB
+            // 🌍 REGIONS TAB
             if (tab.dataset.tab === 'regions') {
-                e.stopPropagation();
-                isRegionSelected = true;
+                e.stopPropagation(); // 🔥 IMPORTANT
 
                 dropdown.classList.toggle('show');
                 dropdownIcon.classList.toggle('open');
                 return;
             }
 
-            // OTHER TABS
-            isRegionSelected = false;
-
+            // 🟣 OTHER TABS
             tabs.forEach(t => t.classList.remove('active'));
             tab.classList.add('active');
 
@@ -50,9 +46,8 @@
     // REGION DROPDOWN ITEMS
     // =====================
     regionItems.forEach(item => {
-        item.addEventListener('click', () => {
-
-            isRegionSelected = true;
+        item.addEventListener('click', (e) => {
+            e.stopPropagation(); // 🔥 IMPORTANT
 
             tabs.forEach(t => t.classList.remove('active'));
             regionsTab.classList.add('active');
@@ -65,7 +60,14 @@
     });
 
     // =====================
-    // DOT NAVIGATION (FIXED)
+    // PREVENT DROPDOWN SELF CLOSE
+    // =====================
+    dropdown.addEventListener('click', (e) => {
+        e.stopPropagation();
+    });
+
+    // =====================
+    // DOT NAVIGATION
     // =====================
     dots.forEach(dot => {
         dot.addEventListener('click', () => {
@@ -76,13 +78,10 @@
 
             if (slideIndex === 0) {
                 tabs[0].classList.add('active');
-                isRegionSelected = false;
-            }
-            else if (slideIndex === 1) {
+            } else if (slideIndex === 1) {
                 tabs[1].classList.add('active');
-                isRegionSelected = false;
             }
-            // ❌ REGIONS TAB WILL NOT ACTIVATE HERE
+            // ❌ REGIONS TAB intentionally NOT auto-active
         });
     });
 

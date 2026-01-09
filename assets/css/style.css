@@ -135,172 +135,370 @@
 
 /* navbarsec style end */
 
-
-/* hero-section style */
-#hero-section {
-    margin: 2rem 0;
-    position: relative;
-}
-
-#hero-section .container {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    gap: 2rem;
-
-    border-radius: 2.5rem;
-    /* ✅ image jaisa rounded */
-    overflow: hidden;
-    /* ✅ corners ke bahar content hide */
-}
-
-
-#hero-section .panel {
-    position: relative;
-    overflow: hidden;
-    border-radius: 3rem;
-    /* ✅ inner curve */
-    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
-/* Full width state */
-#hero-section .container.full-width .panel-left,
-#hero-section .container.full-width .panel-right {
-    width: 0;
-    transform: translateY(100%);
-    opacity: 0;
-}
-
-#hero-section .container.full-width .panel-center {
-    width: 100%;
-}
-
-/* Three panel state */
-#hero-section .container.three-panel .panel-left,
-#hero-section .container.three-panel .panel-right {
-    width: 33.333%;
-    transform: translateY(0);
-    opacity: 1;
-}
-
-#hero-section .container.three-panel .panel-center {
-    width: 33.333%;
-}
-
-#hero-section .container.three-panel .panel-left,
-#hero-section .container.three-panel .panel-center,
-#hero-section .container.three-panel .panel-right {
-    border-radius: 6rem;
-}
-
-#hero-section .container.full-width .panel-center {
-    width: 100%;
-    border-radius: 2.5rem;
-    /* outer container ke barabar */
-}
-
-#hero-section .panel-left,
-#hero-section .panel-right {
-    height: 100vh;
-}
-
-#hero-section .panel-center {
-    height: 100vh;
-}
-
-#hero-section .panel-content {
-    position: absolute;
+/* primusMobileNav style start */
+#primusMobileNav {
+    --burgundy: #7d204e;
+    --pink-active: #d81b60;
+    --bg-pink: #f2e1e8;
+    --text-dark: #4a4a4a;
+    --white: #ffffff;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    z-index: 1000;
+    font-family: 'Inter', sans-serif;
+}
+
+#primusMobileNav * {
+    box-sizing: border-box;
+}
+
+/* HEADER */
+#primusMobileNav .pm-header {
+    background: var(--white);
+    padding: 15px 20px;
+    margin: 1rem 0.5rem 0 0.5rem;
+    border-radius: 12px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 60px;
-    color: white;
-    z-index: 2;
+    position: relative;
+    z-index: 1001;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .05);
+}
+
+#primusMobileNav .pm-logo a img {
+    width: 8rem;
+}
+
+#primusMobileNav .pm-hamburger {
+    font-size: 26px;
+    border: none;
+    background: none;
     cursor: pointer;
 }
 
-#hero-section .panel-bg {
+/* FULL SCREEN MENU PANEL */
+#primusMobileNav .pm-menu-panel {
+    position: fixed;
+    inset: 0;
+    background: var(--bg-pink);
+    padding-top: 90px;
+    padding-bottom: 40px;
+    transform: translateY(-100vh);
+    transition: transform 0.45s cubic-bezier(.4, 0, .2, 1);
+    z-index: 1000;
+    overflow-y: auto;
+    margin: 1rem 0.5rem 0 0.5rem;
+    height: 85vh;
+    border-radius: 0.7rem;
+}
+
+/* OPEN STATE */
+#primusMobileNav.is-open .pm-menu-panel {
+    transform: translateY(0);
+}
+
+/* NAV LINKS */
+#primusMobileNav .pm-nav-links {
+    list-style: none;
+    padding: 0 25px;
+    margin: 0;
+}
+
+#primusMobileNav .pm-nav-links li {
+    padding: 12px 0;
+}
+
+#primusMobileNav .pm-nav-links a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+#primusMobileNav .pm-nav-links a.is-active {
+    color: var(--pink-active);
+    font-weight: 700;
+}
+
+/* ENQUIRY */
+#primusMobileNav .pm-enquiry {
+    margin-top: 30px;
+    padding: 0 25px;
+    position: relative;
+}
+
+#primusMobileNav .pm-enquiry-btn {
+    background: #821A52;
+    color: #fff;
+    border: none;
+    padding: 14px 36px;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+/* ENQUIRY DROPDOWN */
+#primusMobileNav .pm-enquiry-dropdown {
+    position: absolute;
+    bottom: 120%;
+    left: 25px;
+    width: 170px;
+    background: #fff;
+    list-style: none;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .15);
+
+    opacity: 0;
+    transform: translateY(10px);
+    pointer-events: none;
+    transition: .3s ease;
+    padding: 0;
+    margin: 0;
+}
+
+#primusMobileNav .pm-enquiry-dropdown.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+
+#primusMobileNav .pm-enquiry-dropdown a {
+    display: block;
+    padding: 14px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-dark);
+    text-decoration: none;
+    border-bottom: 1px solid #eee;
+}
+
+#primusMobileNav .pm-enquiry-dropdown li:last-child a {
+    border-bottom: none;
+}
+
+body.pm-nav-open {
+    overflow: hidden;
+}
+
+/* primusMobileNav style end */
+
+
+/* hero-section-scroll desktop style start*/
+#hero-section-scroll {
+    position: relative;
+    width: 100%;
+}
+
+#hero-section-scroll .container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#hero-section-scroll .scroll-track {
+    height: 500vh;
+    position: relative;
+}
+
+#hero-section-scroll .sticky-wrapper {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: #fff;
+}
+
+#hero-section-scroll .layout-container {
+    display: flex;
+    width: 96%;
+    height: 90vh;
+    gap: 0px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 3rem;
+    font-family: var(--primary-heading-font);
+}
+
+#hero-section-scroll .video-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    flex-shrink: 0;
+    z-index: 2;
+}
+
+#hero-section-scroll .video-box video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#hero-section-scroll .video-text {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    color: white;
+    font-size: 5.2rem;
+    max-width: 750px;
+    z-index: 5;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    transition: opacity 0.5s ease;
+    font-family: var(--primary-heading-font);
+}
+
+#hero-section-scroll #newText {
+    opacity: 0;
+}
+
+#hero-section-scroll .side-panel {
+    position: relative;
+    height: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(100vh);
+    z-index: 3;
+}
+
+#hero-section-scroll .side-panel img {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    z-index: 1;
 }
 
-#hero-section .overlay {
+#hero-section-scroll .side-panel::after {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
     z-index: 1;
 }
 
-#hero-section h1 {
-    font-size: 4.5rem;
-    font-weight: 700;
-    line-height: 1.2;
-    text-align: center;
-    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.8);
-    margin-bottom: 20px;
-}
-
-#hero-section h2 {
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: 1.2;
-    text-align: left;
-    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.8);
+#hero-section-scroll .side-panel h3 {
     position: absolute;
-    left: 4rem;
-    bottom: 15rem;
-    font-family: var(--primary-heading-font);
-}
-
-#hero-section .subtitle {
-    font-size: 1.5rem;
-    font-weight: 400;
-    text-align: center;
-    margin-top: 10px;
-    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
-}
-
-/* Video styling */
-#hero-section video {
-    filter: brightness(0.7);
-}
-
-/* Heading visibility control */
-#hero-section .main-heading {
-    opacity: 1;
-    transition: opacity 0.5s ease;
-    font-family: var(--primary-heading-font);
-}
-
-#hero-section .welcome-heading {
-    opacity: 0;
-    transition: opacity 0.5s ease;
-}
-
-#hero-section .container.three-panel .main-heading {
-    opacity: 0;
-}
-
-#hero-section .container.three-panel .welcome-heading {
-    opacity: 1;
-    font-family: var(--primary-heading-font);
+    bottom: 40px;
+    left: 40px;
+    z-index: 2;
+    color: white;
     font-size: 3rem;
 }
+
+#hero-section-scroll .content-section {
+    height: 100vh;
+    background: #701b44;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+/* hero-section-scroll desktop style end*/
+
+/* primusHero mobile section start */
+
+#primusHero {
+    position: relative;
+}
+
+#primusHero * {
+    box-sizing: border-box;
+}
+
+/* Wrapper */
+#primusHero .ph-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+/* Section */
+#primusHero .ph-section {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3.5rem;
+}
+
+/* Card */
+#primusHero .ph-card {
+    width: 100%;
+    height: 90vh;
+    border-radius: 2rem;
+    overflow: hidden;
+    position: relative;
+    background: #000;
+    transform: translateZ(0);
+}
+
+/* Media */
+#primusHero video,
+#primusHero img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Fixed text */
+#primusHero .ph-text-container {
+    position: fixed;
+    bottom: 15%;
+    left: 35px;
+    right: 35px;
+    z-index: 100;
+    pointer-events: none;
+}
+
+#primusHero .ph-dynamic-text {
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, .6);
+    /* transition: opacity .4s ease, transform .6s cubic-bezier(.23, 1, .32, 1); */
+    font-family: var(--primary-para-font);
+    max-width: 60%;
+}
+
+/* Image overlay text */
+#primusHero .ph-overlay-text {
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+    right: 30px;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+    text-shadow: 0 4px 15px rgba(0, 0, 0, .6);
+    /* transition: opacity .4s ease, transform .6s cubic-bezier(.23, 1, .32, 1); */
+    font-family: var(--primary-para-font);
+    max-width: 60%;
+}
+
+/* heroMobileScrollSec mobile section end */
 
 /* primushealthlifeotosec style start */
 #primushealthlifeotosec {
@@ -359,6 +557,7 @@
     color: #333;
     margin-bottom: 40px;
     font-size: 1.1em;
+
 }
 
 #primushealthlifeotosec .slides {
@@ -506,7 +705,7 @@
     margin-right: 0;
 }
 
-0 #primushealthlifeotosec .nav-arrow:hover {
+#primushealthlifeotosec .nav-arrow:hover {
     background: none;
 }
 
@@ -547,6 +746,225 @@
 }
 
 /* primushealthlifeotosec style end */
+
+/* primushealthMobsec style start */
+#primushealthMobsec {
+    font-family: var(--primary-heading-font);
+    margin: 0 5rem;
+}
+
+/* --- Scoped Styles specific to this section --- */
+#primushealthMobsec .slider-container {
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#primushealthMobsec .main-heading {
+    text-align: center;
+    color: #6b2847;
+    font-size: 2rem;
+    margin-bottom: 25px;
+    line-height: 1.3;
+    padding-top: 20px;
+}
+
+#primushealthMobsec .slider-wrapper {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+#primushealthMobsec .slides {
+    display: flex;
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+    align-items: stretch;
+
+}
+
+#primushealthMobsec .slide {
+    min-width: 100%;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#primushealthMobsec .slide-heading {
+    text-align: center;
+    color: #6b2847;
+    font-size: 1.6em;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+#primushealthMobsec .slide-subtext {
+    text-align: center;
+    color: #555;
+    font-size: 0.95rem;
+    margin-top: -15px;
+    margin-bottom: 25px;
+    max-width: 90%;
+    line-height: 1.5;
+}
+
+#primushealthMobsec .columns {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+#primushealthMobsec .column-item {
+    border-radius: 12px;
+    display: flex;
+    align-items: stretch;
+    color: white;
+    overflow: hidden;
+    min-height: 140px;
+}
+
+#primushealthMobsec .two-item-slide .column-item {
+    min-height: 230px;
+}
+
+#primushealthMobsec .left-column {
+    background: #521e36;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 130px;
+    flex-shrink: 0;
+}
+
+/* #primushealthMobsec .icon-box {
+    background: rgba(0, 0, 0, 0.3);
+    width: 65px;
+    height: 65px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+} */
+
+#primushealthMobsec .icon-box div img {
+    width: 4rem;
+}
+
+#primushealthMobsec .icon {
+    font-size: 2em;
+}
+
+#primushealthMobsec .icon-caption {
+    font-size: 0.85em;
+    text-align: center;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+#primushealthMobsec .column-content {
+    background: #6b2847;
+    padding: 20px 25px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#primushealthMobsec .column-content h3 {
+    font-size: 1.25em;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+#primushealthMobsec .column-content ul {
+    list-style: none;
+}
+
+#primushealthMobsec .column-content li {
+    margin: 6px 0;
+    padding-left: 18px;
+    position: relative;
+    line-height: 1.4;
+    font-size: 0.95em;
+}
+
+#primushealthMobsec .column-content li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+#primushealthMobsec .bottom-text {
+    text-align: center;
+    margin-top: 25px;
+    color: #333;
+    line-height: 1.5;
+    font-size: 0.95em;
+}
+
+/* --- Navigation Styles --- */
+#primushealthMobsec .controls-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    min-height: 40px;
+    padding-bottom: 20px;
+}
+
+#primushealthMobsec .nav-btn {
+    background: none;
+    color: #821A52;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    position: absolute;
+    top: 54%;
+    transform: translateY(-50%);
+}
+
+#primushealthMobsec #prevBtn {
+    left: -60px;
+}
+
+#primushealthMobsec #nextBtn {
+    right: -60px;
+}
+
+#primushealthMobsec .dots {
+    display: flex;
+    gap: 12px;
+}
+
+#primushealthMobsec .dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #6b2847;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#primushealthMobsec .dot.active {
+    background: #6b2847;
+    transform: scale(1.2);
+}
+
+/* primushealthMobsec style end */
 
 /* primuswayoflifesec style */
 #primuswayoflifesec {
@@ -594,7 +1012,7 @@
 #primuswayoflifesec .slide-group {
     min-width: 100%;
     display: flex;
-    gap: 30px;
+    gap: 6rem;
     padding: 10px;
 }
 
@@ -678,6 +1096,123 @@
     transform: none;
     background: rgba(255, 255, 255, 0.2);
 }
+
+
+/* primuswayoflifesec style start */
+#primuswayofMobSec {
+    background-color: #801A46;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+    padding: 3rem 1.2rem;
+    touch-action: pan-y;
+    margin: 0 auto;
+    font-family: var(--primary-heading-font);
+}
+
+#primuswayofMobSec .main-container {
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+}
+
+#primuswayofMobSec .main-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#primuswayofMobSec .slider-viewport {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 40px;
+    background-color: #6D143A;
+    cursor: grab;
+}
+
+#primuswayofMobSec .slider-track {
+    display: flex;
+    width: 500%;
+    transition: transform 0.4s cubic-bezier(0.2, 0, 0.2, 1);
+}
+
+#primuswayofMobSec .slide {
+    width: 20%;
+    flex-shrink: 0;
+    text-align: left;
+}
+
+/* Image height ko 500px kar diya gaya hai */
+#primuswayofMobSec .image-wrapper {
+    padding: 18px;
+    width: 100%;
+}
+
+#primuswayofMobSec .slide img {
+    width: 100%;
+    height: 500px;
+    /* Aapki lambi image ke liye perfect height */
+    border-radius: 30px;
+    display: block;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+#primuswayofMobSec .content {
+    padding: 10px 30px 45px 30px;
+}
+
+#primuswayofMobSec .content h2 {
+    font-size: 2.2rem;
+    line-height: 1.1;
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+#primuswayofMobSec .content p {
+    font-size: 1.05rem;
+    line-height: 1.5;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+#primuswayofMobSec .slider-dots {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+}
+
+#primuswayofMobSec .dot {
+    height: 16px;
+    width: 16px;
+    border: 2px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#primuswayofMobSec .dot.active {
+    background-color: white;
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 768px) {
+    #primuswayofMobSec.only-mobile {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .only-mobile:not(#primuswayofMobSec) {
+        display: block !important;
+    }
+}
+
 
 /* primusgallerydesignsec style */
 #primusgallerydesignsec {
@@ -782,6 +1317,91 @@
 #primusgallerydesignsec .accordion-panel.active .panel-number {
     opacity: 0.3;
 }
+
+
+/* primusgalleryMobSec style start */
+#primusgalleryMobSec {
+    width: 100%;
+    overflow: hidden;
+    padding: 20px 0;
+    position: relative;
+    font-family: var(--primary-heading-font);
+}
+
+#primusgalleryMobSec .slider-wrapper {
+    display: flex;
+    transition: transform 0.4s ease-out;
+    will-change: transform;
+}
+
+#primusgalleryMobSec .slide {
+    min-width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+#primusgalleryMobSec .card {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    aspect-ratio: 4/5;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+#primusgalleryMobSec .card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+#primusgalleryMobSec .card-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 45px;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.85));
+    color: white;
+}
+
+#primusgalleryMobSec .card-content h3 {
+    margin: 0 0 5px;
+    font-family: var(--primary-heading-font);
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 36px;
+}
+
+#primusgalleryMobSec .card-content p {
+    margin: 0;
+    font-size: 0.9rem;
+    opacity: 0.9;
+    line-height: 1.4;
+}
+
+/* Dots Navigation */
+#primusgalleryMobSec .dots-container {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+#primusgalleryMobSec .dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #800040;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#primusgalleryMobSec .dot.active {
+    background-color: #800040;
+}
+
+/* primusgalleryMobSec style end */
 
 /* activelivingofyourlifesec style start */
 #activelivingofyourlifesec {
@@ -943,6 +1563,153 @@
     transform: scale(1.3);
 }
 
+/* activelivingofMobSec style start */
+#activelivingofMobSec {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* background: linear-gradient(135deg, #E8D5F2 0%, #F5C4D8 100%); */
+    background: url(../images/home/activeLivingMob/bgActiveLiving.png);
+    padding: 3rem 0;
+}
+
+#activelivingofMobSec .container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#activelivingofMobSec .main-heading {
+    text-align: center;
+    color: #801B53;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    line-height: 1.3;
+    padding: 0 20px;
+
+
+    font-family: Montserrat;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 26px;
+    line-height: 36px;
+}
+
+#activelivingofMobSec .slider-container {
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 360px;
+}
+
+#activelivingofMobSec .slider-wrapper {
+    display: flex;
+    transition: none;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+}
+
+#activelivingofMobSec .slide {
+    flex-shrink: 0;
+    width: 190px;
+    height: 310px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    transition: all 0.5s ease;
+    opacity: 0.7;
+    transform: scale(0.9);
+}
+
+#activelivingofMobSec .slide.left {
+    left: 0;
+    opacity: 0.7;
+    transform: translateX(0) scale(0.9);
+}
+
+#activelivingofMobSec .slide.center {
+    left: 50%;
+    transform: translateX(-50%) scale(1);
+    width: 250px;
+    height: 336px;
+    opacity: 1;
+    z-index: 10;
+}
+
+#activelivingofMobSec .slide.right {
+    right: 0;
+    opacity: 0.7;
+    transform: translateX(0) scale(0.9);
+}
+
+#activelivingofMobSec .slide.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#activelivingofMobSec .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#activelivingofMobSec .slide-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    padding: 20px;
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#activelivingofMobSec .slide.center .slide-overlay {
+    opacity: 1;
+}
+
+#activelivingofMobSec .description {
+    font-family: var(--primary-para-font);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+}
+
+#activelivingofMobSec .dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#activelivingofMobSec .dot {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid #821A52;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#activelivingofMobSec .dot.active {
+    background: #821A52;
+    width: 16px;
+    height: 16px;
+}
+
+/* activelivingofMobSec style end */
+
 /* exploreourcommunitiessec style start */
 #exploreourcommunitiessec {
     font-family: var(--primary-heading-font);
@@ -980,6 +1747,7 @@
     border-radius: 8px;
     transition: all 0.3s ease;
     position: relative;
+    font-family: var(--primary-heading-font);
 }
 
 #exploreourcommunitiessec .tab.active {
@@ -1376,10 +2144,87 @@
 
 /* primussupportdivisionsec style end */
 
+/* primusSupportMobSec style start */
+#primusSupportMobSec {
+    font-family: var(--primary-heading-font);
+    margin: 0;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#primusSupportMobSec .container {
+    width: 100%;
+    max-width: 495px;
+    /* max-width: 495px; */
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+#primusSupportMobSec .card {
+    background-color: #E6D1DC;
+    border-radius: 30px;
+    padding: 30px 20px 25px 20px;
+    text-align: left;
+    position: relative;
+    /* Card ke andar content ko image ke neeche se start karne ke liye */
+    padding-top: 70px;
+}
+
+#primusSupportMobSec .image-wrapper {
+    position: absolute;
+    top: -65px;
+    /* Image ka aadha hissa card ke bahar */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+#primusSupportMobSec .image-wrapper img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+}
+
+#primusSupportMobSec .content h3 {
+    margin: 0 0 15px 0;
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+#primusSupportMobSec .content p {
+    font-size: 0.95rem;
+    line-height: 1.45;
+    margin-bottom: 15px;
+    font-weight: 400;
+    color: #000000;
+}
+
+#primusSupportMobSec .logo-area {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#primusSupportMobSec .logo {
+    height: 35px;
+    width: auto;
+    object-fit: contain;
+    /* Logo ko thoda dark dikhane ke liye agar background light hai */
+    filter: brightness(0.2);
+}
+
+/* primusSupportMobSec style end */
+
 /* primusdifftoldresisec style start */
 #primusdifftoldresisec {
     font-family: var(--primary-heading-font);
-    background: linear-gradient(135deg, #7b2869 0%, #a02d7a 100%);
+    background: #821A52;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -1449,7 +2294,7 @@
 #primusdifftoldresisec .primus-slide {
     min-width: 100%;
     display: flex;
-    gap: 30px;
+    gap: 6rem;
     padding: 0 5px;
 }
 
@@ -1663,6 +2508,97 @@
 
 /* primusprideranksec style end */
 
+/* primusprideMobSec style start */
+/* CSS Same rakha hai bas container ko responsive banaya hai */
+#primusprideMobSec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+#primusprideMobSec {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#primusprideMobSec .slider-container {
+    width: 90%;
+    max-width: 768px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 30px;
+    background: #fff;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    cursor: grab;
+    user-select: none;
+    position: relative;
+}
+
+#primusprideMobSec .slider-container:active {
+    cursor: grabbing;
+}
+
+#primusprideMobSec .slider-track {
+    display: flex;
+    height: 100%;
+    transition: transform 0.4s ease-out;
+    will-change: transform;
+}
+
+#primusprideMobSec .slide {
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#primusprideMobSec .card-top {
+    flex: 1.2;
+    background-color: #f9f9fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+#primusprideMobSec .card-top img {
+    width: 14rem;
+    object-fit: contain;
+    pointer-events: none;
+}
+
+#primusprideMobSec .card-bottom {
+    flex: 0.8;
+    background-color: #e6dae3;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#primusprideMobSec .card-bottom p {
+    color: #333;
+    font-family: var(--primary-para-font);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0%;
+
+}
+
+/* primusprideMobSec style end */
+
+
+
 /* Led By a Pioneer section start */
 #ledbypioneersec {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
@@ -1673,6 +2609,8 @@
     align-items: center;
     justify-content: center;
     padding: 20px;
+    background-position: left;
+    object-fit: cover;
 }
 
 #ledbypioneersec .container {
@@ -1805,7 +2743,7 @@
 }
 
 .primusdifferencecdivtext p {
-    font-family: Lato;
+    font-family: var(--primary-heading-font);
     font-weight: 400;
     font-style: Regular;
     font-size: 25px;

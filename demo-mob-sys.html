@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Fluid Slider with Content</title>
+    <style>
+        /* Desktop par hide karne ke liye (Desktop par blank dikhega) */
+        @media screen and (min-width: 769px) {
+            body {
+                display: none;
+            }
+        }
+
+        #primushealthMobsec {
+            font-family: 'Segoe UI', Tahoma, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 40px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Main Top Heading */
+        #primushealthMobsec .main-heading-section {
+            text-align: center;
+            color: #4a154b;
+            padding: 0 20px;
+            margin-bottom: 30px;
+        }
+
+        #primushealthMobsec .main-heading-section h1 {
+            font-size: 1.8rem;
+            margin: 0;
+        }
+
+        #primushealthMobsec .main-heading-section p {
+            font-size: 1rem;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        /* Outer Wrapper: Fluid Width control */
+        #primushealthMobsec .outer-wrapper {
+            position: relative;
+            width: 85%;
+            max-width: 600px;
+            min-width: 280px;
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        #primushealthMobsec .slider-container {
+            width: 100%;
+            background: white;
+            padding: 25px;
+            border-radius: 20px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            min-height: 520px;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+        }
+
+        #primushealthMobsec .slide {
+            display: none;
+            flex-direction: column;
+            height: 100%;
+            flex-grow: 1;
+            animation: fadeIn 0.4s ease-in-out;
+        }
+
+        #primushealthMobsec .slide.active {
+            display: flex;
+        }
+
+        /* Slider Internal Text */
+        #primushealthMobsec .slide h2 {
+            color: #4a154b;
+            margin: 0;
+            text-align: center;
+            font-size: 1.4rem;
+        }
+
+        #primushealthMobsec .slide .slide-desc {
+            text-align: center;
+            font-size: 0.95rem;
+            color: #555;
+            margin: 10px 0 25px 0;
+            line-height: 1.4;
+        }
+
+        /* Card Layout */
+        #primushealthMobsec .division-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            justify-content: center;
+            /* Slide 1 ke liye center alignment */
+            flex-grow: 1;
+        }
+
+        #primushealthMobsec .card {
+            display: flex;
+            border: 1.2px solid #4a154b;
+            border-radius: 12px;
+            overflow: hidden;
+            min-height: 90px;
+        }
+
+        #primushealthMobsec .card-left {
+            background-color: #4a154b;
+            color: white;
+            width: 32%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.75rem;
+            font-weight: bold;
+            padding: 8px;
+            text-align: center;
+        }
+
+        #primushealthMobsec .card-left span {
+            font-size: 20px;
+            margin-bottom: 4px;
+        }
+
+        #primushealthMobsec .card-right {
+            background-color: #fdf7ff;
+            color: #333;
+            width: 68%;
+            padding: 12px;
+            display: flex;
+            align-items: center;
+            font-size: 0.85rem;
+            text-align: left;
+            line-height: 1.4;
+        }
+
+        /* Arrows Outside */
+        #primushealthMobsec .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: #4a154b;
+            color: white;
+            border: none;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            cursor: pointer;
+            z-index: 10;
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #primushealthMobsec .prev {
+            left: -45px;
+        }
+
+        #primushealthMobsec .next {
+            right: -45px;
+        }
+
+        /* Pagination Dots */
+        #primushealthMobsec .dots-container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 30px;
+        }
+
+        #primushealthMobsec .dot {
+            width: 12px;
+            height: 12px;
+            background-color: #ccc;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        #primushealthMobsec .dot.active {
+            background-color: #4a154b;
+            transform: scale(1.2);
+        }
+
+        #primushealthMobsec .bottom-tagline {
+            text-align: center;
+            font-size: 0.85rem;
+            color: #4a154b;
+            margin-top: 25px;
+            font-weight: 500;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* For very small screens */
+        @media screen and (max-width: 480px) {
+            #primushealthMobsec .outer-wrapper {
+                width: 82%;
+            }
+
+            #primushealthMobsec .prev {
+                left: -40px;
+            }
+
+            #primushealthMobsec .next {
+                right: -40px;
+            }
+
+            #primushealthMobsec .card-left {
+                width: 38%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section id="primushealthMobsec">
+        <div class="main-heading-section">
+            <h1>Think ageing can't be reversed?</h1>
+            <p>Active ageing is about staying physically mobile, mentally and socially connected.</p>
+        </div>
+
+        <div class="outer-wrapper">
+            <button class="arrow prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="arrow next" onclick="changeSlide(1)">&#10095;</button>
+
+            <div class="slider-container">
+                <div class="slide active">
+                    <h2>What Is Active Ageing?</h2>
+                    <p class="slide-desc">Active ageing is about staying physically managed and mentally sharp.</p>
+                    <div class="division-stack">
+                        <div class="card">
+                            <div class="card-left"><span>⌛</span>Lifespan</div>
+                            <div class="card-right">Total number of years lived. Often extended by intervention for a
+                                balanced life.</div>
+                        </div>
+                        <div class="card">
+                            <div class="card-left"><span>🏥</span>Healthspan</div>
+                            <div class="card-right">Years lived in good health, free from chronic diseases and
+                                disabilities.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <h2>Core Pillars</h2>
+                    <p class="slide-desc">Our foundation for a healthy and vibrant lifestyle every day.</p>
+                    <div class="division-stack">
+                        <div class="card">
+                            <div class="card-left"><span>🏃</span>Move Daily</div>
+                            <div class="card-right">Gentle, regular movement keeps the body strong and density alive.
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-left"><span>🧠</span>Engage Mind</div>
+                            <div class="card-right">Learning, hobbies, and conversations keep the curiosity alive.</div>
+                        </div>
+                        <div class="card">
+                            <div class="card-left"><span>🤝</span>Connect</div>
+                            <div class="card-right">Social interactions and community support for mental well-being.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide">
+                    <h2>Our Services</h2>
+                    <p class="slide-desc">Explore how we help you maintain your independence and joy.</p>
+                    <div class="division-stack">
+                        <div class="card">
+                            <div class="card-left"><span>🛡️</span>Safety</div>
+                            <div class="card-right">24/7 emergency response and secure living environments.</div>
+                        </div>
+                        <div class="card">
+                            <div class="card-left"><span>🥗</span>Nutrition</div>
+                            <div class="card-right">Customized healthy meal plans specifically for senior needs.</div>
+                        </div>
+                        <div class="card">
+                            <div class="card-left"><span>🏡</span>Care</div>
+                            <div class="card-right">Personalized care and assistance available whenever you need it.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="bottom-tagline">At Primus, we design life to extend Healthspan.</p>
+            </div>
+        </div>
+
+        <div class="dots-container">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </section>
+    <script>
+        // primushealthMobsec 
+
+        const sliderSection = document.querySelector('#primushealthMobsec');
+
+        let slideIndex = 0;
+        const slides = sliderSection.querySelectorAll('.slide');
+        const dots = sliderSection.querySelectorAll('.dot');
+        function showSlide(n) {
+            if (n >= slides.length) slideIndex = 0;
+            else if (n < 0) slideIndex = slides.length - 1;
+            else slideIndex = n;
+
+            slides.forEach(s => s.classList.remove('active'));
+            dots.forEach(d => d.classList.remove('active'));
+
+            slides[slideIndex].classList.add('active');
+            dots[slideIndex].classList.add('active');
+        }
+
+        function changeSlide(n) {
+            showSlide(slideIndex + n);
+        }
+
+        function currentSlide(n) {
+            showSlide(n);
+        }
+
+        /* Initial slide */
+        showSlide(slideIndex);
+    </script>
+</body>
+
+</html>

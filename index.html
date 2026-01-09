@@ -15,7 +15,7 @@
 
 <body>
     <!-- navbarsec start -->
-    <section id="navbarsec">
+    <section id="navbarsec" class="only-desktop">
 
         <!-- spacer (layout jump fix) -->
         <div id="navbar-space"></div>
@@ -56,10 +56,43 @@
         </div>
     </section>
     <!-- navbar section end -->
-    <!-- hero-section start -->
-    <section id="hero-section">
+    <!-- navbarMobSec section start -->
+    <section id="primusMobileNav" class="only-mobile">
+        <header class="pm-header">
+            <div class="pm-logo"><a href="#"><img src="./assets/images/primus-logo.png" alt=""></a></div>
+            <button class="pm-hamburger" aria-label="Menu Toggle">☰</button>
+        </header>
+
+        <nav class="pm-menu-panel">
+            <ul class="pm-nav-links">
+                <li><a href="#" class="is-active">Home</a></li>
+                <li><a href="#">Our Communities</a></li>
+                <li><a href="#">The Primus Lifestyle</a></li>
+                <li><a href="#">Homes Reimagined</a></li>
+                <li><a href="#">Partner With Us</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+
+            <div class="pm-enquiry">
+                <ul class="pm-enquiry-dropdown">
+                    <li><a href="#">EMAIL</a></li>
+                    <li><a href="#">WHATSAPP</a></li>
+                    <li><a href="#">FORM</a></li>
+                </ul>
+
+                <button class="pm-enquiry-btn">ENQUIRY <i style="margin-left: 10px;"
+                        class="fa-solid fa-angle-down"></i></button>
+            </div>
+        </nav>
+
+    </section>
+    <!-- navbarMobSec section end -->
+
+    <!-- hero-section start (on click)-->
+    <!-- <section id="hero-section">
         <div class="container full-width" id="mainContainer">
-            <!-- Left Panel -->
             <div class="panel panel-left">
                 <img src="./assets/images/home/leftimg.png" alt="Senior couple" class="panel-bg">
                 <div class="overlay"></div>
@@ -67,8 +100,6 @@
                     <h2>What good<br>is living long<br>if you don't<br>live well?</h2>
                 </div>
             </div>
-
-            <!-- Center Panel (Video) -->
             <div class="panel panel-center">
                 <video class="panel-bg" autoplay muted loop playsinline>
                     <source src="./assets/video/one.mp4" type="video/mp4">
@@ -79,8 +110,6 @@
                     <h1 class="welcome-heading">Welcome to PRIMUS</h1>
                 </div>
             </div>
-
-            <!-- Right Panel -->
             <div class="panel panel-right">
                 <img src="./assets/images/home/rightimg.png" alt="Senior woman" class="panel-bg">
                 <div class="overlay"></div>
@@ -89,11 +118,83 @@
                 </div>
             </div>
         </div>
+    </section> -->
+    <!-- hero-section end (on click)-->
+
+    <!-- hero-section start (on scroll) desktop only -->
+    <section id="hero-section-scroll" class="only-desktop">
+        <div class="container">
+            <div class="scroll-track">
+                <div class="sticky-wrapper">
+                    <div class="layout-container" id="mainContainer">
+
+                        <div class="side-panel" id="leftPanel">
+                            <img src="./assets/images/home/leftimg.png" alt="Communities">
+                            <h3>Our <br> Communities</h3>
+                        </div>
+
+                        <div class="video-box" id="videoBox">
+                            <video autoplay muted loop playsinline>
+                                <source src="./assets/video/one.mp4" type="video/mp4">
+                            </video>
+                            <h1 class="video-text" id="oldText">What good is living long, if you don't live well?</h1>
+                            <h1 class="video-text" id="newText">Welcome to Primus</h1>
+                        </div>
+
+                        <div class="side-panel" id="rightPanel">
+                            <img src="./assets/images/home/rightimg.png" alt="Lifestyle">
+                            <h3>The Primus <br> Lifestyle</h3>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
-    <!-- hero-section end -->
+    <!-- hero-section end (on scroll) desktop only -->
+
+    <!-- hero-section mobile mobile only start-->
+    <section id="primusHero" class="only-mobile">
+        <div class="ph-wrapper">
+
+            <div class="ph-text-container">
+                <h1 class="ph-dynamic-text">
+                    What good is living long, if you don’t live well?
+                </h1>
+            </div>
+
+            <div class="ph-section ph-video">
+                <div class="ph-card">
+                    <video autoplay muted loop playsinline>
+                        <source src="./assets/video/one.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <div class="ph-section ph-image">
+                <div class="ph-card">
+                    <img src="./assets/images/home/leftimg.png">
+                    <div class="ph-overlay-text">
+                        What good is living long if you don't live well
+                    </div>
+                </div>
+            </div>
+
+            <div class="ph-section ph-image">
+                <div class="ph-card">
+                    <img src="./assets/images/home/rightimg.png">
+                    <div class="ph-overlay-text">
+                        Why own home when you can live in one that serve you
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- hero-section mobile mobile only end-->
 
     <!-- primushealthlifeotosec -->
-    <section id="primushealthlifeotosec">
+    <section id="primushealthlifeotosec" class="only-desktop">
         <div class="container">
             <div class="slider-wrapper">
                 <h1 class="slider-wrapper-heading">Think ageing can't be reversed? Think again.</h1>
@@ -104,11 +205,9 @@
                         <div class="slide active">
                             <div class="slider-title-subtitle-container">
                                 <div class="slider-title">
-                                    <h1>Think ageing can't be reversed? Think again.</h1>
+                                    <h1>Healthspan vs Lifespan</h1>
                                 </div>
                             </div>
-
-                            <!-- <div class="slider-subtitle">Healthspan vs Lifespan</div> -->
 
                             <div class="cards-container">
                                 <div class="card">
@@ -201,7 +300,7 @@
                                         <p>Community, friendships, and shared experiences build emotional wellbeing.</p>
                                     </div>
                                 </div>
-                                <div class="card">
+                                <!-- <div class="card">
                                     <div class="card-top">
                                         <h3>Live with Purpose</h3>
                                         <div class="icon"><img src="./assets/images/home/healthspan/livewithpurpose.gif"
@@ -210,7 +309,7 @@
                                     <div class="card-bottom">
                                         <p>Meaningful routines and contributions give every day direction.</p>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
 
                             <div class="footer-text">
@@ -268,7 +367,7 @@
                                         <p>Simple, balanced meals shared with others, rich in nutrients.</p>
                                     </div>
                                 </div>
-
+                                <!-- 
                                 <div class="card">
                                     <div class="card-top">
                                         <h3>Community & Belonging</h3>
@@ -279,7 +378,7 @@
                                     <div class="card-bottom">
                                         <p>Strong social connections reduce stress and build emotional wellbeing.</p>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
 
                             <div class="footer-text">
@@ -308,12 +407,194 @@
             </div>
         </div>
     </section>
+    <!-- primuswayoflifesec section start-->
+    <!-- primushealthMobsec Mobile section start-->
+    <section id="primushealthMobsec">
+        <div class="slider-container">
+            <h1 class="main-heading">Think ageing can't be reversed? Think again.</h1>
+
+            <div class="slider-wrapper">
+                <div class="slides" id="slides">
+
+                    <div class="slide two-item-slide">
+                        <h2 class="slide-heading">Healthspan vs Lifespan</h2>
+                        <div class="columns">
+                            <div class="column-item">
+                                <div class="left-column">
+                                    <div class="icon-box">
+                                        <div class="icon"><img src="./assets/images/home/healthspan/watchlife.gif"
+                                                alt=""></div>
+                                    </div>
+                                    <p class="icon-caption">Lifespan</p>
+                                </div>
+                                <div class="column-content">
+                                    <h3>Lifespan</h3>
+                                    <ul>
+                                        <li>Total number of years lived</li>
+                                        <li>Medical intervention focused</li>
+                                        <li>Focused on survival</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="column-item">
+                                <div class="left-column">
+                                    <div class="icon-box">
+                                        <div class="icon"><img src="./assets/images/home/healthspan/healthspan.gif"
+                                                alt=""></div>
+                                    </div>
+                                    <p class="icon-caption">Healthspan</p>
+                                </div>
+                                <div class="column-content">
+                                    <h3>Lifespan</h3>
+                                    <ul>
+                                        <li>Total number of years lived</li>
+                                        <li>Medical intervention focused</li>
+                                        <li>Focused on survival</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="bottom-text">At Primus, we design life to extend Healthspan.</p>
+                    </div>
+
+                    <div class="slide">
+                        <h2 class="slide-heading">What is Active Ageing</h2>
+                        <p class="slide-subtext">Activ Ageing is about staying physically mobile, mentally engaged, and
+                            socially Connected</p>
+
+                        <div class="columns">
+                            <div class="column-item">
+                                <div class="left-column">
+                                    <div class="icon-box">
+                                        <div class="icon"><img src="./assets/images/home/healthspan/move-daily.gif"
+                                                alt=""></div>
+                                    </div>
+                                    <p class="icon-caption">Move Daily</p>
+                                </div>
+                                <div class="column-content">
+                                    <h3>Science-Based</h3>
+                                    <ul>
+                                        <li>Evidence-based interventions</li>
+                                        <li>Cutting-edge research</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="column-item">
+                                <div class="left-column">
+                                    <div class="icon-box">
+                                        <div class="icon"><img src="./assets/images/home/healthspan/move-daily.gif"
+                                                alt=""></div>
+                                    </div>
+                                    <p class="icon-caption">Move Daily</p>
+                                </div>
+                                <div class="column-content">
+                                    <h3>Science-Based</h3>
+                                    <ul>
+                                        <li>Evidence-based interventions</li>
+                                        <li>Cutting-edge research</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="column-item">
+                                <div class="left-column">
+                                    <div class="icon-box">
+                                        <div class="icon"><img src="./assets/images/home/healthspan/move-daily.gif"
+                                                alt=""></div>
+                                    </div>
+                                    <p class="icon-caption">Move Daily</p>
+                                </div>
+                                <div class="column-content">
+                                    <h3>Science-Based</h3>
+                                    <ul>
+                                        <li>Evidence-based interventions</li>
+                                        <li>Cutting-edge research</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="bottom-text">Comprehensive solutions for optimal health.</p>
+                    </div>
+
+                    <div class="slide">
+                        <h2 class="slide-heading">Blue Zone Living</h2>
+                        <p class="slide-subtext">Blue Zones are regions of the world where people live longer, healthier
+                            lives — naturally.</p>
+
+                        <div class="columns">
+                            <div class="column-item">
+                                <div class="left-column">
+                                    <div class="icon-box">
+                                        <div class="icon"><img src="./assets/images/home/healthspan/move-daily.gif"
+                                                alt=""></div>
+                                    </div>
+                                    <p class="icon-caption">Move Daily</p>
+                                </div>
+                                <div class="column-content">
+                                    <h3>Science-Based</h3>
+                                    <ul>
+                                        <li>Evidence-based interventions</li>
+                                        <li>Cutting-edge research</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="column-item">
+                                <div class="left-column">
+                                    <div class="icon-box">
+                                        <div class="icon"><img src="./assets/images/home/healthspan/move-daily.gif"
+                                                alt=""></div>
+                                    </div>
+                                    <p class="icon-caption">Move Daily</p>
+                                </div>
+                                <div class="column-content">
+                                    <h3>Science-Based</h3>
+                                    <ul>
+                                        <li>Evidence-based interventions</li>
+                                        <li>Cutting-edge research</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="column-item">
+                                <div class="left-column">
+                                    <div class="icon-box">
+                                        <div class="icon"><img src="./assets/images/home/healthspan/move-daily.gif"
+                                                alt=""></div>
+                                    </div>
+                                    <p class="icon-caption">Move Daily</p>
+                                </div>
+                                <div class="column-content">
+                                    <h3>Science-Based</h3>
+                                    <ul>
+                                        <li>Evidence-based interventions</li>
+                                        <li>Cutting-edge research</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="bottom-text">Experience the difference of truly living.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="controls-area">
+                <button class="nav-btn" id="prevBtn"><i class="fa-solid fa-angle-left"></i></button>
+                <div class="dots">
+                    <span class="dot active" onclick="goToSlide(0)"></span>
+                    <span class="dot" onclick="goToSlide(1)"></span>
+                    <span class="dot" onclick="goToSlide(2)"></span>
+                </div>
+                <button class="nav-btn" id="nextBtn"><i class="fa-solid fa-angle-right"></i></button>
+            </div>
+        </div>
+    </section>
+    <!-- primushealthMobsec Mobile section end-->
 
     <!-- primuswayoflifesec section start-->
-    <section id="primuswayoflifesec">
+    <section id="primuswayoflifesec" class="only-desktop">
         <div class="container">
             <h1>The Primus Way of Life</h1>
-
             <div class="slider-wrapper">
                 <button class="nav-button prev-btn" id="prevBtn">
                     <!-- <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
@@ -418,10 +699,84 @@
             </div>
         </div>
     </section>
-    <!-- primuswayoflifesec section end-->
+    <!-- primuswayoflifesec section start -->
 
-    <!-- primus gallery section start -->
-    <section id="primusgallerydesignsec">
+    <!-- primuswayofMobSec mobile section start -->
+    <section id="primuswayofMobSec" class="only-mobile">
+        <div class="main-container">
+            <h1 class="main-title">The Primus Way of Life</h1>
+
+            <div class="slider-viewport" id="viewport">
+                <div class="slider-track" id="track">
+
+                    <div class="slide">
+                        <div class="image-wrapper">
+                            <img src="./assets/images/home/primuslifeMob/one.png" alt="Preventive Health">
+                        </div>
+                        <div class="content">
+                            <h2>Preventive<br>Health</h2>
+                            <p>Daily movement, screenings, and wellness programs that catch issues before they start.
+                                Because staying healthy is easier than treating illness.</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="image-wrapper">
+                            <img src="./assets/images/home/primuslifeMob/one.png" alt="Preventive Health">
+                        </div>
+                        <div class="content">
+                            <h2>Active<br>Fitness</h2>
+                            <p>Keep your body moving with customized exercise routines that fit your daily lifestyle and
+                                energy levels.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="image-wrapper">
+                            <img src="./assets/images/home/primuslifeMob/one.png" alt="Preventive Health">
+                        </div>
+                        <div class="content">
+                            <h2>Active<br>Fitness</h2>
+                            <p>Keep your body moving with customized exercise routines that fit your daily lifestyle and
+                                energy levels.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="image-wrapper">
+                            <img src="./assets/images/home/primuslifeMob/one.png" alt="Preventive Health">
+                        </div>
+                        <div class="content">
+                            <h2>Active<br>Fitness</h2>
+                            <p>Keep your body moving with customized exercise routines that fit your daily lifestyle and
+                                energy levels.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="image-wrapper">
+                            <img src="./assets/images/home/primuslifeMob/one.png" alt="Preventive Health">
+                        </div>
+                        <div class="content">
+                            <h2>Active<br>Fitness</h2>
+                            <p>Keep your body moving with customized exercise routines that fit your daily lifestyle and
+                                energy levels.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="slider-dots">
+                <span class="dot active" onclick="goToSlide(0)"></span>
+                <span class="dot" onclick="goToSlide(1)"></span>
+                <span class="dot" onclick="goToSlide(2)"></span>
+                <span class="dot" onclick="goToSlide(3)"></span>
+                <span class="dot" onclick="goToSlide(4)"></span>
+            </div>
+        </div>
+    </section>
+    <!-- primuswayofMobSec mobile section start -->
+
+    <!-- primusgallerydesignsec section start -->
+    <section id="primusgallerydesignsec" class="only-desktop">
         <div class="container">
             <div class="accordion-container">
                 <div class="accordion-panel active" data-index="0">
@@ -497,10 +852,76 @@
             </div>
         </div>
     </section>
-    <!-- primus gallery section end -->
+    <!-- primusgallerydesignsec section end -->
 
-    <!-- active living, build into every corner of your life start -->
-    <section id="activelivingofyourlifesec">
+    <!-- primusgalleryMobSec mobile section end -->
+    <section id="primusgalleryMobSec" class="only-mobile">
+        <div class="slider-wrapper">
+            <div class="slide">
+                <div class="card">
+                    <img src="./assets/images/home/social-connection/one.png" alt="Slide 1">
+                    <div class="card-content">
+                        <h3>Social Connections</h3>
+                        <p>Homes that keep loneliness at bay and encourage togetherness.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="card">
+                    <img src="./assets/images/home/social-connection/one.png" alt="Slide 2">
+                    <div class="card-content">
+                        <h3>Wellness Hub</h3>
+                        <p>Dedicated spaces for your physical and mental health.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="card"><img src="./assets/images/home/social-connection/one.png">
+                    <div class="card-content">
+                        <h3>Creative Pursuits</h3>
+                        <p>Express yourself through art.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="card"><img src="./assets/images/home/social-connection/one.png">
+                    <div class="card-content">
+                        <h3>Outdoor Retreats</h3>
+                        <p>Enjoy nature in gardens.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="card"><img src="./assets/images/home/social-connection/one.png">
+                    <div class="card-content">
+                        <h3>Community Dining</h3>
+                        <p>Share meals with friends.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="card"><img src="./assets/images/home/social-connection/one.png">
+                    <div class="card-content">
+                        <h3>Active Living</h3>
+                        <p>Stay fit and healthy.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="dots-container">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+    </section>
+    <!-- primusgalleryMobSec mobile section end -->
+
+    <!-- activelivingofyourlifesec start -->
+    <section id="activelivingofyourlifesec" class="only-desktop">
         <div class="container">
             <div class="main-wrapper">
                 <div class="header">
@@ -581,7 +1002,72 @@
             </div>
         </div>
     </section>
-    <!-- active living, build into every corner of your life end -->
+    <!-- activelivingofyourlifesec end -->
+
+    <!-- activelivingofMobSec Start -->
+    <section id="activelivingofMobSec">
+        <div class="container">
+            <h1 class="main-heading">Active living, built into every corner of your life.</h1>
+
+            <div class="slider-container" id="sliderContainer">
+                <div class="slider-wrapper" id="sliderWrapper">
+                    <div class="slide" data-index="0">
+                        <img src="./assets/images/home/activeLivingMob/one.png" alt="Slide 1">
+                        <div class="slide-overlay">Smart Living</div>
+                    </div>
+                    <div class="slide center" data-index="1">
+                        <img src="./assets/images/home/activeLivingMob/two.jpg" alt="Slide 2">
+                        <div class="slide-overlay">Modern Comfort</div>
+                    </div>
+                    <div class="slide" data-index="2">
+                        <img src="./assets/images/home/activeLivingMob/three.jpg" alt="Slide 3">
+                        <div class="slide-overlay">Seamless Access</div>
+                    </div>
+                    <div class="slide" data-index="3">
+                        <img src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=400&h=600&fit=crop"
+                            alt="Slide 4">
+                        <div class="slide-overlay">Open Spaces</div>
+                    </div>
+                    <div class="slide" data-index="4">
+                        <img src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=400&h=600&fit=crop"
+                            alt="Slide 5">
+                        <div class="slide-overlay">Natural Light</div>
+                    </div>
+                    <div class="slide" data-index="5">
+                        <img src="https://images.unsplash.com/photo-1600573472550-8090b5e0745e?w=400&h=600&fit=crop"
+                            alt="Slide 6">
+                        <div class="slide-overlay">Elegant Design</div>
+                    </div>
+                    <div class="slide" data-index="6">
+                        <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=400&h=600&fit=crop"
+                            alt="Slide 7">
+                        <div class="slide-overlay">Wellness Focus</div>
+                    </div>
+                    <div class="slide" data-index="7">
+                        <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=400&h=600&fit=crop"
+                            alt="Slide 8">
+                        <div class="slide-overlay">Connected Living</div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="description" id="description">Premium finishes and thoughtful layouts that blend contemporary
+                style
+                with lasting elegance.</p>
+
+            <div class="dots" id="dots">
+                <span class="dot" data-index="0"></span>
+                <span class="dot active" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+                <span class="dot" data-index="3"></span>
+                <span class="dot" data-index="4"></span>
+                <span class="dot" data-index="5"></span>
+                <span class="dot" data-index="6"></span>
+                <span class="dot" data-index="7"></span>
+            </div>
+        </div>
+    </section>
+    <!-- activelivingofMobSec End -->
 
     <!-- exploreourcommunities section start -->
     <section id="exploreourcommunitiessec">
@@ -844,7 +1330,7 @@
     <!-- Led By a Pioneer section end -->
 
     <!-- primussupportdivisionsec start -->
-    <section id="primussupportdivisionsec">
+    <section id="primussupportdivisionsec" class="only-desktop">
         <div class="container">
             <div class="cards-wrapper">
                 <!-- Card 1: Hemant Taneja -->
@@ -900,6 +1386,41 @@
     </section>
     <!-- primussupportdivisionsec end -->
 
+    <!-- primusSupportMobSec start -->
+    <section id="primusSupportMobSec">
+        <div class="container">
+            <div class="card fade-in">
+                <div class="image-wrapper">
+                    <img src="./assets/images/home/primussupportpicone.png" alt="Hemant Taneja">
+                </div>
+                <div class="content">
+                    <h3>Hemant Taneja</h3>
+                    <p>One of America's most respected entrepreneurs and is Managing Director at General Catalyst. GC is
+                        a
+                        $47Bn US-based fund that specializes in healthcare...</p>
+                    <div class="logo-area">
+                        <img src="./assets/images/home/General_Catalyst_Logo.svg.png    " alt="General Catalyst"
+                            class="logo">
+                    </div>
+                </div>
+            </div>
+
+            <div class="card fade-in">
+                <div class="image-wrapper">
+                    <img src="./assets/images/home/primussupportpictwo.png" alt="Nikhil Kamath">
+                </div>
+                <div class="content">
+                    <h3>Nikhil Kamath</h3>
+                    <p>One of India's most respected entrepreneurs, known for backing companies that improve lives in
+                        meaningful, measurable ways.</p>
+                    <p>His belief in building businesses that do good, not just do well, aligns strongly with the
+                        mission of
+                        Primus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- primusSupportMobSec end -->
     <!-- primusdifftoldresisec start -->
     <section id="primusdifftoldresisec">
         <div class="container">
@@ -1023,7 +1544,7 @@
     <!-- The Primus Difference, as told by Residents end -->
 
     <!-- primusprideranksec start -->
-    <section id="primusprideranksec">
+    <section id="primusprideranksec" class="only-desktop">
         <div class="container">
             <div class="award-carousel-wrapper-2025">
                 <div class="award-carousel-container-main">
@@ -1108,6 +1629,45 @@
     </section>
     <!-- primusprideranksec end -->
 
+    <!-- primusprideMobSec start -->
+    <section id="primusprideMobSec">
+        <div class="slider-container">
+            <div class="slider-track">
+                <div class="slide">
+                    <div class="card-top"><img src="./assets/images/home/primusPrideMob/One.png" alt="Logo 1"></div>
+                    <div class="card-bottom">
+                        <p>Best Senior Living Project of the Year</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card-top"><img src="./assets/images/home/primusPrideMob/One.png" alt="Logo 1"></div>
+                    <div class="card-bottom">
+                        <p>Best Senior Living Project of the Year</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card-top"><img src="./assets/images/home/primusPrideMob/One.png" alt="Logo 1"></div>
+                    <div class="card-bottom">
+                        <p>Best Senior Living Project of the Year</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card-top"><img src="./assets/images/home/primusPrideMob/One.png" alt="Logo 1"></div>
+                    <div class="card-bottom">
+                        <p>Best Senior Living Project of the Year</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card-top"><img src="./assets/images/home/primusPrideMob/One.png" alt="Logo 1"></div>
+                    <div class="card-bottom">
+                        <p>Best Senior Living Project of the Year</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- primusprideMobSec end -->
+
     <!-- footer page design tab section start -->
     <footer id="footersec">
         <div class="footercont main-container">
@@ -1162,7 +1722,22 @@
     <script src="./assets/js/home/priderecognise.js"></script>
     <!-- navbarsec script code  -->
     <script src="./assets/js/home/navbarmenudsk.js"></script>
-    <!-- <script src="./assets/js/script.js"></script> -->
+    <!-- herosectionscroll script js -->
+    <script src="./assets/js/home/herosectionscroll.js"></script>
+    <!-- primusHero script code -->
+    <script src="./assets/js/home/primusHero.js"></script>
+    <!-- primusMobileNav script code -->
+    <script src="./assets/js/home/primusMobileNav.js"></script>
+    <!-- primushealthMobsec script code -->
+    <script src="./assets/js/home/primushealthMobsec.js"></script>
+    <!-- primuswayofMobSec script js -->
+    <script src="./assets/js/home/primuswayofMobSec.js"></script>
+    <!-- primusgalleryMobSec script code -->
+    <script src="./assets/js/home/primusgalleryMobSec.js"></script>
+    <!-- activelivingofMobSec script code -->
+    <script src="./assets/js/home/activelivingofMobSec.js"></script>
+    <!-- primusprideMobSec script code -->
+    <script src="./assets/js/home/primusprideMobSec.js"></script>
 </body>
 
 </html>

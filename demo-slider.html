@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Footer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Lato', sans-serif;
+        }
+
+        /* ================= DESKTOP ================= */
+
+        #footersec {
+            background-color: #ededed;
+        }
+
+        .footercont {
+            max-width: 1400px;
+            margin: auto;
+        }
+
+        .mainfootercontup {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            grid-template-rows: auto auto;
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-logo-sec img {
+            padding-left: 8rem;
+            width: 22rem;
+        }
+
+        .footer-policy-sec {
+            justify-self: center;
+        }
+
+        .footer-policy-sec ul,
+        .footer-about-us ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-policy-sec ul li,
+        .footer-about-us ul li {
+            list-style: none;
+        }
+
+        .footer-policy-sec ul li a,
+        .footer-about-us ul li a {
+            font-size: 20px;
+            line-height: 45px;
+            color: #000;
+            text-decoration: none;
+        }
+
+        .footer-about-us {
+            justify-self: flex-start;
+        }
+
+        .footer-social-media {
+            display: flex;
+            gap: 1.5rem;
+            grid-column: span 3;
+            justify-self: flex-end;
+            padding-right: 5rem;
+            margin-top: 2rem;
+        }
+
+        .footer-social-media i {
+            font-size: 2rem;
+            color: #821a52;
+        }
+
+        .mainfootercontdown {
+            background: #000;
+            color: #fff;
+            text-align: center;
+            padding: 0.5rem 0;
+        }
+
+        .mainfootercontdown p {
+            font-size: 20px;
+            margin: 0;
+        }
+
+        /* ================= MOBILE (≤768px) ================= */
+
+        @media screen and (max-width: 768px) {
+
+            #footersec .mainfootercontup {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 2.5rem 1.5rem 1.5rem;
+                gap: 2rem;
+            }
+
+            #footersec .footer-logo-sec img {
+                padding-left: 0;
+                width: 14rem;
+            }
+
+            #footersec .footer-policy-sec,
+            #footersec .footer-about-us {
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            #footersec .footer-policy-sec ul li a,
+            #footersec .footer-about-us ul li a {
+                font-size: 18px;
+                line-height: 38px;
+            }
+
+            #footersec .footer-social-media {
+                padding-right: 0;
+                justify-content: center;
+                margin-top: 1rem;
+                gap: 1.2rem;
+            }
+
+            #footersec .footer-social-media i {
+                font-size: 1.8rem;
+            }
+
+            #footersec .mainfootercontdown p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <footer id="footersec">
+        <div class="footercont">
+            <div class="mainfootercontup">
+
+                <div class="footer-logo-sec">
+                    <a href="#">
+                        <img src="./assets/images/primus-logo.png" alt="Primus Logo">
+                    </a>
+                </div>
+
+                <div class="footer-policy-sec">
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Careers Page</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-about-us">
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="footer-social-media">
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="mainfootercontdown">
+            <p>Primus © 2025</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
