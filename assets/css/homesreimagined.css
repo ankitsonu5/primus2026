@@ -117,7 +117,8 @@
     margin-bottom: 15px;
     font-size: 20px;
     line-height: 25px;
-    width: 435px;
+    max-width: 435px;
+    width: 100%;
 }
 
 /* Responsive Design */
@@ -614,6 +615,27 @@
 /* Responsive Design for homesreimagined.css */
 /* 1366px */
 @media (max-width: 1366px) {
+
+    #heroreimaginesec .banner-content h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    #heroreimaginesec .banner-content {
+        left: 35px;
+    }
+
+    #thelivinghub .center-content {
+        max-width: 345px;
+        width: 100%;
+        padding: 0 0px;
+    }
+
+    #thelivinghub .center-content p {
+        max-width: 330px;
+        width: 100%;
+    }
+
     #thelivinghub .right-image.visible {
         width: 36%;
     }
@@ -625,6 +647,7 @@
     #thelivinghub .center-content h1 {
         font-size: 1.8rem;
     }
+
 }
 
 /* 1024px */

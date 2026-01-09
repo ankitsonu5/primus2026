@@ -447,7 +447,36 @@
 
 /* responsive */
 /* 1366px */
-@media (max-width: 1366px) {}
+@media (max-width: 1366px) {
+
+    #slidersec .info-section {
+        max-width: 400px;
+        width: 100%;
+    }
+
+    #slidersec .image-section4 {
+        max-width: 160px;
+        width: 100%;
+    }
+
+    #slidersec2 .carousel-container {
+        max-width: 1095px;
+        width: 100%;
+    }
+
+    #slidersec2 .slide-group {
+        width: 85px;
+        gap: 25px;
+    }
+
+    #slidersec2 .right-arrow {
+        right: -7rem;
+    }
+
+    #slidersec2 .left-arrow {
+        left: -7rem;
+    }
+}
 
 /* 1024px */
 @media (max-width: 1024px) {}
