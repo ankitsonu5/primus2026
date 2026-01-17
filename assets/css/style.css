@@ -394,10 +394,11 @@ body.pm-nav-open {
 #hero-section-scroll .side-panel h3 {
     position: absolute;
     bottom: 40px;
-    left: 40px;
+    left: 24px;
+    padding-right: 1.2rem;
     z-index: 2;
     color: white;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 #hero-section-scroll .content-section {
@@ -1853,17 +1854,23 @@ body.pm-nav-open {
 }
 
 #exploreourcommunitiessec .property-details h2 {
-    font-size: 2rem;
     color: #000;
     margin-bottom: 20px;
+    font-family: var(--primary-heading-font);
     font-weight: 700;
+    font-size: 30px;
+    line-height: 18.61px;
 }
 
 #exploreourcommunitiessec .property-details p {
-    color: #333;
-    line-height: 1.6;
+    color: #000000;
     margin-bottom: 25px;
-    font-size: 1.05rem;
+    font-family: var(--primary-para-font);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0%;
+
 }
 
 #exploreourcommunitiessec .location {
@@ -1882,7 +1889,7 @@ body.pm-nav-open {
 }
 
 #exploreourcommunitiessec .know-more-btn {
-    background: #6b1f54;
+    background: #801B53;
     color: white;
     padding: 12px 35px;
     border: none;
@@ -1894,7 +1901,7 @@ body.pm-nav-open {
 }
 
 #exploreourcommunitiessec .know-more-btn:hover {
-    background: #8b2f74;
+    background: #822257;
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(107, 31, 84, 0.3);
 }
@@ -2383,18 +2390,12 @@ body.pm-nav-open {
     min-width: calc(33.333% - 14px);
     background: white;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); */
     overflow: hidden;
     transition: transform 0.3s ease;
 }
 
-#primusprideranksec .award-card-item-unique:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-}
-
 #primusprideranksec .award-image-banner-top {
-    /* background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); */
     height: 350px;
     display: flex;
     justify-content: center;
@@ -2409,33 +2410,53 @@ body.pm-nav-open {
 }
 
 #primusprideranksec .award-card-item-unique:nth-child(1) .award-image-banner-top {
-    background: url('../images/home/pridenrecognise/RealityPlus.png') no-repeat center center;
-    background-size: cover;
+    background-image: url('../images/home/pridenrecognise/RealityPlus.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 285px auto;
     width: 100%;
+    height: 240px;
+    background-color: #F6F6F6;
 }
 
 #primusprideranksec .award-card-item-unique:nth-child(2) .award-image-banner-top {
-    background: url('../images/home/pridenrecognise/TET.png') no-repeat center center;
-    background-size: cover;
+    background-image: url('../images/home/pridenrecognise/TET.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 285px auto;
     width: 100%;
+    height: 240px;
+    background-color: #F6F6F6;
 }
 
 #primusprideranksec .award-card-item-unique:nth-child(3) .award-image-banner-top {
-    background: url('../images/home/pridenrecognise/innovativeAsset.png') no-repeat center center;
-    background-size: cover;
+    background-image: url('../images/home/pridenrecognise/innovativeAsset.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 285px auto;
     width: 100%;
+    height: 240px;
+    background-color: #F6F6F6;
 }
 
 #primusprideranksec .award-card-item-unique:nth-child(4) .award-image-banner-top {
-    background: url('../images/home/pridenrecognise/timesBusinessAward.png') no-repeat center center;
-    background-size: cover;
+    background-image: url('../images/home/pridenrecognise/timesBusinessAward.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 285px auto;
     width: 100%;
+    height: 240px;
+    background-color: #000000;
 }
 
 #primusprideranksec .award-card-item-unique:nth-child(5) .award-image-banner-top {
-    background: url('../images/home/pridenrecognise/asiaOne.png') no-repeat center center;
-    background-size: cover;
+    background-image: url('../images/home/pridenrecognise/asiaOne.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 285px auto;
     width: 100%;
+    height: 240px;
+    background-color: #E8E8E8;
 }
 
 #primusprideranksec .award-info-content-box {
@@ -2443,6 +2464,7 @@ body.pm-nav-open {
     padding: 20px;
     text-align: center;
     border-radius: 0 0 15px 15px;
+    min-height: 7rem;
 }
 
 #primusprideranksec .award-title-heading-text {
@@ -2456,8 +2478,8 @@ body.pm-nav-open {
     font-size: 13px;
     color: #666;
     line-height: 1.6;
-    font-weight: 700;
-    font-family: var(--primary-heading-font);
+    font-weight: 500;
+    font-family: var(--primary-para-font);
 }
 
 #primusprideranksec .navigation-buttons-container-2025 {
@@ -2484,27 +2506,7 @@ body.pm-nav-open {
     font-weight: bold;
 }
 
-#primusprideranksec .nav-arrow-button-unique:hover {
-    /* background: #6b4f9e; */
-    /* color: white; */
-    transform: scale(1.1);
-    /* box-shadow: 0 8px 25px rgba(107, 79, 158, 0.3); */
-}
 
-#primusprideranksec .nav-arrow-button-unique:active {
-    transform: scale(0.95);
-}
-
-#primusprideranksec .nav-arrow-button-unique:disabled {
-    opacity: 0.3;
-    cursor: not-allowed;
-}
-
-#primusprideranksec .nav-arrow-button-unique:disabled:hover {
-    /* background: white; */
-    /* color: #6b4f9e; */
-    transform: scale(1);
-}
 
 /* primusprideranksec style end */
 
@@ -2597,22 +2599,38 @@ body.pm-nav-open {
 
 /* primusprideMobSec style end */
 
-
-
 /* Led By a Pioneer section start */
 #ledbypioneersec {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    background: linear-gradient(135deg, #f5e6e8 0%, #e8d5e0 50%, #d4c5e0 100%);
-    background-image: url('../images/home/bgmain.png');
-    background-repeat: no-repeat;
-    object-fit: cover;
-    min-height: 100vh;
+    position: relative;
+    background: url('../images/home/bgmain.png') no-repeat center;
+    background-size: cover;
+    min-height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
-    background-position: left;
-    object-fit: cover;
+    overflow: hidden;
+}
+
+#ledbypioneersec::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 1;
+}
+
+#ledbypioneersec>* {
+    position: relative;
+    z-index: 2;
+}
+
+
+
+/* Content ko upar laane ke liye */
+#ledbypioneersec>* {
+    position: relative;
+    z-index: 2;
 }
 
 #ledbypioneersec .container {
@@ -2751,6 +2769,7 @@ body.pm-nav-open {
     font-size: 25px;
     line-height: 30px;
     letter-spacing: 0%;
+    margin-bottom: 24px;
 }
 
 .primusdifferencecdivtext h4 {
