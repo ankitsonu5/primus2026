@@ -969,8 +969,8 @@ body.pm-nav-open {
 
 /* primuswayoflifesec style */
 #primuswayoflifesec {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #8B2469 0%, #a0316f 100%);
+    font-family: var(--primary-heading-font);
+    background-color: #821A52;
     min-height: 100vh;
     display: flex;
     align-items: center;
