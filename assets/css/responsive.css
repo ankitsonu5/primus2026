@@ -198,6 +198,14 @@
     #primushealthlifeotosec .card-top h3 {
         min-height: 3rem;
     }
+
+    #builtontrustbackedbyproofsec .stat-number {
+        font-size: 1.5rem;
+    }
+
+    #builtontrustbackedbyproofsec .stat-label {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 1320px) {
@@ -436,6 +444,10 @@
 
     #primusprideranksec .award-info-content-box {
         min-height: 8rem;
+    }
+
+    #primussupportdivisionsec .card {
+        width: 25rem;
     }
 }
 

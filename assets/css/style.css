@@ -1991,6 +1991,7 @@ body.pm-nav-open {
     gap: 50px;
     margin-bottom: 40px;
     flex-wrap: wrap;
+    align-items: self-start;
 }
 
 #builtontrustbackedbyproofsec .stat-item {
