@@ -1,4 +1,12 @@
 /* style */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-heading-font: "Montserrat", sans-serif;
+    --primary-para-font: "Lato", sans-serif;
+}
+
 /* hero section design style start */
 .banner {
     position: relative;
@@ -26,6 +34,7 @@
     color: #FFFFFF;
     font-size: 86.05px;
     line-height: 96.81px;
+    font-family: var(--primary-heading-font);
 }
 
 .banner-para p {
@@ -70,7 +79,7 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 0;
-    padding: 0 1rem;
+    padding: 2rem 1rem;
 }
 
 .howitbegin {
@@ -95,147 +104,66 @@
 
 /* howitbeginsec style end */
 
-/*Slider section 1 start*/
-
-#slidersec {
-    margin: 2rem 0rem;
+/*Profiles section start*/
+#profilessec {
+    padding-bottom: 5rem;
 }
 
-#slidersec .main-container {
+#profilessec .profiles {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    padding: 125px 0;
-    color: white;
-    position: relative;
-    background-color: #7D1D50;
-    border-radius: 25px;
-    position: relative;
-    /* padding-bottom: 60px; */
+    gap: 8px;
 }
 
-#slidersec .carousel-window {
-    width: 80%;
-    overflow: hidden;
-}
-
-#slidersec .carousel-track {
+#profilessec .profiles-card {
     display: flex;
-    transition: transform 0.5s ease-in-out;
+    flex-direction: column;
+    background-color: #821A52;
+    border-radius: 20px;
+    max-width: 340px;
     width: 100%;
+    height: 495px;
 }
 
-#slidersec .carousel-slide {
-    min-width: 100%;
-    display: flex;
-    gap: 30px;
-    align-items: center;
+#profilessec .profiles-card-image {
+    max-width: 250px;
+}
+
+#profilessec .profiles-card-image img {
+    width: 100%;
     padding: 20px;
 }
 
-#slidersec .nav-btn {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 2rem;
-    cursor: pointer;
-    padding: 0 20px;
-    z-index: 10;
-    transition: transform 0.2s;
-}
-
-#slidersec .nav-btn:hover {
-    transform: scale(1.2);
-}
-
-#slidersec .profile-card {
-    display: flex;
-    align-items: center;
-    gap: 35px;
-    width: 100%;
-}
-
-#slidersec .image-section4 {
-    width: 520px;
-}
-
-#slidersec .image-section4 img {
-    width: 100%;
-    border-radius: 50%;
-}
-
-#slidersec .image-section img {
-    width: 100%;
-    border-radius: 50%;
-}
-
-#slidersec .info-section-para {
-    font-size: 23px;
-    line-height: 25px;
-    color: white;
+#profilessec .profiles-main-text {
+    font-family: var(--primary-para-font);
     font-weight: 700;
-    margin-bottom: 5px;
-}
-
-#slidersec .role {
-    margin-bottom: 15px;
-    color: white;
-}
-
-#slidersec .details-list {
     font-size: 23px;
     line-height: 25px;
     color: white;
+    padding-left: 20px;
 }
 
-#slidersec .details-list li {
-    position: relative;
-    padding-left: 3px;
-    margin-bottom: 5px;
-}
-
-#slidersec .description {
-    font-family: Lato;
-    font-weight: 700;
-    font-style: Bold;
+#profilessec .profiles-head {
+    font-family: var(--primary-para-font);
+    font-weight: 400;
     font-size: 23px;
     line-height: 25px;
     color: white;
+    padding-left: 20px;
+    margin-bottom: 1rem;
 }
 
-#slidersec .dots-container {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin: 0;
-    z-index: 20;
+#profilessec .profiles-about {
+    font-family: var(--primary-para-font);
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 25px;
+    color: white;
+    padding-left: 40px;
 }
 
-#slidersec .dot {
-    height: 12px;
-    width: 12px;
-    background-color: transparent;
-    border: 2px solid white;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: all 0.3s;
-    padding: 0;
-}
-
-#slidersec .dot.active-dot {
-    background-color: white;
-}
-
-#slidersec .dot:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-}
-
-/*Slider section 1 end*/
+/*Profiles section end*/
 
 /*Trusted & recognised section start */
 
@@ -250,11 +178,12 @@
 }
 
 #trustedsec .construcction {
-    font-family: Montserrat;
+    font-family: var(--primary-heading-font);
     font-weight: 700;
     font-size: 25px;
     line-height: 30px;
     text-align: center;
+    padding-bottom: 3rem;
 }
 
 /*Trusted & recognised section end */
@@ -366,7 +295,7 @@
 }
 
 #slidersec2 .card-title {
-    font-family: Montserrat;
+    font-family: var(--primary-heading-font);
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
@@ -375,7 +304,7 @@
 
 #slidersec2 .read-more {
     color: #8b3a8b;
-    font-family: Montserrat;
+    font-family: var(--primary-heading-font);
     font-weight: 400;
     font-size: 22px;
     line-height: 26px;
@@ -404,20 +333,9 @@
     border-color: #8b3a8b;
 }
 
-@media (max-width: 1366px) {
-    .banner-tagline h1 {
-        font-size: 3rem;
-        line-height: 3rem;
-    }
-
-    .banner-para p {
-        font-size: 2rem;
-        line-height: 2rem;
-        font-weight: 500;
-    }
+#slidersec2 .logo img {
+    width: 100%;
 }
-
-@media (max-width: 1024px) {}
 
 @media (max-width: 768px) {
     .carousel-container {
@@ -445,9 +363,144 @@
 
 /* Slider section 2 end */
 
+#profilesmobSec {
+    padding: 50px 0px;
+    min-height: 0vh;
+}
+
+#profilesmobSec .slider-wrapper {
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+#profilesmobSec .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+#profilesmobSec .slide {
+    min-width: 100%;
+    background: #821A52;
+    padding: 60px 40px;
+    text-align: center;
+    color: white;
+}
+
+#profilesmobSec .profile-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin: 0 auto 30px;
+    object-fit: cover;
+}
+
+#profilesmobSec .name {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+}
+
+#profilesmobSec .title {
+    font-size: 18px;
+    margin-bottom: 30px;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+#profilesmobSec .details {
+    text-align: left;
+    display: inline-block;
+}
+
+#profilesmobSec .details li {
+    margin-bottom: 12px;
+    font-size: 15px;
+    line-height: 1.6;
+    opacity: 0.95;
+}
+
+#profilesmobSec .profilesmobSecdots {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+#profilesmobSec .profilesmobSecdot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid #801B53;
+}
+
+#profilesmobSec .profilesmobSecdot:hover {
+    background: #821A52;
+    transform: scale(1.1);
+}
+
+#profilesmobSec .profilesmobSecdot.active {
+    background: #821A52;
+    border-color: #821A52;
+    transform: scale(1.2);
+}
+
 /* responsive */
 /* 1366px */
 @media (max-width: 1366px) {
+
+    .banner-tagline {
+        padding-right: 25rem;
+        top: 60%;
+    }
+
+    .banner-tagline h1 {
+        font-size: 5rem;
+        line-height: 5rem;
+    }
+
+    .banner-para {
+        bottom: 3%;
+        padding-right: 40rem;
+    }
+
+    .banner-para p {
+        font-size: 1.5rem;
+    }
+
+    #profilessec .profiles-card-image {
+        max-width: 180px;
+    }
+
+    #profilessec .profiles-head {
+        font-size: 15px;
+    }
+
+    #profilessec .profiles-about {
+        font-size: 15px;
+    }
+
+    #profilessec .profiles-main-text {
+        font-size: 22px;
+    }
+
+    #profilessec .profiles-card {
+        height: 450px;
+    }
+
+    #trustedsec {
+        margin: 0rem 0rem;
+    }
+
+    #trustedsec .trusted-heading {
+        font-size: 58px;
+    }
+
+    #trustedsec .construcction {
+        font-size: 20px;
+    }
 
     #slidersec .info-section {
         max-width: 400px;
@@ -457,6 +510,10 @@
     #slidersec .image-section4 {
         max-width: 160px;
         width: 100%;
+    }
+
+    #slidersec2 .card-image {
+        height: 225px;
     }
 
     #slidersec2 .carousel-container {
@@ -476,16 +533,581 @@
     #slidersec2 .left-arrow {
         left: -7rem;
     }
+
+    #slidersec2 .card-header {
+        padding: 0px;
+    }
+
+    #primusprideranksec {
+        min-height: 70vh;
+    }
 }
 
+
 /* 1024px */
-@media (max-width: 1024px) {}
+@media (max-width: 1024px) {
+
+    .banner-tagline {
+        top: 57%;
+        padding-right: 25rem;
+    }
+
+    .banner-tagline h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+
+    .banner-para {
+        bottom: 11%;
+        padding-right: 10rem;
+    }
+
+
+    .banner-para p {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+
+    .herobannerdwn p {
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .herobannerdwn {
+        margin-bottom: 0rem;
+    }
+
+    .howitbegincont {
+        padding: 0rem 1rem;
+    }
+
+    .howitbegin-para {
+        font-size: 18px;
+        padding-right: 5rem;
+    }
+
+    #profilessec .profiles-card-image {
+        max-width: 150px;
+    }
+
+    #profilessec .profiles-main-text {
+        font-size: 15px;
+        line-height: 20px;
+        padding: 0px 10px;
+    }
+
+    #profilessec .profiles-head {
+        font-size: 12px;
+        line-height: 18px;
+        padding: 0px 10px;
+    }
+
+    #profilessec .profiles-about {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    #profilessec .profiles-card {
+        height: 355px;
+    }
+
+    #profilessec {
+        padding-bottom: 3rem;
+    }
+
+    #slidersec2 .carousel-container {
+        max-width: 865px;
+    }
+
+    #slidersec2 .left-arrow {
+        left: -4rem;
+    }
+
+    #slidersec2 .slide-group {
+        width: 67px;
+        gap: 20px;
+    }
+
+    #slidersec2 .right-arrow {
+        right: -4rem;
+    }
+
+    #trustedsec .trusted-heading {
+        font-size: 50px;
+        line-height: 50px;
+    }
+
+    #trustedsec .construcction {
+        font-size: 15px;
+    }
+}
 
 /* 768px */
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+
+    .banner-tagline {
+        top: 70%;
+        padding-right: 15rem;
+    }
+
+    .bannerimg img {
+        margin-top: 15%;
+    }
+
+    .banner-tagline h1 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    .banner-para {
+        bottom: 12%;
+        padding-right: 10rem;
+    }
+
+    .banner-para p {
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+
+    .herobannerdwn p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .howitbegincont {
+        grid-template-columns: 1fr;
+        align-items: center;
+        gap: 3rem;
+        padding: 2rem 1rem;
+    }
+
+    .howitbegintext {
+        margin-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .howitbegin-para {
+        font-size: 16px;
+        padding-right: 0rem;
+    }
+
+    /* primussupportdivisionsec mob start */
+    #backedbyvisionariesmobsec {
+        background: linear-gradient(135deg, #f5e6e8 0%, #e8d5e0 50%, #d4c5e0 100%);
+        background-image: url(../images/home/bgmain.png);
+        background-repeat: no-repeat;
+        object-fit: cover;
+        min-height: 100vh;
+        background-position: left;
+        margin: 2rem 0;
+        padding: 25px;
+    }
+
+    #backedbyvisionariesmobsec .backedbyvisionaries {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #backedbyvisionariesmobsec .backedByVisionaries {
+        font-family: var(--primary-heading-font);
+        font-weight: 700;
+        font-size: 2.5rem;
+        line-height: 32px;
+        text-align: center;
+        color: #821A52;
+        padding: 2rem 0rem 1rem 0rem;
+    }
+
+    #backedbyvisionariesmobsec .nikhilkamath-para {
+        font-family: var(--primary-para-font);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    #backedbyvisionariesmobsec .nikhilkamath-para span {
+        font-family: var(--primary-para-font);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+    }
+
+    #backedbyvisionariesmobsec .nikhilkamath-para2 {
+        font-family: var(--primary-para-font);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        padding-bottom: 3rem;
+    }
+
+    /* primussupportdivisionsec mob end */
+
+    /* profiles mob Section start */
+
+    #profilesmobSec .slide {
+        padding: 50px 30px;
+    }
+
+    #profilesmobSec .profile-img {
+        width: 150px;
+        height: 150px;
+        margin-left: -30rem;
+    }
+
+    #profilesmobSec .name {
+        font-family: var(--primary-para-font);
+        font-weight: 700;
+        font-size: 23px;
+        line-height: 25px;
+        margin-left: -26rem;
+    }
+
+    #profilesmobSec .title {
+        font-family: var(--primary-para-font);
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 25px;
+        margin-left: -28rem;
+    }
+
+    #profilesmobSec .details li {
+        font-family: var(--primary-para-font);
+        font-weight: 400;
+        font-size: 23px;
+        line-height: 25px;
+        margin-left: -7rem;
+    }
+
+    #profilesmobSec .profilesmobSecdot {
+        width: 12px;
+        height: 12px;
+    }
+
+    #primusprideMobSec {
+        background-color: #FFFFFF;
+    }
+
+    #primusprideMobSec .slider-container {
+        box-shadow: none;
+    }
+
+    /* profiles mob Section end */
+
+    /* primusinthenewsMob sec start */
+    #primusinthenewsMob .inthenews-txt h1 {
+        font-family: var(--primary-heading-font);
+        font-size: 32px;
+        color: #801B53;
+        text-align: center;
+        padding: 5rem 0rem 3rem 0rem;
+    }
+
+    #primusinthenewsMobSec {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        margin: 0;
+        background-color: #fff;
+        font-family: Arial, sans-serif;
+        overflow-x: hidden;
+    }
+
+    #primusinthenewsMobSec {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    #primusinthenewsMobSec .card-top-slide-image img {
+        width: 100%;
+    }
+
+    #primusinthenewsMobSec .slider-container {
+        width: 90%;
+        max-width: 768px;
+        overflow: hidden;
+        background: #fff;
+        box-shadow: none;
+        cursor: grab;
+        user-select: none;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #primusinthenewsMobSec .slider-container:active {
+        cursor: grabbing;
+    }
+
+    #primusinthenewsMobSec .slider-track {
+        display: flex;
+        height: 100%;
+        transition: transform 0.4s ease-out;
+        will-change: transform;
+    }
+
+    #primusinthenewsMobSec .slide {
+        min-width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #primusinthenewsMobSec .card-top {
+        flex: 1.2;
+        background-color: #E6D1DC;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    #primusinthenewsMobSec .card-top img {
+        width: 100%;
+        object-fit: contain;
+        pointer-events: none;
+    }
+
+    #primusinthenewsMobSec .card-bottom {
+        flex: 0.8;
+        background-color: #E6D1DC;
+        padding: 30px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 5rem;
+    }
+
+        #primusinthenewsMobSec #card-bottom {
+            margin-bottom: 2rem;
+        }
+
+    #primusinthenewsMobSec .card-bottom p {
+        color: #333;
+        font-family: var(--primary-para-font);
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 14px;
+    }
+
+    /* primusinthenewsMob sec end */
+}
+
+
 
 /* 480px */
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+
+    .banner {
+        margin-top: 2.5rem;
+        padding: 0px 15px 0px 15px;
+    }
+
+    .banner-tagline {
+        top: 65%;
+        left: 10%;
+        padding-right: 1rem;
+    }
+
+    .banner-para {
+        left: 10%;
+        bottom: 8%;
+        padding-right: 1rem;
+    }
+
+    .banner-para p {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .herobannerdwn p {
+        font-size: 14px;
+    }
+
+    .herobannerdwn {
+        padding: 4rem 3rem 3rem 3rem;
+        margin: -40px 15px;
+    }
+
+    #ledbypioneersec .profile-content h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #backedbyvisionariesmobsec .backedByVisionaries {
+        font-size: 1.5rem;
+    }
+
+    #profilesmobSec {
+        padding: 50px 20px;
+    }
+
+    #profilesmobSec .slide {
+        padding: 40px 25px;
+    }
+
+    #profilesmobSec .profile-img {
+        width: 130px;
+        height: 130px;
+        margin-bottom: 20px;
+        margin-left: -12rem;
+    }
+
+    #profilesmobSec .name {
+        font-size: 22px;
+        margin-bottom: 8px;
+        margin-left: -9rem;
+    }
+
+    #profilesmobSec .title {
+        font-size: 15px;
+        margin-bottom: 25px;
+        margin-left: -14rem;
+    }
+
+    #profilesmobSec .details li {
+        font-size: 13px;
+        margin-bottom: 10px;
+        margin-left: -3rem;
+    }
+
+    #profilesmobSec .profilesmobSecdots {
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    #profilesmobSec .profilesmobSecdot {
+        width: 10px;
+        height: 10px;
+    }
+
+    .primary-heading-font {
+        font-size: 32px;
+    }
+
+    #trustedsec .construcction {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    #primusprideMobSec {
+        min-height: 0vh;
+        background-color: #FFFFFF;
+        padding: 30px 0px;
+    }
+
+    #primusprideMobSec .slider-container {
+        height: 350px;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    }
+}
 
 /* 345px */
-@media (max-width: 364px) {}
+@media (max-width: 364px) {
+
+    .banner-tagline {
+        padding-right: 8rem;
+    }
+
+    .banner-tagline h1 {
+        font-size: 18px;
+        line-height: 1.5rem;
+    }
+
+    .banner-para {
+        padding-right: 6rem;
+    }
+
+    .banner-para p {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .herobannerdwn p {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .howitbegin {
+        line-height: 0px;
+    }
+
+    .howitbegin-para {
+        font-size: 14px;
+    }
+
+    #ledbypioneersec .profile-content h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    #ledbypioneersec .profile-content h2 {
+        font-size: 1rem;
+    }
+
+    #backedbyvisionariesmobsec .nikhilkamath-para {
+        font-size: 14px;
+    }
+
+    #backedbyvisionariesmobsec .nikhilkamath-para2 {
+        font-size: 14px;
+    }
+
+    #profilesmobSec {
+        padding: 50px 20px;
+    }
+
+    #profilesmobSec .profile-img {
+        margin-left: -9rem;
+    }
+
+    #profilesmobSec .name {
+        font-size: 22px;
+        margin-bottom: 8px;
+        margin-left: -4rem;
+    }
+
+    #profilesmobSec .title {
+        font-size: 15px;
+        margin-bottom: 15px;
+        margin-left: -9rem;
+    }
+
+    #profilesmobSec .details li {
+        font-size: 12px;
+        margin-bottom: 0px;
+        margin-left: 0rem;
+    }
+
+    .primary-heading-font {
+        font-size: 25px;
+    }
+
+    #trustedsec .trusted-heading {
+        line-height: 50px;
+    }
+
+    #trustedsec .construcction {
+        font-size: 12px;
+        line-height: 15px;
+        padding: 0rem;
+    }
+
+    #primusprideMobSec .card-bottom p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
