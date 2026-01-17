@@ -5,15 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
+    <!-- style link -->
     <link rel="stylesheet" href="./assets/css/general.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/css/aboutus.css">
+    <!-- font awesome cdn -->
+    <script src="https://kit.fontawesome.com/0823a66b46.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!-- navbarsec start -->
-    <section id="navbarsec">
+    <section id="navbarsec" class="only-desktop">
 
         <!-- spacer (layout jump fix) -->
         <div id="navbar-space"></div>
@@ -54,9 +57,42 @@
         </div>
     </section>
     <!-- navbar section end -->
+    <!-- navbarMobSec section start -->
+    <section id="primusMobileNav" class="only-mobile">
+        <header class="pm-header">
+            <div class="pm-logo"><a href="#"><img src="./assets/images/primus-logo.png" alt=""></a></div>
+            <button class="pm-hamburger" aria-label="Menu Toggle">☰</button>
+        </header>
+
+        <nav class="pm-menu-panel">
+            <ul class="pm-nav-links">
+                <li><a href="#" class="is-active">Home</a></li>
+                <li><a href="#">Our Communities</a></li>
+                <li><a href="#">The Primus Lifestyle</a></li>
+                <li><a href="#">Homes Reimagined</a></li>
+                <li><a href="#">Partner With Us</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+
+            <div class="pm-enquiry">
+                <ul class="pm-enquiry-dropdown">
+                    <li><a href="#">EMAIL</a></li>
+                    <li><a href="#">WHATSAPP</a></li>
+                    <li><a href="#">FORM</a></li>
+                </ul>
+
+                <button class="pm-enquiry-btn">ENQUIRY <i style="margin-left: 10px;"
+                        class="fa-solid fa-angle-down"></i></button>
+            </div>
+        </nav>
+
+    </section>
+    <!-- navbarMobSec section end -->
     <!-- desktop banner code -->
     <div class="container">
-        <section id="header" class="home-header">
+        <section id="header" class="home-header only-desktop">
             <div class="banner">
                 <div class="banner-tagline primary-heading-font">
                     <h1>Driven by Purpose. Built for You.</h1>
@@ -77,13 +113,42 @@
                 <p>Independence and interdependence, designed to co-exist beautifully.</p>
             </div>
         </section>
-        <!-- desktop banner code end -->
+    </div>
+    <!-- desktop banner code end -->
+
+    <!-- mobile banner code -->
+    <div class="container">
+        <section id="header" class="home-header only-mobile">
+            <div class="banner">
+                <div class="banner-tagline">
+                    <h1>Driven by Purpose. Built for You.</h1>
+                </div>
+                <div class="banner-para primary-para-font">
+                    <p>The story, the people, and the vision that shaped Primus.</p>
+                </div>
+
+                <div class="bannerimg">
+                    <img class="bannerimgdesktop" src="./assets/images/aboutus/MobBannImg.png" />
+                    <!-- <img class="bannerimgmobile" src="./assets/images/aboutus/bannerImage.png" /> -->
+                </div>
+            </div>
+            <div class="herobannerdwn primary-para-font">
+                <p>At Primus, we believe reimagining life begins at home. Homes where children learn from
+                    grandparents,
+                    parents stay close
+                    yet independent, and everyday living is filled with laughter, support, and togetherness.</p>
+                <p>Independence and interdependence, designed to co-exist beautifully.</p>
+            </div>
+        </section>
+        <!-- mobile banner code end -->
+
         <!-- How it all begin section start -->
         <section id="howitbeginsec">
             <div class="howitbegincont">
                 <div class="howitbegintext">
                     <h1 class="primary-heading-font howitbegin">How it all began</h1>
-                    <p class="primary-para-font howitbegin-para">It started with our founder Adarsh Narahari’s ajji. She
+                    <p class="primary-para-font howitbegin-para">It started with our founder Adarsh Narahari’s ajji.
+                        She
                         wanted independence with
                         dignity — and
                         inspired Adarsh to study the best senior living communities worldwide. In 2013, that vision
@@ -124,7 +189,7 @@
     <!-- Led By a Pioneer section end -->
 
     <!-- primussupportdivisionsec start -->
-    <section id="primussupportdivisionsec">
+    <section id="primussupportdivisionsec" class="only-desktop">
         <div class="container">
             <div class="cards-wrapper">
                 <!-- Card 1: Hemant Taneja -->
@@ -134,8 +199,10 @@
                     </div>
                     <div class="name">Hemant Taneja</div>
                     <div class="description">
-                        One of America's most respected entrepreneurs and investor at General Catalyst. GC is a $47bn
-                        US-based fund that specializes in healthcare and also runs health at the world's largest senior
+                        One of America's most respected entrepreneurs and investor at General Catalyst. GC is a
+                        $47bn
+                        US-based fund that specializes in healthcare and also runs health at the world's largest
+                        senior
                         living community, The Villages, which is a 35,000-acre retirement destination
                     </div>
                     <div class="company-logo">
@@ -150,7 +217,8 @@
                     </div>
                     <div class="name">Nikhil Kamath</div>
                     <div class="description">
-                        One of India's most respected entrepreneurs, known for backing companies that improve lives in
+                        One of India's most respected entrepreneurs, known for backing companies that improve lives
+                        in
                         meaningful, measurable ways.
                         <br><br>
                         With a philosophy rooted in purposeful investing, Nikhil champions transformative ideas that
@@ -179,112 +247,198 @@
         </div>
     </section>
     <!-- primussupportdivisionsec end -->
+    <!-- primussupportdivisionsec  mob start -->
+    <section id="backedbyvisionariesmobsec" class="only-mobile">
+        <div class="container">
+            <div class="backedbyvisionaries">
+                <div class="backedbyvisionaries-txt">
+                    <h1 class="backedByVisionaries">Backed by Visionaries.</h1>
 
-    <!--Slider section 1 start-->
-    <div class="container">
-        <section id="slidersec">
-            <div class="main-container">
+                    <p class="nikhilkamath-para"><span>Nikhil Kamath</span> is one of India’s most respected
+                        entrepreneurs, known for backing ideas that improve the world in tangible
+                        ways. His investment philosophy is grounded in purpose over noise, supporting ventures that
+                        bring innovation, access,
+                        and meaningful improvement to everyday life.</p>
 
-                <button class="nav-btn prev-btn" id="prevBtn">
-                    <img src="./assets/images/aboutus/leftarrow.png" alt="">
-                </button>
+                    <p class="nikhilkamath-para2">His belief in scaling businesses that genuinely benefit people
+                        aligns
+                        deeply with the ethos of Primus. With Nikhil, it’s
+                        never about trends but about impact, integrity, and building for the long term.</p>
+                </div>
+                <div class="backedbyvisionaries-image">
+                    <img src="./assets/images/aboutus/backedbyvisionairesMobImg.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- primussupportdivisionsec  mob end -->
 
-                <div class="carousel-window">
-                    <div class="carousel-track" id="track">
+    <!-- Profiles section start-->
+    <section id="profilessec" class="only-desktop">
+        <div class="container">
+            <div class="profiles">
+                <div class="profiles-card">
+                    <div class="profiles-card-image">
+                        <img src="./assets/images/aboutus/sliderimage1.png" alt="">
+                    </div>
+                    <div class="profiles-text">
+                        <p class="profiles-main-text">Narendra Nagaraju</p>
+                        <p class="profiles-head">Head of Projects</p>
 
-                        <div class="carousel-slide active-slide">
-                            <div class="profile-card">
-                                <div class="image-section">
-                                    <img src="./assets/images/aboutus/sliderimage1.png" alt="">
-                                </div>
-                                <div class="info-section">
-                                    <p class="info-section-para primary-para-font">Narendra Nagaraju</p>
-                                    <p class="role primary-para-font">Head of Projects</p>
-                                    <ul class="details-list primary-para-font">
-                                        <li>M.Tech (Construction Management, Australia)</li>
-                                        <li>15+ Years in Real Estate</li>
-                                        <li>Led Development of 3M+ sq. ft.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="profile-card">
-                                <div class="image-section">
-                                    <img src="./assets/images/aboutus/sliderimage2.png" alt="">
-                                </div>
-                                <div class="info-section">
-                                    <p class="info-section-para primary-para-font">Girish Krishnan</p>
-                                    <p class="role primary-para-font">Chief Operating Officer</p>
-                                    <ul class="details-list primary-para-font">
-                                        <li>25+ Years in Hospitality</li>
-                                        <li>5+ Years in Senior Living</li>
-                                        <li>Ex–Oberoi, Marriott, Starwood, ITC</li>
-                                        <li>Expert in Operations & Revenue Management</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="carousel-slide">
-                            <div class="profile-card">
-                                <div class="image-section">
-                                    <img src="./assets/images/aboutus/sliderimg3.png" alt="">
-                                </div>
-                                <div class="info-section">
-                                    <p class="info-section-para primary-para-font">Dr Sneha Prakash</p>
-                                    <p class="role primary-para-font">VP, Clinical Operations</p>
-                                    <ul class="details-list primary-para-font">
-                                        <li>15+ Years in Healthcare</li>
-                                        <li>Preventive Care & Holistic Health Specialist</li>
-                                        <li>Ex–Portea & Manipal</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="profile-card">
-                                <div class="image-section4">
-                                    <img src="./assets/images/aboutus/sliderimg4.png" alt="">
-                                </div>
-                                <div class="info-section">
-                                    <p class="info-section-para primary-para-font">Dev Gupta</p>
-                                    <p class="role primary-para-font">Chief Brand Officer</p>
-                                    <p class="description">Marketing leader with 11 years of experience in community
-                                        engagement and
-                                        360-degree marketing, achieving 10M+ user
-                                        acquisitions.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="carousel-slide">
-                            <div class="profile-card">
-                                <div class="image-section">
-                                    <img src="./assets/images/aboutus/sliderimg5.png" alt="">
-                                </div>
-                                <div class="info-section">
-                                    <p class="info-section-para primary-para-font">Vibha Singhal</p>
-                                    <p class="role primary-para-font">Co-Founder, Marzi</p>
-                                    <p class="description">Business and tech leader with 16+ years of experience in
-                                        building and scaling
-                                        tech first companies</p>
-                                </div>
-                            </div>
-                        </div>
+                        <ul class="profiles-about">
+                            <li>M.Tech (Construction Management, Australia)</li>
+                            <li>15+ Years in Real Estate</li>
+                            <li>Led Development of 3M+ sq. ft.</li>
+                        </ul>
                     </div>
                 </div>
 
-                <button class="nav-btn next-btn" id="nextBtn">
-                    <img src="./assets/images/aboutus/rightarrow.png" alt="">
-                </button>
+                <div class="profiles-card">
+                    <div class="profiles-card-image">
+                        <img src="./assets/images/aboutus/sliderimage2.png" alt="">
+                    </div>
+                    <div class="profiles-text">
+                        <p class="profiles-main-text">Girish Krishnan</p>
+                        <p class="profiles-head">Chief Operating Officer</p>
 
-                <div class="dots-container" id="dotsNav">
-                    <button class="dot active-dot"></button>
-                    <button class="dot"></button>
-                    <button class="dot"></button>
+                        <ul class="profiles-about">
+                            <li>25+ Years in Hospitality</li>
+                            <li>5+ Years in Senior Living</li>
+                            <li>Ex–Oberoi, Marriott, Starwood, ITC</li>
+                            <li>Expert in Operations & Revenue Management</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="profiles-card">
+                    <div class="profiles-card-image">
+                        <img src="./assets/images/aboutus/sliderimg3.png" alt="">
+                    </div>
+                    <div class="profiles-text">
+                        <p class="profiles-main-text">Dr Sneha Prakash</p>
+                        <p class="profiles-head">VP, Clinical Operations</p>
+
+                        <ul class="profiles-about">
+                            <li>15+ Years in Healthcare</li>
+                            <li>Preventive Care & Holistic Health Specialist</li>
+                            <li>Ex–Portea & Manipal</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="profiles-card">
+                    <div class="profiles-card-image">
+                        <img src="./assets/images/aboutus/sliderimg4.png" alt="">
+                    </div>
+                    <div class="profiles-text">
+                        <p class="profiles-main-text">Dev Gupta</p>
+                        <p class="profiles-head">Chief Brand Officer</p>
+
+                        <p class="profiles-head">Marketing leader with 11 years of experience in engagement and
+                            360-degree marketing, achieving 10M+ user acquisitions.</p>
+                    </div>
+                </div>
+
+                <div class="profiles-card">
+                    <div class="profiles-card-image">
+                        <img src="./assets/images/aboutus/sliderimg5.png" alt="">
+                    </div>
+                    <div class="profiles-text">
+                        <p class="profiles-main-text">Vibha Singhal</p>
+                        <p class="profiles-head">Co-Founder, Marzi</p>
+
+                        <p class="profiles-head">Business and tech leader with 16+ years of experience in building
+                            and
+                            scaling tech first companies</p>
+                    </div>
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
+    <!--Profile section end-->
 
-    <!--Slider section 1 end-->
+    <!-- Profiles mob section start-->
+    <section id="profilesmobSec" class="only-mobile">
+        <div class="container">
+            <div class="slider-wrapper">
+                <div class="slides" id="slides">
+                    <!-- Slide 1 -->
+                    <div class="slide">
+                        <img src="./assets/images/aboutus/sliderimage1.png" alt="" class="profile-img">
+                        <h2 class="name">Narendra Nagaraju</h2>
+                        <p class="title">Head of Projects</p>
+                        <ul class="details">
+                            <li>M.Tech (Construction Management, Australia)</li>
+                            <li>15+ Years in Real Estate</li>
+                            <li>Led Development of 3M+ sq. ft.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=300&h=300&fit=crop"
+                            alt="Priya Sharma" class="profile-img">
+                        <h2 class="name">Priya Sharma</h2>
+                        <p class="title">Chief Architect</p>
+                        <ul class="details">
+                            <li>• B.Arch (IIT Kharagpur)</li>
+                            <li>• 12+ Years in Design</li>
+                            <li>• Award-winning Projects</li>
+                        </ul>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=300&fit=crop"
+                            alt="Rajesh Kumar" class="profile-img">
+                        <h2 class="name">Rajesh Kumar</h2>
+                        <p class="title">Operations Director</p>
+                        <ul class="details">
+                            <li>• MBA (Operations Management)</li>
+                            <li>• 18+ Years in Construction</li>
+                            <li>• Managed 50+ Projects</li>
+                        </ul>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=300&h=300&fit=crop"
+                            alt="Anita Desai" class="profile-img">
+                        <h2 class="name">Anita Desai</h2>
+                        <p class="title">Finance Head</p>
+                        <ul class="details">
+                            <li>• CA & CFA Qualified</li>
+                            <li>• 14+ Years in Real Estate Finance</li>
+                            <li>• Expert in Project Funding</li>
+                        </ul>
+                    </div>
+
+                    <!-- Slide 5 -->
+                    <div class="slide">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop"
+                            alt="Vikram Singh" class="profile-img">
+                        <h2 class="name">Vikram Singh</h2>
+                        <p class="title">Marketing Director</p>
+                        <ul class="details">
+                            <li>• MBA (Marketing, XLRI)</li>
+                            <li>• 10+ Years in Real Estate Marketing</li>
+                            <li>• Digital Marketing Expert</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profilesmobSecdots" id="dots">
+                <span class="profilesmobSecdot active" onclick="goToSlider(0)"></span>
+                <span class="profilesmobSecdot" onclick="goToSlider(1)"></span>
+                <span class="profilesmobSecdot" onclick="goToSlider(2)"></span>
+                <span class="profilesmobSecdot" onclick="goToSlider(3)"></span>
+                <span class="profilesmobSecdot" onclick="goToSlider(4)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profiles mob section end-->
 
     <!-- Trusted & recognised section start-->
     <div class="container">
@@ -297,9 +451,49 @@
     </div>
     <!-- Trusted & recognised section end-->
 
+    <!-- primusprideMobSec start -->
+    <section id="primusprideMobSec">
+        <div class="slider-container">
+            <div class="slider-track">
+                <div class="slide">
+                    <div class="card-top"><img src="./assets/images/home/primusPrideMob/One.png" alt="Logo 1"></div>
+                    <div class="card-bottom">
+                        <p>Best Senior Living Project of the Year</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card-top"><img src="./assets/images/home/primusPrideMob/One.png" alt="Logo 1"></div>
+                    <div class="card-bottom">
+                        <p>Best Senior Living Project of the Year</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card-top"><img src="./assets/images/home/primusPrideMob/One.png" alt="Logo 1"></div>
+                    <div class="card-bottom">
+                        <p>Best Senior Living Project of the Year</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card-top"><img src="./assets/images/home/primusPrideMob/One.png" alt="Logo 1"></div>
+                    <div class="card-bottom">
+                        <p>Best Senior Living Project of the Year</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card-top"><img src="./assets/images/home/primusPrideMob/One.png" alt="Logo 1"></div>
+                    <div class="card-bottom">
+                        <p>Best Senior Living Project of the Year</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- primusprideMobSec end -->
+
+
     <!--Slider section 2 start-->
     <div class="container">
-        <section id="slidersec2">
+        <section id="slidersec2" class="only-desktop">
             <div class="carousel-container">
                 <div class="carousel-wrapper">
                     <div class="arrow left-arrow" onclick="prevSlide()">
@@ -332,7 +526,8 @@
                                 </div>
                                 <img src="./assets/images/aboutus/trusted2.png" alt="" class="card-image">
                                 <div class="card-content">
-                                    <h3 class="card-title">Senior living company Primus announces raising $20 mn in seed
+                                    <h3 class="card-title">Senior living company Primus announces raising $20 mn in
+                                        seed
                                         funding
                                     </h3>
                                     <a href="#" class="read-more">Read more</a>
@@ -363,7 +558,8 @@
                                 </div>
                                 <img src="./assets/images/aboutus/trusted2.png" alt="" class="card-image">
                                 <div class="card-content">
-                                    <h3 class="card-title">Senior living company Primus announces raising $20 mn in seed
+                                    <h3 class="card-title">Senior living company Primus announces raising $20 mn in
+                                        seed
                                         funding
                                     </h3>
                                     <a href="#" class="read-more">Read more</a>
@@ -391,7 +587,8 @@
                                 </div>
                                 <img src="./assets/images/aboutus/slidersec2img.png" alt="" class="card-image">
                                 <div class="card-content">
-                                    <h3 class="card-title">Today’s seniors aren’t looking for a retirement home; they
+                                    <h3 class="card-title">Today’s seniors aren’t looking for a retirement home;
+                                        they
                                         want vibrant secure neighbourhoods: Adarsh Narhari of Primus
                                         Living </h3>
                                     <a href="#" class="read-more">Read more</a>
@@ -422,7 +619,8 @@
                                 </div>
                                 <img src="./assets/images/aboutus/slidersec2img.png" alt="" class="card-image">
                                 <div class="card-content">
-                                    <h3 class="card-title">Today’s seniors aren’t looking for a retirement home; they
+                                    <h3 class="card-title">Today’s seniors aren’t looking for a retirement home;
+                                        they
                                         want vibrant secure neighbourhoods: Adarsh Narhari of Primus
                                         Living </h3>
                                     <a href="#" class="read-more">Read more</a>
@@ -437,7 +635,8 @@
                                 </div>
                                 <img src="./assets/images/aboutus/ist-newsimg.png" alt="" class="card-image">
                                 <div class="card-content">
-                                    <h3 class="card-title">Primus Senior Living Secures $20 Million in Seed Funding Led
+                                    <h3 class="card-title">Primus Senior Living Secures $20 Million in Seed Funding
+                                        Led
                                         by General Catalyst </h3>
                                     <a href="#" class="read-more">Read more</a>
                                 </div>
@@ -454,7 +653,8 @@
                                 </div>
                                 <img src="./assets/images/aboutus/slidersec2img.png" alt="" class="card-image">
                                 <div class="card-content">
-                                    <h3 class="card-title">Today’s seniors aren’t looking for a retirement home; they
+                                    <h3 class="card-title">Today’s seniors aren’t looking for a retirement home;
+                                        they
                                         want vibrant secure neighbourhoods: Adarsh Narhari of Primus
                                         Living </h3>
                                     <a href="#" class="read-more">Read more</a>
@@ -469,7 +669,8 @@
                                 </div>
                                 <img src="./assets/images/aboutus/ist-newsimg.png" alt="" class="card-image">
                                 <div class="card-content">
-                                    <h3 class="card-title">Primus Senior Living Secures $20 Million in Seed Funding Led
+                                    <h3 class="card-title">Primus Senior Living Secures $20 Million in Seed Funding
+                                        Led
                                         by General Catalyst </h3>
                                     <a href="#" class="read-more">Read more</a>
                                 </div>
@@ -483,7 +684,8 @@
                                 </div>
                                 <img src="./assets/images/aboutus/slidersec2img.png" alt="" class="card-image">
                                 <div class="card-content">
-                                    <h3 class="card-title">General Catalyst leads $20Mn Seed funding in primus senior
+                                    <h3 class="card-title">General Catalyst leads $20Mn Seed funding in primus
+                                        senior
                                         living </h3>
                                     <a href="#" class="read-more">Read more</a>
                                 </div>
@@ -500,7 +702,8 @@
                                 </div>
                                 <img src="./assets/images/aboutus/ist-newsimg.png" alt="" class="card-image">
                                 <div class="card-content">
-                                    <h3 class="card-title">Primus Senior Living Secures $20 Million in Seed Funding Led
+                                    <h3 class="card-title">Primus Senior Living Secures $20 Million in Seed Funding
+                                        Led
                                         by General Catalyst </h3>
                                     <a href="#" class="read-more">Read more</a>
                                 </div>
@@ -514,7 +717,8 @@
                                 </div>
                                 <img src="./assets/images/aboutus/slidersec2img.png" alt="" class="card-image">
                                 <div class="card-content">
-                                    <h3 class="card-title">General Catalyst leads $20Mn Seed funding in primus senior
+                                    <h3 class="card-title">General Catalyst leads $20Mn Seed funding in primus
+                                        senior
                                         living </h3>
                                     <a href="#" class="read-more">Read more</a>
                                 </div>
@@ -528,7 +732,8 @@
                                 </div>
                                 <img src="./assets/images/aboutus/trusted1.png" alt="" class="card-image">
                                 <div class="card-content">
-                                    <p class="card-title">Primus Senior Living Raises $20M From Nikhil Kamath & Gruhas 
+                                    <p class="card-title">Primus Senior Living Raises $20M From Nikhil Kamath &
+                                        Gruhas 
                                     </p>
                                     <a href="#" class="read-more">Read more</a>
                                 </div>
@@ -545,7 +750,8 @@
                                 </div>
                                 <img src="./assets/images/aboutus/slidersec2img.png" alt="" class="card-image">
                                 <div class="card-content">
-                                    <h3 class="card-title">General Catalyst leads $20Mn Seed funding in primus senior
+                                    <h3 class="card-title">General Catalyst leads $20Mn Seed funding in primus
+                                        senior
                                         living </h3>
                                     <a href="#" class="read-more">Read more</a>
                                 </div>
@@ -559,7 +765,8 @@
                                 </div>
                                 <img src="./assets/images/aboutus/trusted1.png" alt="" class="card-image">
                                 <div class="card-content">
-                                    <p class="card-title">Primus Senior Living Raises $20M From Nikhil Kamath & Gruhas 
+                                    <p class="card-title">Primus Senior Living Raises $20M From Nikhil Kamath &
+                                        Gruhas 
                                     </p>
                                     <a href="#" class="read-more">Read more</a>
                                 </div>
@@ -573,7 +780,8 @@
                                 </div>
                                 <img src="./assets/images/aboutus/building-img.png" alt="" class="card-image">
                                 <div class="card-content">
-                                    <h3 class="card-title">Primus Senior Living To Develop Senior Living Projects Across
+                                    <h3 class="card-title">Primus Senior Living To Develop Senior Living Projects
+                                        Across
                                         Six Cities. </h3>
                                     <a href="#" class="read-more">Read more</a>
                                 </div>
@@ -590,7 +798,8 @@
                                 </div>
                                 <img src="./assets/images/aboutus/trusted1.png" alt="" class="card-image">
                                 <div class="card-content">
-                                    <p class="card-title">Primus Senior Living Raises $20M From Nikhil Kamath & Gruhas 
+                                    <p class="card-title">Primus Senior Living Raises $20M From Nikhil Kamath &
+                                        Gruhas 
                                     </p>
                                     <a href="#" class="read-more">Read more</a>
                                 </div>
@@ -604,7 +813,8 @@
                                 </div>
                                 <img src="./assets/images/aboutus/building-img.png" alt="" class="card-image">
                                 <div class="card-content">
-                                    <h3 class="card-title">Primus Senior Living To Develop Senior Living Projects Across
+                                    <h3 class="card-title">Primus Senior Living To Develop Senior Living Projects
+                                        Across
                                         Six Cities. </h3>
                                     <a href="#" class="read-more">Read more</a>
                                 </div>
@@ -663,7 +873,8 @@
                                 </div>
                                 <img src="./assets/images/aboutus/slidersec2img.png" alt="" class="card-image">
                                 <div class="card-content">
-                                    <h3 class="card-title">Primus Senior Living Secures USD 20 Mn Seed Funding Led by
+                                    <h3 class="card-title">Primus Senior Living Secures USD 20 Mn Seed Funding Led
+                                        by
                                         General Catalyst </h3>
                                     <a href="#" class="read-more">Read more</a>
                                 </div>
@@ -694,7 +905,8 @@
                                 </div>
                                 <img src="./assets/images/aboutus/slidersec2img.png" alt="" class="card-image">
                                 <div class="card-content">
-                                    <h3 class="card-title">Primus Senior Living Secures USD 20 Mn Seed Funding Led by
+                                    <h3 class="card-title">Primus Senior Living Secures USD 20 Mn Seed Funding Led
+                                        by
                                         General Catalyst </h3>
                                     <a href="#" class="read-more">Read more</a>
                                 </div>
@@ -708,7 +920,8 @@
                                 </div>
                                 <img src="./assets/images/aboutus/tv18-img.png" alt="" class="card-image">
                                 <div class="card-content">
-                                    <h3 class="card-title">Primus Senior Living sells 120 flats for over Rs180 crore in
+                                    <h3 class="card-title">Primus Senior Living sells 120 flats for over Rs180 crore
+                                        in
                                         Bengaluru </h3>
                                     <a href="#" class="read-more">Read more</a>
                                 </div>
@@ -725,7 +938,8 @@
                                 </div>
                                 <img src="./assets/images/aboutus/slidersec2img.png" alt="" class="card-image">
                                 <div class="card-content">
-                                    <h3 class="card-title">Primus Senior Living Secures USD 20 Mn Seed Funding Led by
+                                    <h3 class="card-title">Primus Senior Living Secures USD 20 Mn Seed Funding Led
+                                        by
                                         General Catalyst </h3>
                                     <a href="#" class="read-more">Read more</a>
                                 </div>
@@ -739,7 +953,8 @@
                                 </div>
                                 <img src="./assets/images/aboutus/tv18-img.png" alt="" class="card-image">
                                 <div class="card-content">
-                                    <h3 class="card-title">Primus Senior Living sells 120 flats for over Rs180 crore in
+                                    <h3 class="card-title">Primus Senior Living sells 120 flats for over Rs180 crore
+                                        in
                                         Bengaluru </h3>
                                     <a href="#" class="read-more">Read more</a>
                                 </div>
@@ -770,7 +985,8 @@
                                 </div>
                                 <img src="./assets/images/aboutus/tv18-img.png" alt="" class="card-image">
                                 <div class="card-content">
-                                    <h3 class="card-title">Primus Senior Living sells 120 flats for over Rs180 crore in
+                                    <h3 class="card-title">Primus Senior Living sells 120 flats for over Rs180 crore
+                                        in
                                         Bengaluru </h3>
                                     <a href="#" class="read-more">Read more</a>
                                 </div>
@@ -843,7 +1059,8 @@
                                 </div>
                                 <img src="./assets/images/aboutus/trusted2.png" alt="" class="card-image">
                                 <div class="card-content">
-                                    <h3 class="card-title">Senior living company Primus announces raising $20 mn in seed
+                                    <h3 class="card-title">Senior living company Primus announces raising $20 mn in
+                                        seed
                                         funding </h3>
                                     <a href="#" class="read-more">Read more</a>
                                 </div>
@@ -874,7 +1091,8 @@
                                 </div>
                                 <img src="./assets/images/aboutus/trusted2.png" alt="" class="card-image">
                                 <div class="card-content">
-                                    <h3 class="card-title">Senior living company Primus announces raising $20 mn in seed
+                                    <h3 class="card-title">Senior living company Primus announces raising $20 mn in
+                                        seed
                                         funding </h3>
                                     <a href="#" class="read-more">Read more</a>
                                 </div>
@@ -912,7 +1130,7 @@
     <!--Slider section 2 end-->
 
     <!-- primusprideranksec start -->
-    <section id="primusprideranksec">
+    <section id="primusprideranksec" class="only-desktop">
         <div class="container">
             <div class="award-carousel-wrapper-2025">
                 <div class="award-carousel-container-main">
@@ -923,7 +1141,8 @@
                             </div>
                             <div class="award-info-content-box">
                                 <div class="award-description-paragraph-text">
-                                    Recognized for exceptional design and innovation in senior living infrastructure,
+                                    Recognized for exceptional design and innovation in senior living
+                                    infrastructure,
                                     creating
                                     comfortable and accessible spaces for residents.
                                 </div>
@@ -937,7 +1156,8 @@
                             <div class="award-info-content-box">
 
                                 <div class="award-description-paragraph-text">
-                                    Awarded by The Economic Times for outstanding contribution in developing vibrant and
+                                    Awarded by The Economic Times for outstanding contribution in developing vibrant
+                                    and
                                     sustainable senior living communities.
                                 </div>
                             </div>
@@ -949,7 +1169,8 @@
                             </div>
                             <div class="award-info-content-box">
                                 <div class="award-description-paragraph-text">
-                                    Honored for pioneering innovative approaches in senior housing asset class, setting
+                                    Honored for pioneering innovative approaches in senior housing asset class,
+                                    setting
                                     new
                                     standards in the industry.
                                 </div>
@@ -962,7 +1183,8 @@
                             </div>
                             <div class="award-info-content-box">
                                 <div class="award-description-paragraph-text">
-                                    Recognized for creating inclusive and sustainable communities that enhance quality
+                                    Recognized for creating inclusive and sustainable communities that enhance
+                                    quality
                                     of life
                                     for senior citizens.
                                 </div>
@@ -976,7 +1198,8 @@
                             <div class="award-info-content-box">
                                 <!-- <div class="award-title-heading-text">Best Healthcare Integration</div> -->
                                 <div class="award-description-paragraph-text">
-                                    Awarded for seamlessly integrating healthcare facilities and services within senior
+                                    Awarded for seamlessly integrating healthcare facilities and services within
+                                    senior
                                     living
                                     communities.
                                 </div>
@@ -996,6 +1219,127 @@
         </div>
     </section>
     <!-- primusprideranksec end -->
+
+    <!-- primusinthenewsMob sec start -->
+    <section id="primusinthenewsMob" class="only-mobile">
+        <div class="container">
+            <div class="inthenews-txt">
+                <h1>In the News</h1>
+            </div>
+        </div>
+    </section>
+
+    <section id="primusinthenewsMobSec">
+        <div class="slider-container">
+            <div class="slider-track">
+                <div class="slide">
+                    <div class="card-top"><img src="./assets/images/aboutus/hindustan-timesMob-logo.png" alt="">
+                    </div>
+                    <div class="card-top-slide-image">
+                        <img src="./assets/images/aboutus/inthenewsMobImg-1.png" alt="">
+                    </div>
+                    <div class="card-bottom" id="card-bottom">
+                        <p>Primus Senior Living to invest ₹2200 crore to develop senior living projects across six cities
+                        </p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card-top"><img src="./images/hindustan-times-logo-png_seeklogo-361636 1.png" alt="Logo 1">
+                    </div>
+                    <div class="card-top-slide-image">
+                        <img src="./images/Rectangle 257.png" alt="">
+                    </div>
+                    <div class="card-bottom">
+                        <p>Best Senior Living Project of the Year</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card-top"><img src="./images/hindustan-times-logo-png_seeklogo-361636 1.png" alt="Logo 1">
+                    </div>
+                    <div class="card-top-slide-image">
+                        <img src="./images/Rectangle 257.png" alt="">
+                    </div>
+                    <div class="card-bottom">
+                        <p>Best Senior Living Project of the Year</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card-top"><img src="./images/hindustan-times-logo-png_seeklogo-361636 1.png" alt="Logo 1">
+                    </div>
+                    <div class="card-top-slide-image">
+                        <img src="./images/Rectangle 257.png" alt="">
+                    </div>
+                    <div class="card-bottom">
+                        <p>Best Senior Living Project of the Year</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card-top"><img src="./images/hindustan-times-logo-png_seeklogo-361636 1.png" alt="Logo 1">
+                    </div>
+                    <div class="card-top-slide-image">
+                        <img src="./images/Rectangle 257.png" alt="">
+                    </div>
+                    <div class="card-bottom">
+                        <p>Best Senior Living Project of the Year</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slider-track">
+                <div class="slide">
+                    <div class="card-top"><img src="./assets/images/aboutus/hindustan-timesMob-logo.png" alt="">
+                    </div>
+                    <div class="card-top-slide-image">
+                        <img src="./assets/images/aboutus/inthenewsMobImg-1.png" alt="">
+                    </div>
+                    <div class="card-bottom">
+                        <p>Primus Senior Living to invest ₹2200 crore to develop senior living projects across six cities
+                        </p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card-top"><img src="./images/hindustan-times-logo-png_seeklogo-361636 1.png" alt="Logo 1">
+                    </div>
+                    <div class="card-top-slide-image">
+                        <img src="./images/Rectangle 257.png" alt="">
+                    </div>
+                    <div class="card-bottom">
+                        <p>Best Senior Living Project of the Year</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card-top"><img src="./images/hindustan-times-logo-png_seeklogo-361636 1.png" alt="Logo 1">
+                    </div>
+                    <div class="card-top-slide-image">
+                        <img src="./images/Rectangle 257.png" alt="">
+                    </div>
+                    <div class="card-bottom">
+                        <p>Best Senior Living Project of the Year</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card-top"><img src="./images/hindustan-times-logo-png_seeklogo-361636 1.png" alt="Logo 1">
+                    </div>
+                    <div class="card-top-slide-image">
+                        <img src="./images/Rectangle 257.png" alt="">
+                    </div>
+                    <div class="card-bottom">
+                        <p>Best Senior Living Project of the Year</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="card-top"><img src="./images/hindustan-times-logo-png_seeklogo-361636 1.png" alt="Logo 1">
+                    </div>
+                    <div class="card-top-slide-image">
+                        <img src="./images/Rectangle 257.png" alt="">
+                    </div>
+                    <div class="card-bottom">
+                        <p>Best Senior Living Project of the Year</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- primusinthenewsMob sec end -->
 
     <!-- footer page design tab section start -->
     <footer id="footersec">
@@ -1035,14 +1379,20 @@
     </footer>
     <!-- footer page design tab section end -->
 
-    <!--Slider js-->
-    <script src="./assets/js/aboutus/slider.js"></script>
     <!--Slider2 js-->
     <script src="./assets/js/aboutus/slider2.js"></script>
     <!-- primusprideranksec script code  -->
     <script src="./assets/js/home/priderecognise.js"></script>
     <!-- navbarmenu script code-->
     <script src="./assets/js/home/navbarmenudsk.js"></script>
+    <!-- primusMobileNav script code -->
+    <script src="./assets/js/home/primusMobileNav.js"></script>
+    <!-- profilesMobSec script code -->
+    <script src="./assets/js/aboutus/profilesMobSec.js"></script>
+    <!-- primusprideMobSec script code -->
+    <script src="./assets/js/home/primusprideMobSec.js"></script>
+    <!-- primusinthenewsMobSec script code -->
+    <script src="./assets/js/aboutus/primusinthenewsMob.js"></script>
 
 </body>
 
