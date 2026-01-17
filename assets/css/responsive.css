@@ -44,6 +44,44 @@
 
 
 /* index responsive */
+@media (max-width: 1695px) {
+    #navbarsec .nav-menu {
+        gap: 18px;
+    }
+
+    #navbarsec .nav-menu li a {
+        font-size: 15px;
+    }
+
+    #navbarsec .enquiry-btn {
+        font-size: 14px;
+    }
+
+    #navbarsec .logo a img {
+        width: 5rem
+    }
+
+    #primushealthlifeotosec .slider-wrapper .slider-wrapper-heading {
+        font-size: 3.3rem;
+    }
+
+    #primushealthlifeotosec .slide:first-child .card {
+        max-width: 564px;
+        min-height: 380px;
+    }
+
+    #primuswayoflifesec .card-description {
+        font-size: clamp(13px, 1rem, 15px);
+        line-height: 1.6;
+        padding: 0 2rem;
+    }
+
+    #activelivingofyourlifesec .header h1 {
+        padding: 0 9rem;
+    }
+}
+
+
 /* 1366px */
 @media (max-width: 1366px) {
     #primuswayoflifesec .slide-group {
@@ -105,7 +143,7 @@
     }
 
     .primary-heading-font {
-        font-size: 42px;
+        font-size: 64px;
     }
 
     #ledbypioneersec .profile-content {
@@ -155,6 +193,67 @@
 
     #hero-section-scroll .side-panel h3 {
         font-size: 2rem;
+    }
+
+    #primushealthlifeotosec .card-top h3 {
+        min-height: 3rem;
+    }
+}
+
+@media (max-width: 1320px) {
+    #primussupportdivisionsec .card {
+        width: 18rem;
+        padding: 34px 14px;
+    }
+
+    #primussupportdivisionsec .company-logo img {
+        width: 10rem;
+    }
+
+    #navbarsec .enquiry-btn {
+        padding: 8px 20px;
+    }
+
+    #navbarsec .navbar {
+        padding: 0 14px;
+    }
+
+    #navbarsec .nav-menu li a {
+        font-size: 12px;
+    }
+
+    #navbarsec .logo a img {
+        width: 6rem;
+    }
+
+    #navbarsec .enquiry-btn {
+        padding: 8px 16px;
+    }
+
+    #primushealthlifeotosec .slide:first-child .card {
+        max-width: 550px;
+        min-height: 380px;
+    }
+
+    #primushealthlifeotosec .slider-wrapper .slider-wrapper-heading {
+        padding-inline: 13rem;
+    }
+
+    #primuswayoflifesec .card-description {
+        font-size: clamp(13px, 1rem, 14px);
+        padding: 0 0.8rem;
+    }
+
+    .primary-heading-font {
+        font-size: 55px;
+    }
+
+    #activelivingofyourlifesec .header h1 {
+        padding: 0 6rem;
+    }
+
+    .primary-heading-font {
+        font-size: 53px;
     }
 }
 
@@ -223,7 +322,7 @@
     }
 
     #primushealthlifeotosec .slider-wrapper .slider-wrapper-heading {
-        padding-inline: 4rem;
+        padding-inline: 6rem;
         margin-top: 2rem;
     }
 
@@ -289,7 +388,7 @@
     }
 
     #navbarsec .nav-menu li a {
-        font-size: 0.65rem;
+        font-size: 0.71rem;
         font-weight: bold;
     }
 
@@ -313,6 +412,30 @@
 
     #hero-section-scroll .side-panel h3 {
         left: 24px;
+    }
+
+    #navbarsec .navbar-wrapper {
+        padding: 21px 11px;
+    }
+
+    #navbarsec .nav-menu {
+        gap: 14px;
+    }
+
+    #hero-section-scroll .container {
+        padding: 0;
+    }
+
+    #navbarsec .enquiry-btn {
+        padding: 6px 10px;
+    }
+
+    #primushealthlifeotosec .card-top h3 {
+        min-height: 5rem;
+    }
+
+    #primusprideranksec .award-info-content-box {
+        min-height: 8rem;
     }
 }
 
@@ -626,7 +749,7 @@
     }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 768px) {
 
     #primushealthMobsec,
     #primuswayofMobSec,
