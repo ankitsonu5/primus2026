@@ -969,8 +969,8 @@ body.pm-nav-open {
 
 /* primuswayoflifesec style */
 #primuswayoflifesec {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #8B2469 0%, #a0316f 100%);
+    font-family: var(--primary-heading-font);
+    background-color: #821A52;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -1991,6 +1991,7 @@ body.pm-nav-open {
     gap: 50px;
     margin-bottom: 40px;
     flex-wrap: wrap;
+    align-items: self-start;
 }
 
 #builtontrustbackedbyproofsec .stat-item {
@@ -2360,7 +2361,7 @@ body.pm-nav-open {
 #primusprideranksec {
     font-family: 'Arial', sans-serif;
     background: #ffffff;
-    min-height: 100vh;
+    min-height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2517,14 +2518,12 @@ body.pm-nav-open {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    margin: 0;
-    background-color: #f0f0f0;
+    background-color: #ffffff;
     font-family: Arial, sans-serif;
     overflow-x: hidden;
 }
 
 #primusprideMobSec {
-    width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -2568,6 +2567,14 @@ body.pm-nav-open {
     align-items: center;
     padding: 40px;
     box-sizing: border-box;
+}
+
+#primusprideMobSec .card-top-bg-slide-blc {
+    background-color: #010101;
+}
+
+#primusprideMobSec .card-top-bg-slide-wtc {
+    background-color: #E9E9E9;
 }
 
 #primusprideMobSec .card-top img {

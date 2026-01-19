@@ -67,16 +67,24 @@
 }
 
 #lifeofaprimusresidentsec .header h1 {
-    color: #7a2f5f;
-    font-size: 2.5rem;
+    color: #801B53;
     margin-bottom: 15px;
-    font-weight: bold;
+    font-family: var(--primary-heading-font);
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 90px;
+    text-align: center;
+    padding-inline: 10rem;
 }
 
 #lifeofaprimusresidentsec .header p {
-    color: #555;
-    font-size: 1rem;
-    line-height: 1.6;
+    color: #000000;
+    font-family: var(--primary-para-font);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0%;
+    text-align: center;
 }
 
 #lifeofaprimusresidentsec .slider-container {
@@ -101,9 +109,8 @@
     flex: 1;
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     position: relative;
-    height: 300px;
+    height: 324px;
     background-size: cover;
     background-position: center;
 }
@@ -185,6 +192,7 @@
     border: 2px solid #d0d0d0;
     border-radius: 12px;
     overflow: hidden;
+    background-color: #FBFBFB;
 }
 
 #corelivingservicessec .services-table td {
@@ -203,15 +211,21 @@
 
 #corelivingservicessec .services-table td:first-child {
     width: 30%;
-    color: #7d2e68;
-    font-weight: 600;
-    font-size: 1.1rem;
+    color: #801B53;
+    font-family: var(--primary-heading-font);
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
 }
 
 #corelivingservicessec .services-table td:last-child {
     width: 70%;
-    color: #333;
-    line-height: 1.6;
+    color: #000000;
+    font-family: var(--primary-para-font);
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 40px;
+    letter-spacing: 0%;
 }
 
 /* corelivingservicessec end */
@@ -290,7 +304,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 60px;
+    gap: 32px;
     /* min-height: 100vh; */
 }
 
@@ -361,6 +375,10 @@
     text-align: center;
 }
 
+#primuscelebrationsec .celebration-item div img {
+    width: 5rem;
+}
+
 #primuscelebrationsec .celebration-item:nth-child(3n) {
     border-right: none;
 }
@@ -397,10 +415,18 @@
 /* bluezonelivingsec style start */
 #bluezonelivingsec {
     font-family: var(--primary-heading-font);
-    background: linear-gradient(135deg, #e8d5f2 0%, #d5e5f7 100%);
+    background-image: url("../images/lifestyle/bluezonebg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
     color: #333;
     line-height: 1.6;
+    object-fit: cover;
+    padding: 4rem 0;
 }
+
+
 
 #bluezonelivingsec .container {
     max-width: 1366px;
@@ -413,29 +439,22 @@
 }
 
 #bluezonelivingsec .header h1 {
-    font-size: 2.5rem;
-    color: #7b3f8f;
-    margin-bottom: 15px;
-    font-weight: 700;
+    color: #801B53;
     font-family: var(--primary-heading-font);
+    font-family: Montserrat;
     font-weight: 700;
-    font-style: Bold;
     font-size: 80px;
     line-height: 90px;
-    letter-spacing: -5%;
-
 }
 
 #bluezonelivingsec .header p {
-    color: #555;
-    max-width: 700px;
-    margin: 0 auto;
+    color: #000000;
     font-family: var(--primary-para-font);
-    font-weight: 600;
+    font-family: Montserrat;
+    font-weight: 500;
     font-size: 28px;
     line-height: 40px;
-    letter-spacing: 0%;
-
+    margin-top: 1rem;
 }
 
 #bluezonelivingsec .main-content {
@@ -466,10 +485,11 @@
 }
 
 #bluezonelivingsec .left-section p {
-    font-size: 0.95rem;
-    color: #666;
-    text-align: center;
-    font-style: italic;
+    color: #000000;
+    font-family: var(--primary-heading-font);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
 }
 
 #bluezonelivingsec .right-section {
@@ -479,17 +499,35 @@
 }
 
 #bluezonelivingsec .right-section h2 {
-    font-size: 2rem;
-    color: #2d2d5f;
-    margin-bottom: 15px;
+    color: #000000;
+    font-family: var(--primary-heading-font);
     font-weight: 700;
+    font-size: 48px;
+}
+
+#bluezonelivingsec .right-section h4 {
+    margin-bottom: 3rem;
+    color: #000000;
+    font-family: var(--primary-heading-font);
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 40px;
+}
+
+#bluezonelivingsec .right-section h6 {
+    font-family: var(--primary-para-font);
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 1rem;
 }
 
 #bluezonelivingsec .right-section>p {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 30px;
-    line-height: 1.8;
+    font-family: var(--primary-para-font);
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 18px;
 }
 
 #bluezonelivingsec .blue-zones {
@@ -514,15 +552,23 @@
 }
 
 #bluezonelivingsec .zone-card h3 {
-    font-size: 1.3rem;
-    color: #7b3f8f;
+    color: #000000;
     margin-bottom: 8px;
-    font-weight: 600;
+    font-family: var(--primary-heading-font);
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 25px;
+    line-height: 30px;
 }
 
 #bluezonelivingsec .zone-card p {
-    font-size: 0.95rem;
-    color: #666;
+    color: #000000;
+    margin-bottom: 8px;
+    font-family: var(--primary-heading-font);
+    font-weight: 400;
+    font-style: Bold;
+    font-size: 25px;
+    line-height: 30px;
 }
 
 /* bluezonelivingsec style end */
@@ -541,9 +587,15 @@
 
 /* All responsive style code */
 /* Responsive for 1366px */
+@media screen and (max-width: 1695px) {
+    #primusfestivedaymagicsec .content h1 {
+        font-size: 58px;
+        line-height: 80px;
+    }
+}
+
 @media screen and (max-width: 1366px) {
     #herolifestysec .banner-container {
-        height: 450px;
         border-radius: 25px;
     }
 
@@ -559,9 +611,78 @@
     #herolifestysec .banner-content p {
         font-size: 18px;
     }
+
+    #primuscelebrationsec .left-section h1 {
+        font-size: 3rem;
+    }
 }
 
+
 /* Responsive for 1024px */
+@media screen and (max-width: 1320px) {
+    #lifeofaprimusresidentsec .header h1 {
+        font-size: 54px;
+        line-height: 64px;
+        padding-inline: 9rem;
+    }
+
+    #lifeofaprimusresidentsec .header p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    #primusfestivedaymagicsec .content h1 {
+        font-size: 38px;
+        line-height: 50px;
+    }
+
+    #primusfestivedaymagicsec .content p {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    #bluezonelivingsec .header h1 {
+        font-size: 55px;
+        line-height: 56px;
+    }
+
+    #bluezonelivingsec .right-section h2 {
+        font-size: 35px;
+    }
+
+    #bluezonelivingsec .right-section h4 {
+        font-size: 20px;
+        margin-bottom: 2rem;
+    }
+
+    #bluezonelivingsec .main-content {
+        gap: 5px;
+    }
+
+    #bluezonelivingsec .right-section h6 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    #bluezonelivingsec .right-section>p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    #bluezonelivingsec .zone-card h3 {
+        font-size: 20px;
+        margin-bottom: 0;
+    }
+
+    #bluezonelivingsec .zone-card p {
+        font-size: 18px;
+    }
+
+    #bluezonelivingsec .main-content {
+        padding: 16px;
+    }
+}
+
 @media screen and (max-width: 1024px) {
     #herolifestysec .banner-container {
         height: 400px;
@@ -578,6 +699,35 @@
     }
 
     #herolifestysec .banner-content p {
+        font-size: 16px;
+    }
+
+    #corelivingservicessec .services-table td:first-child {
+        font-size: 19px;
+    }
+
+    #corelivingservicessec .services-table td:last-child {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    #primuscelebrationsec .celebration-text h3 {
+        font-size: 16px;
+    }
+
+    #primuscelebrationsec .left-section h1 {
+        font-size: 2rem;
+    }
+
+    #primuscelebrationsec .container {
+        gap: 14px;
+    }
+
+    #primuscelebrationsec .celebration-item div img {
+        width: 3rem;
+    }
+
+    #lifeofaprimusresidentsec .card-title {
         font-size: 16px;
     }
 }
