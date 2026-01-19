@@ -63,7 +63,7 @@
 .herobannerdwn p {
     font-size: 20px;
     line-height: 25px;
-    width: 50%;
+    width: 100%;
 }
 
 /* hero section design style end */
@@ -679,6 +679,7 @@
     .herobannerdwn p {
         font-size: 16px;
         line-height: 20px;
+        width: 100%;
     }
 
     .howitbegincont {
