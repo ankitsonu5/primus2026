@@ -297,17 +297,20 @@ body.pm-nav-open {
     margin-top: -12rem !important;
 }
 
+/* Container */
 #hero-section-scroll .container {
     width: 100%;
     margin: 0 auto;
     position: relative;
 }
 
+/* Scroll Height */
 #hero-section-scroll .scroll-track {
     height: 500vh;
     position: relative;
 }
 
+/* Sticky Wrapper */
 #hero-section-scroll .sticky-wrapper {
     position: sticky;
     top: 1rem;
@@ -319,11 +322,11 @@ body.pm-nav-open {
     background: #fff;
 }
 
+/* Layout */
 #hero-section-scroll .layout-container {
     display: flex;
     width: 96%;
     height: 90vh;
-    gap: 0px;
     align-items: center;
     justify-content: center;
     position: relative;
@@ -331,13 +334,13 @@ body.pm-nav-open {
     font-family: var(--primary-heading-font);
 }
 
+/* VIDEO */
 #hero-section-scroll .video-box {
     position: relative;
     width: 100%;
     height: 100%;
     border-radius: 1rem;
     overflow: hidden;
-    flex-shrink: 0;
     z-index: 2;
 }
 
@@ -347,11 +350,12 @@ body.pm-nav-open {
     object-fit: cover;
 }
 
+/* VIDEO TEXT */
 #hero-section-scroll .video-text {
     position: absolute;
     bottom: 50px;
     left: 50px;
-    color: white;
+    color: #fff;
     font-size: 5.2rem;
     max-width: 750px;
     z-index: 5;
@@ -364,6 +368,7 @@ body.pm-nav-open {
     opacity: 0;
 }
 
+/* SIDE PANELS */
 #hero-section-scroll .side-panel {
     position: relative;
     height: 100%;
@@ -376,8 +381,7 @@ body.pm-nav-open {
 
 #hero-section-scroll .side-panel img {
     position: absolute;
-    top: 0;
-    left: 0;
+    inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -386,10 +390,7 @@ body.pm-nav-open {
 #hero-section-scroll .side-panel::after {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset: 0;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
     z-index: 1;
 }
@@ -398,34 +399,31 @@ body.pm-nav-open {
     position: absolute;
     bottom: 40px;
     left: 24px;
-    padding-right: 1.2rem;
     z-index: 2;
-    color: white;
+    color: #fff;
     font-size: 2.5rem;
+    padding-right: 1rem;
 }
 
-#hero-section-scroll .content-section {
-    height: 100vh;
-    background: #701b44;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-}
-
+/* SCROLL INDICATOR (FULL CONTAINER BOTTOM RIGHT) */
 #hero-section-scroll .scroll-indicator {
     position: absolute;
-    bottom: 30px;
-    right: 30px;
+    bottom: 2rem;
+    right: 4rem;
     animation: bounceArrow 2s infinite;
-    opacity: 0.8;
+    opacity: 0.85;
+    z-index: 10;
+}
+
+#hero-section-scroll .scroll-indicator path {
+    stroke: #ffffff;
 }
 
 #hero-section-scroll .scroll-indicator svg {
-    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
 }
 
+/* Arrow Animation */
 @keyframes bounceArrow {
 
     0%,
