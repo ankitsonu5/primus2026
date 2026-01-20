@@ -5,6 +5,10 @@
     --primary-para-font: "Lato", sans-serif;
 }
 
+body,
+html {
+    overflow-x: hidden;
+}
 
 /* herolifestysec style start */
 #herolifestysec {
