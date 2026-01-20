@@ -736,8 +736,8 @@ body.pm-nav-open {
 }
 
 #primushealthlifeotosec .dot {
-    width: 12px;
-    height: 12px;
+    width: 18px;
+    height: 18px;
     border-radius: 50%;
     background: transparent;
     cursor: pointer;
@@ -746,7 +746,7 @@ body.pm-nav-open {
 }
 
 #primushealthlifeotosec .dot.active {
-    background: #6b1b4d;
+    background: #821A52;
     border: none;
 }
 
@@ -1555,17 +1555,19 @@ body.pm-nav-open {
 }
 
 #activelivingofyourlifesec .dot {
-    width: 12px;
-    height: 12px;
+    width: 18px;
+    height: 18px;
     border-radius: 50%;
-    background: rgba(107, 36, 86, 0.3);
+    background: transparent;
     cursor: pointer;
     transition: all 0.3s ease;
+    border: 2px solid #821A52;
 }
 
 #activelivingofyourlifesec .dot.active {
-    background: #6b2456;
+    background: #821A52;
     transform: scale(1.3);
+    border: none;
 }
 
 /* activelivingofMobSec style start */
@@ -1918,16 +1920,17 @@ body.pm-nav-open {
 }
 
 #exploreourcommunitiessec .dot {
-    width: 12px;
-    height: 12px;
+    width: 18px;
+    height: 18px;
     border-radius: 50%;
-    background: rgba(107, 31, 84, 0.3);
+    background: transparent;
     cursor: pointer;
     transition: all 0.3s ease;
+    border: 2px solid #821A52;
 }
 
 #exploreourcommunitiessec .dot.active {
-    background: #6b1f54;
+    background: #821A52;
     transform: scale(1.3);
 }
 
