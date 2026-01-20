@@ -83,13 +83,17 @@
 }
 
 .howitbegin {
+    font-family: var(--primary-heading-font);
+    font-size: 5rem;
     line-height: 90px;
+    color: #801B53;
 }
 
 .howitbegin-para {
-    font-size: 20px;
-    line-height: 25px;
+    font-family: var(--primary-para-font);
     font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 25px;
     padding-right: 12rem;
     margin-top: 2rem;
 }
@@ -470,6 +474,11 @@
         font-size: 1.5rem;
     }
 
+    .howitbegin {
+        font-size: 4rem;
+        line-height: 70px;
+    }
+
     #profilessec .profiles-card-image {
         max-width: 180px;
     }
@@ -578,9 +587,15 @@
         padding: 0rem 1rem;
     }
 
+    .howitbegin {
+        font-size: 3rem;
+        line-height: 50px;
+    }
+
     .howitbegin-para {
-        font-size: 18px;
+        font-size: 1rem;
         padding-right: 5rem;
+        margin-top: 1rem;
     }
 
     #profilessec .profiles-card-image {
@@ -1356,11 +1371,8 @@
     }
 
     .howitbegin {
-        line-height: 0px;
-    }
-
-    .primary-heading-font {
-        font-size: 32px;
+        line-height: 25px;
+        font-size: 2rem;
     }
 
     .howitbegin-para {
@@ -1384,6 +1396,23 @@
         font-size: 14px;
     }
 
+    #profilesmobSec .slideMobName2 {
+        font-size: 1.5rem;
+        margin-left: -7rem;
+    }
+
+    #profilesmobSec .slideMobTitle2 {
+        font-size: 1rem;
+        line-height: 15px;
+        margin-left: -7rem;
+    }
+
+    #profilesmobSec .slideMobTitle3 {
+        font-size: 1rem;
+        line-height: 15px;
+        margin-left: -7rem;
+    }
+
     #profilesmobSec {
         padding: 50px 20px;
     }
@@ -1395,7 +1424,17 @@
     #profilesmobSec .name {
         font-size: 22px;
         margin-bottom: 8px;
-        margin-left: -4rem;
+        margin-left: -6rem;
+    }
+
+    #profilesmobSec .nameDev {
+        font-size: 1.5rem;
+        margin-left: -10rem;
+    }
+
+    #profilesmobSec .nameVibha {
+        font-size: 1.25rem;
+        margin-left: -9rem;
     }
 
     #profilesmobSec .title {
@@ -1404,10 +1443,30 @@
         margin-left: -9rem;
     }
 
+    #profilesmobSec .titleDev {
+        font-size: 1rem;
+        line-height: 15px;
+        margin-left: -8rem;
+    }
+
+    #profilesmobSec .titleVibha {
+        font-size: 1rem;
+        line-height: 15px;
+        margin-left: -8rem;
+    }
+
     #profilesmobSec .details li {
         font-size: 12px;
         margin-bottom: 0px;
         margin-left: 0rem;
+    }
+
+    #profilesmobSec .detailsDev {
+        padding-right: 2rem;
+    }
+
+    #profilesmobSec .detailsVibha {
+        padding-right: 2rem;
     }
 
     #trustedsec .trusted-heading {
