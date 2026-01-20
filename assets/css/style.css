@@ -405,17 +405,14 @@ body.pm-nav-open {
     padding-right: 1rem;
 }
 
+/* SCROLL INDICATOR (FULL CONTAINER BOTTOM RIGHT) */
 #hero-section-scroll .scroll-indicator {
     position: absolute;
     bottom: 2rem;
     right: 4rem;
     animation: bounceArrow 2s infinite;
     opacity: 0.85;
-    z-index: 999 !important;
-}
-
-#hero-section-scroll .scroll-indicator path {
-    stroke: #ffffff;
+    z-index: 10;
 }
 
 #hero-section-scroll .scroll-indicator svg {
