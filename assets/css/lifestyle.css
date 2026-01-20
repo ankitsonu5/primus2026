@@ -148,20 +148,18 @@
 }
 
 #lifeofaprimusresidentsec .dot {
-    width: 12px;
-    height: 12px;
+    width: 18px;
+    height: 18px;
     border-radius: 50%;
-    background: #ccc;
+    background: #ffffff;
     cursor: pointer;
     position: relative;
+    border: 2px solid #821A52;
 }
 
 #lifeofaprimusresidentsec .dot.active {
-    background: #7a2f5f;
-}
-
-#lifeofaprimusresidentsec .dot:hover {
-    background: #a0506f;
+    background: #821A52;
+    border: none;
 }
 
 /* corelivingservicessec style */
