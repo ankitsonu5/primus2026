@@ -10,6 +10,7 @@
     font-family: var(--primary-para-font);
     position: relative;
     z-index: 999999;
+    margin: 0 auto;
 }
 
 #navbarsec .navbar-wrapper {
@@ -35,6 +36,7 @@
     left: 50%;
     transform: translateX(-50%);
     width: calc(100% - 80px);
+
     z-index: 9999999;
 }
 
@@ -292,6 +294,7 @@ body.pm-nav-open {
 #hero-section-scroll {
     position: relative;
     width: 100%;
+    margin-top: -12rem !important;
 }
 
 #hero-section-scroll .container {
@@ -307,7 +310,7 @@ body.pm-nav-open {
 
 #hero-section-scroll .sticky-wrapper {
     position: sticky;
-    top: 0;
+    top: 1rem;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -409,6 +412,35 @@ body.pm-nav-open {
     justify-content: center;
     align-items: center;
     font-size: 1.5rem;
+}
+
+#hero-section-scroll .scroll-indicator {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    animation: bounceArrow 2s infinite;
+    opacity: 0.8;
+}
+
+#hero-section-scroll .scroll-indicator svg {
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+@keyframes bounceArrow {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+/* Fade out animation on hover (optional) */
+#hero-section-scroll .scroll-indicator:hover {
+    opacity: 1;
 }
 
 /* hero-section-scroll desktop style end*/
