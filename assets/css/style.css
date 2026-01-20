@@ -666,9 +666,13 @@ body.pm-nav-open {
 }
 
 #primushealthlifeotosec .card-bottom p {
-    line-height: 1.6;
     text-align: center;
     flex-grow: 1;
+
+    font-family: var(--primary-para-font);
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 30px;
 }
 
 #primushealthlifeotosec .nav-arrows {
