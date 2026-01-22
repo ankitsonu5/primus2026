@@ -611,6 +611,16 @@ html {
 @media screen and (max-width: 1024px) {}
 
 /* Additional responsive for smaller screens */
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+
+    #partnerwithussec .container {
+        padding: 2rem;
+    }
+
+    #locationscrossindiasec .locationscrossindiaheading {
+        font-size: 48px;
+        padding-bottom: 2rem;
+    }
+}
 
 @media screen and (max-width: 480px) {}

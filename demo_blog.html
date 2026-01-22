@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senior Living Community Blog</title>
+
+    <style>
+        /* RESET */
+        #blogcontainerSec * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        #blogcontainerSec {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            padding: 20px 0;
+        }
+
+        /* LAYOUT */
+        #blogcontainerSec .container {
+            display: flex;
+            /* max-width: 1400px; */
+            margin: 0 auto;
+            background: #fff;
+        }
+
+        /* SIDEBAR */
+        #blogcontainerSec .sidebar {
+            width: 280px;
+            background-color: #f4e4e4;
+            padding: 30px 20px;
+            min-height: 100vh;
+        }
+
+        #blogcontainerSec .search-box {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        #blogcontainerSec .search-box input {
+            width: 100%;
+            padding: 10px 35px 10px 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        #blogcontainerSec .search-box::after {
+            content: "🔍";
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        #blogcontainerSec .sidebar-section {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        #blogcontainerSec .sidebar h3 {
+            font-size: 16px;
+            margin-bottom: 15px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        #blogcontainerSec .sidebar ul {
+            list-style: none;
+        }
+
+        #blogcontainerSec .sidebar li {
+            padding: 8px 0;
+            font-size: 14px;
+            color: #555;
+            cursor: pointer;
+        }
+
+        /* MAIN CONTENT */
+        #blogcontainerSec .main-content {
+            flex: 1;
+            padding: 40px;
+        }
+
+        #blogcontainerSec .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+
+        #blogcontainerSec .article-card {
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        #blogcontainerSec .article-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        #blogcontainerSec .article-content {
+            padding: 20px;
+        }
+
+        #blogcontainerSec .article-meta {
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 10px;
+        }
+
+        #blogcontainerSec .article-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+
+        #blogcontainerSec .article-excerpt {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* PAGINATION */
+        #blogcontainerSec .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 40px;
+        }
+
+        #blogcontainerSec .pagination button {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            background: #fff;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        #blogcontainerSec .pagination button.active {
+            background: #c67b7b;
+            color: #fff;
+            border-color: #c67b7b;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            #blogcontainerSec .container {
+                flex-direction: column;
+            }
+
+            #blogcontainerSec .sidebar {
+                width: 100%;
+                min-height: auto;
+            }
+
+            #blogcontainerSec .sidebar-section {
+                display: none;
+            }
+
+            #blogcontainerSec .articles-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section id="blogcontainerSec">
+        <div class="container">
+
+            <!-- SIDEBAR -->
+            <aside class="sidebar">
+                <div class="search-box">
+                    <input type="text" placeholder="Search...">
+                </div>
+
+                <div class="sidebar-section">
+                    <h3>Categories</h3>
+                    <ul>
+                        <li>Assisted Living</li>
+                        <li>Health Advice</li>
+                        <li>Independent Living</li>
+                        <li>Lifestyle & Entertainment</li>
+                        <li>Memory Care</li>
+                        <li>Senior Living Communities</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3>Tags</h3>
+                    <ul>
+                        <li>Continuing Care Retirement Community</li>
+                        <li>Independent Living Tips</li>
+                        <li>Healthy Aging</li>
+                        <li>Memory Care Explained</li>
+                    </ul>
+
+                    <h3 style="margin-top:20px;">Popular Posts</h3>
+                    <ul>
+                        <li>50 Tips for Active Independent Living</li>
+                        <li>Understanding Assisted Living</li>
+                        <li>Choosing the Right Retirement Community</li>
+                    </ul>
+                </div>
+            </aside>
+
+            <!-- MAIN CONTENT -->
+            <main class="main-content">
+                <div class="articles-grid" id="articlesGrid"></div>
+
+                <div class="pagination">
+                    <button>&laquo;</button>
+                    <button class="active">1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <button>&raquo;</button>
+                </div>
+            </main>
+
+        </div>
+    </section>
+
+    <script>
+        const articles = [
+            {
+                image: "https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=500",
+                category: "Assisted Living",
+                date: "January 15, 2026",
+                title: "Parent-Adult Family Care in Indian Homes",
+                excerpt: "Explore how Indian families balance responsibility and care in multigenerational living..."
+            },
+            {
+                image: "https://images.unsplash.com/photo-1581579438747-1dc8d17bbce4?w=500",
+                category: "Senior Living",
+                date: "January 14, 2026",
+                title: "100 Lifestyle Ideas for Independent Seniors",
+                excerpt: "Creative and meaningful lifestyle ideas to enhance senior living experiences..."
+            },
+            {
+                image: "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=500",
+                category: "Culture",
+                date: "January 13, 2026",
+                title: "Why Indian Families Choose Multigenerational Living",
+                excerpt: "Cultural and practical reasons behind multigenerational homes in India..."
+            },
+            {
+                image: "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=500",
+                category: "Health & Wellness",
+                date: "January 12, 2026",
+                title: "Investing in Senior Housing in India",
+                excerpt: "Understanding the growth and opportunities in India’s senior housing market..."
+            }
+        ];
+
+        function renderArticles() {
+            const grid = document.getElementById("articlesGrid");
+            grid.innerHTML = articles.map(article => `
+                <div class="article-card">
+                    <img src="${article.image}" class="article-image" alt="${article.title}">
+                    <div class="article-content">
+                        <div class="article-meta">${article.category} • ${article.date}</div>
+                        <h2 class="article-title">${article.title}</h2>
+                        <p class="article-excerpt">${article.excerpt}</p>
+                    </div>
+                </div>
+            `).join("");
+        }
+
+        renderArticles();
+    </script>
+
+</body>
+
+</html>

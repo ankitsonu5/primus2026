@@ -445,7 +445,7 @@
     }
 
     #primussupportdivisionsec .card {
-        width: 22rem;
+        /* width: 22rem; */
     }
 
     #builtontrustbackedbyproofsec .left-side img {
@@ -589,6 +589,11 @@
 
     #footersec .mainfootercontdown p {
         font-size: 16px;
+    }
+
+    #primusSupportMobSec .content h3 {
+        font-size: 1rem;
+        font-weight: 500;
     }
 }
 
