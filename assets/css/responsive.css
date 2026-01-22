@@ -210,7 +210,7 @@
 
 @media (max-width: 1320px) {
     #primussupportdivisionsec .card {
-        width: 18rem;
+        /* width: 18rem; */
         padding: 34px 14px;
     }
 
@@ -347,7 +347,7 @@
     }
 
     #activelivingofyourlifesec .header h1 {
-        padding: 0 12rem;
+        padding: 0 7rem;
     }
 
     #exploreourcommunitiessec .content-area {
@@ -389,6 +389,8 @@
 
     #navbarsec .navbar {
         padding: 0 1rem;
+        width: 94vw;
+        margin: 0 auto;
     }
 
     #navbarsec .logo a img {
@@ -430,10 +432,6 @@
         gap: 14px;
     }
 
-    #hero-section-scroll .container {
-        padding: 0;
-    }
-
     #navbarsec .enquiry-btn {
         padding: 6px 10px;
     }
@@ -447,7 +445,11 @@
     }
 
     #primussupportdivisionsec .card {
-        width: 25rem;
+        width: 22rem;
+    }
+
+    #builtontrustbackedbyproofsec .left-side img {
+        max-width: 88%;
     }
 }
 
@@ -758,6 +760,23 @@
     #exploreourcommunitiessec .know-more-btn {
         width: 100%;
         padding: 12px;
+    }
+
+    #primushealthMobsec .column-content {
+        padding: 5px;
+    }
+
+    #primushealthMobsec .icon-box div img {
+        width: 2.5rem;
+    }
+
+    #primushealthMobsec .left-column {
+        min-width: 48%;
+        flex: 1;
+    }
+
+    #primushealthMobsec .main-heading {
+        font-size: 1.2rem;
     }
 }
 

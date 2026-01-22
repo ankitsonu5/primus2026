@@ -302,6 +302,7 @@ body.pm-nav-open {
     width: 100%;
     margin: 0 auto;
     position: relative;
+    padding: 0 1rem;
 }
 
 /* Scroll Height */
@@ -313,8 +314,7 @@ body.pm-nav-open {
 /* Sticky Wrapper */
 #hero-section-scroll .sticky-wrapper {
     position: sticky;
-    top: 1rem;
-    height: 100vh;
+    top: -9px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -325,7 +325,7 @@ body.pm-nav-open {
 /* Layout */
 #hero-section-scroll .layout-container {
     display: flex;
-    width: 96%;
+    width: 100%;
     height: 90vh;
     align-items: center;
     justify-content: center;
@@ -2723,7 +2723,7 @@ body.pm-nav-open {
 #ledbypioneersec .profile-content p {
     font-size: 1.4rem;
     line-height: 1.7;
-    color: #444;
+    color: #000000;
     margin-bottom: 20px;
     font-family: var(--primary-para-font);
 }
