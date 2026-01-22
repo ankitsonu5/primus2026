@@ -7,6 +7,11 @@
     --primary-para-font: "Lato", sans-serif;
 }
 
+html,
+body {
+    overflow-x: hidden;
+}
+
 /* hero section design style start */
 .banner {
     position: relative;
@@ -63,7 +68,8 @@
 .herobannerdwn p {
     font-size: 20px;
     line-height: 25px;
-    width: 100%;
+    width: 36%;
+    margin-bottom: 1rem;
 }
 
 /* hero section design style end */
@@ -107,6 +113,24 @@
 }
 
 /* howitbeginsec style end */
+
+/*ledbypoineer style end */
+#ledbypioneersec .profile-content h2 {
+    color: #000000;
+}
+
+#ledbypioneersec .profile-content p {
+    color: #000000;
+}
+
+/*ledbypoineer style end */
+
+/*primussupportdivisionsec style start */
+#primussupportdivisionsec .description {
+    color: #000000;
+}
+
+/*primussupportdivisionsec style end */
 
 /*Profiles section start*/
 #profilessec {
@@ -265,6 +289,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#slidersec2 .hindustan-times2 {
+    padding: 0px;
+}
+
+#slidersec2 .business {
+    padding: 24px;
+}
+
+#slidersec2 .business-review2 {
+    padding: 32px;
 }
 
 #slidersec2 .economic-times {
@@ -456,7 +492,7 @@
 @media (max-width: 1366px) {
 
     .banner-tagline {
-        padding-right: 25rem;
+        padding-right: 30rem;
         top: 60%;
     }
 
@@ -474,9 +510,33 @@
         font-size: 1.5rem;
     }
 
+    .herobannerdwn p {
+        font-size: 15px;
+        line-height: 20px;
+        width: 40%;
+        margin-bottom: 1rem;
+    }
+
+    .herobannerdwn {
+        padding: 6rem 3rem 2rem 3rem;
+    }
+
     .howitbegin {
         font-size: 4rem;
         line-height: 70px;
+    }
+
+    #ledbypioneersec .profile-content {
+        max-width: 405px;
+    }
+
+    #ledbypioneersec .profile-content h1 {
+        font-size: 2.74rem;
+    }
+
+    #ledbypioneersec .profile-content p {
+        line-height: 1.25rem;
+        margin-bottom: 15px;
     }
 
     #profilessec .profiles-card-image {
@@ -510,6 +570,20 @@
 
     #trustedsec .construcction {
         font-size: 20px;
+    }
+
+    #slidersec2 .business-logo {
+        padding: 4px;
+    }
+
+    #slidersec2 .business-logo2 {
+        padding: 13px;
+    }
+
+    #slidersec2 .card-title {
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 0rem;
     }
 
     #slidersec .info-section {
@@ -547,6 +621,36 @@
     #slidersec2 .card-header {
         padding: 0px;
     }
+
+    #slidersec2 .hindustan-times2 {
+        padding: 6px;
+    }
+}
+
+@media (max-width: 1320px) {
+
+    .banner-tagline {
+        padding-right: 25rem;
+    }
+
+    .banner-tagline h1 {
+        font-size: 4.5rem;
+        line-height: 5rem;
+    }
+
+    .banner-para {
+        bottom: 6%;
+        padding-right: 25rem;
+    }
+
+    .banner-para p {
+        line-height: 30px;
+        font-size: 1.25rem;
+    }
+
+    .herobannerdwn p {
+        width: 41%;
+    }
 }
 
 
@@ -560,7 +664,7 @@
 
     .banner-tagline h1 {
         font-size: 3rem;
-        line-height: 3rem;
+        line-height: 3.5rem;
     }
 
     .banner-para {
@@ -575,8 +679,12 @@
     }
 
     .herobannerdwn p {
-        font-size: 18px;
-        line-height: 25px;
+        width: 45%;
+    }
+
+    .herobannerdwn p {
+        font-size: 12px;
+        line-height: 15px;
     }
 
     .herobannerdwn {
@@ -628,6 +736,18 @@
         padding-bottom: 3rem;
     }
 
+    #slidersec2 .hindustan-times2 {
+        padding: 22px;
+    }
+
+    #slidersec2 .hindustan-times {
+        padding: 5px;
+    }
+
+    #slidersec2 .realty-logo {
+        padding: 0px;
+    }
+
     #slidersec2 .carousel-container {
         max-width: 865px;
     }
@@ -651,7 +771,7 @@
     }
 
     #primusprideranksec {
-        min-height: 80vh;
+        min-height: 45vh;
     }
 
     #trustedsec .trusted-heading {
@@ -719,370 +839,397 @@
 
     /* primussupportdivisionsec mob start */
     #backedbyvisionariesmobsec {
-        background: linear-gradient(135deg, #f5e6e8 0%, #e8d5e0 50%, #d4c5e0 100%);
-        background-image: url(../images/home/bgmain.png);
-        background-repeat: no-repeat;
-        object-fit: cover;
-        min-height: 100vh;
-        background-position: left;
-        margin: 2rem 0;
-        padding: 25px;
-    }
-
-    #backedbyvisionariesmobsec .backedbyvisionaries {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #backedbyvisionariesmobsec .backedByVisionaries {
-        font-family: var(--primary-heading-font);
-        font-weight: 700;
-        font-size: 2.5rem;
-        line-height: 32px;
-        text-align: center;
-        color: #821A52;
-        padding: 2rem 0rem 1rem 0rem;
-    }
-
-    #backedbyvisionariesmobsec .nikhilkamath-para {
-        font-family: var(--primary-para-font);
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 20px;
-        text-align: center;
-        padding: 1rem 0;
-    }
-
-    #backedbyvisionariesmobsec .nikhilkamath-para span {
-        font-family: var(--primary-para-font);
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 20px;
-        text-align: center;
-    }
-
-    #backedbyvisionariesmobsec .nikhilkamath-para2 {
-        font-family: var(--primary-para-font);
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 20px;
-        text-align: center;
-        padding-bottom: 3rem;
-    }
-
-    /* primussupportdivisionsec mob end */
-
-    /* profiles mob Section start */
-
-    #profilesmobSec .slide {
-        padding: 50px 30px;
-    }
-
-    #profilesmobSec .profile-img {
-        width: 150px;
-        height: 150px;
-        margin-left: -30rem;
-    }
-
-    #profilesmobSec .name {
-        font-family: var(--primary-para-font);
-        font-weight: 700;
-        font-size: 1.75rem;
-        line-height: 25px;
-        margin-left: -24rem;
-    }
-
-    #profilesmobSec .nameDev {
-        font-family: var(--primary-para-font);
-        font-weight: 700;
-        font-size: 1.75rem;
-        line-height: 25px;
-        margin-left: -30rem;
-        padding-bottom: 0.5rem;
-    }
-
-    #profilesmobSec .nameVibha {
-        font-family: var(--primary-para-font);
-        font-weight: 700;
-        font-size: 1.75rem;
-        line-height: 25px;
-        margin-left: -28rem;
-        padding-bottom: 0.5rem;
-    }
-
-    #profilesmobSec .slideMobName2 {
-        font-family: var(--primary-para-font);
-        font-weight: 700;
-        font-size: 1.75rem;
-        line-height: 25px;
-        margin-left: -26rem;
-        padding-bottom: 0.5rem;
-    }
-
-    #profilesmobSec .title {
-        font-family: var(--primary-para-font);
-        font-weight: 400;
-        font-size: 1.5rem;
-        line-height: 25px;
-        margin-left: -28rem;
-    }
-
-    #profilesmobSec .titleDev {
-        font-family: var(--primary-para-font);
-        font-weight: 400;
-        font-size: 1.5rem;
-        line-height: 25px;
-        margin-left: -26rem;
-        padding-bottom: 1rem;
-    }
-
-    #profilesmobSec .titleVibha {
-        font-family: var(--primary-para-font);
-        font-weight: 400;
-        font-size: 1.5rem;
-        line-height: 25px;
-        margin-left: -26rem;
-        padding-bottom: 1rem;
-    }
-
-    #profilesmobSec .slideMobTitle2 {
-        font-family: var(--primary-para-font);
-        font-weight: 400;
-        font-size: 1.25rem;
-        line-height: 25px;
-        margin-left: -25rem;
-        padding-bottom: 1rem;
-    }
-
-    #profilesmobSec .slideMobTitle3 {
-        font-family: var(--primary-para-font);
-        font-weight: 400;
-        font-size: 1.25rem;
-        line-height: 25px;
-        margin-left: -26rem;
-        padding-bottom: 1rem;
-    }
-
-    #profilesmobSec .details li {
-        font-family: var(--primary-para-font);
-        font-weight: 400;
-        font-size: 1.5rem;
-        line-height: 25px;
-        margin-left: -7rem;
-    }
-
-    #profilesmobSec .detailsDev {
-        font-family: var(--primary-para-font);
-        font-size: 1.25rem;
-        line-height: 25px;
-        margin-left: 1rem;
-    }
-
-    #profilesmobSec .detailsVibha {
-        font-family: var(--primary-para-font);
-        font-size: 1.25rem;
-        line-height: 25px;
-        margin-left: 0rem;
-        padding-right: 8rem;
-    }
-
-    #profilesmobSec .profilesmobSecdot {
-        width: 12px;
-        height: 12px;
-    }
-
-    /* profiles mob Section end */
-
-    /* primusinthenewsMob sec start */
-    #primusinthenewsMob .inthenews-txt h1 {
-        font-family: var(--primary-heading-font);
-        font-size: 32px;
-        color: #801B53;
-        text-align: center;
-        padding: 5rem 0rem 3rem 0rem;
-    }
-
-    #primusinthenewsMobSec {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        margin: 0;
-        background-color: #fff;
-        font-family: Arial, sans-serif;
-        overflow-x: hidden;
-    }
-
-    #primusinthenewsMobSec {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    #primusinthenewsMobSec .card-top-slide-image img {
-        width: 100%;
-    }
-
-    #primusinthenewsMobSec .slider-container {
-        width: 90%;
-        max-width: 768px;
-        overflow: hidden;
-        background: #fff;
-        box-shadow: none;
-        cursor: grab;
-        user-select: none;
         position: relative;
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-    }
-
-    #primusinthenewsMobSec .slider-container:active {
-        cursor: grabbing;
-    }
-
-    #primusinthenewsMobSec .slider-track {
-        display: flex;
-        height: 100%;
-        transition: transform 0.4s ease-out;
-        will-change: transform;
-    }
-
-    #primusinthenewsMobSec .slide {
-        min-width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    #primusinthenewsMobSec .card-top {
-        flex: 1.2;
-        background-color: #E6D1DC;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 5px;
-        box-sizing: border-box;
-    }
-
-    #primusinthenewsMobSec .card-bottom {
-        flex: 0.8;
-        background-color: #E6D1DC;
-        padding: 30px;
-        box-sizing: border-box;
-        text-align: left;
-        margin-bottom: 1rem;
-    }
-
-    #primusinthenewsMobSec #card-bottom {
-        margin-bottom: 2rem;
-    }
-
-    #primusinthenewsMobSec .card-bottom p {
-        color: #333;
-        font-family: var(--primary-para-font);
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 14px;
-        margin-bottom: 1rem;
-    }
-
-    .readmore {
-        font-family: var(--primary-heading-font);
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 14px;
-        text-decoration: underline;
-        color: #801B53;
-    }
-
-    /* primusinthenewsMob sec end */
-
-    #primusprideMobSec {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        margin: 0;
-        background-color: #fff;
-        font-family: Arial, sans-serif;
-        overflow-x: hidden;
-    }
-
-    #primusprideMobSec .slider-container {
-        width: 90%;
-        max-width: 768px;
-        height: 500px;
+        background: url(../images/home/bgmain.png) no-repeat center;
+        background-size: cover;
+        min-height: 70vh;
+        padding: 35px;
         overflow: hidden;
-        border-radius: 30px;
-        background: #fff;
-        box-shadow: none;
-        cursor: grab;
-        user-select: none;
-        position: relative;
     }
 
-    #primusprideMobSec .slider-container:active {
-        cursor: grabbing;
+    #backedbyvisionariesmobsec::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(255, 255, 255, 0.5);
+        z-index: 1;
     }
 
-    #primusprideMobSec .slider-track {
-        display: flex;
-        height: 100%;
-        transition: transform 0.4s ease-out;
-        will-change: transform;
+    .backedbyvisionaries-image {
+        z-index: 1;
     }
 
-    #primusprideMobSec .slide {
-        min-width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
+    .backedbyvisionaries-txt {
+        z-index: 1;
     }
-
-    #primusprideMobSec .card-top {
-        flex: 1.2;
-        background-color: #f9f9fb;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 40px;
-        box-sizing: border-box;
-    }
-
-    #primusprideMobSec .card-top img {
-        width: 14rem;
-        object-fit: contain;
-        pointer-events: none;
-    }
-
-    #primusprideMobSec .card-bottom {
-        flex: 0.8;
-        background-color: #e6dae3;
-        padding: 30px;
-        box-sizing: border-box;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-
-    #primusprideMobSec .card-bottom p {
-        color: #333;
-        font-family: var(--primary-para-font);
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 25px;
-        letter-spacing: 0%;
-
-    }
-
-    /* primusprideMobSec style end */
 }
 
+#backedbyvisionariesmobsec .backedbyvisionaries {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+#backedbyvisionariesmobsec .backedByVisionaries {
+    font-family: var(--primary-heading-font);
+    font-weight: 700;
+    font-size: 2.25rem;
+    line-height: 32px;
+    text-align: center;
+    color: #821A52;
+    padding: 2rem 0rem 1rem 0rem;
+}
+
+#backedbyvisionariesmobsec .nikhilkamath-para {
+    font-family: var(--primary-para-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+#backedbyvisionariesmobsec .nikhilkamath-para span {
+    font-family: var(--primary-para-font);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+}
+
+#backedbyvisionariesmobsec .nikhilkamath-para2 {
+    font-family: var(--primary-para-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+/* primussupportdivisionsec mob end */
+
+/* profiles mob Section start */
+
+#profilesmobSec .slide {
+    padding: 50px 30px;
+}
+
+#profilesmobSec .profile-img {
+    width: 150px;
+    height: 150px;
+    margin-left: -30rem;
+}
+
+#profilesmobSec .name {
+    font-family: var(--primary-para-font);
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 25px;
+    margin-left: -24rem;
+}
+
+#profilesmobSec .nameDev {
+    font-family: var(--primary-para-font);
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 25px;
+    margin-left: -30rem;
+    padding-bottom: 0.5rem;
+}
+
+#profilesmobSec .nameVibha {
+    font-family: var(--primary-para-font);
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 25px;
+    margin-left: -28rem;
+    padding-bottom: 0.5rem;
+}
+
+#profilesmobSec .slideMobName2 {
+    font-family: var(--primary-para-font);
+    font-weight: 700;
+    font-size: 1.75rem;
+    line-height: 25px;
+    margin-left: -26rem;
+    padding-bottom: 0.5rem;
+}
+
+#profilesmobSec .title {
+    font-family: var(--primary-para-font);
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 25px;
+    margin-left: -28rem;
+}
+
+#profilesmobSec .titleDev {
+    font-family: var(--primary-para-font);
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 25px;
+    margin-left: -26rem;
+    padding-bottom: 1rem;
+}
+
+#profilesmobSec .titleVibha {
+    font-family: var(--primary-para-font);
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 25px;
+    margin-left: -26rem;
+    padding-bottom: 1rem;
+}
+
+#profilesmobSec .slideMobTitle2 {
+    font-family: var(--primary-para-font);
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 25px;
+    margin-left: -25rem;
+    padding-bottom: 1rem;
+}
+
+#profilesmobSec .slideMobTitle3 {
+    font-family: var(--primary-para-font);
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 25px;
+    margin-left: -26rem;
+    padding-bottom: 1rem;
+}
+
+#profilesmobSec .details li {
+    font-family: var(--primary-para-font);
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 25px;
+    margin-left: -7rem;
+}
+
+#profilesmobSec .detailsDev {
+    font-family: var(--primary-para-font);
+    font-size: 1.25rem;
+    line-height: 25px;
+    margin-left: 1rem;
+}
+
+#profilesmobSec .detailsVibha {
+    font-family: var(--primary-para-font);
+    font-size: 1.25rem;
+    line-height: 25px;
+    margin-left: 0rem;
+    padding-right: 8rem;
+}
+
+#profilesmobSec .profilesmobSecdot {
+    width: 12px;
+    height: 12px;
+}
+
+/* profiles mob Section end */
+
+/* primusinthenewsMob sec start */
+#primusinthenewsMob .inthenews-txt h1 {
+    font-family: var(--primary-heading-font);
+    font-size: 2rem;
+    color: #801B53;
+    text-align: center;
+    padding: 5rem 0rem 3rem 0rem;
+}
+
+#primusinthenewsMobSec {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+#primusinthenewsMobSec .card-top-slide-image img {
+    width: 100%;
+}
+
+#primusinthenewsMobSec .slider-container {
+    width: 90%;
+    max-width: 768px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: none;
+    cursor: grab;
+    user-select: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+#primusinthenewsMobSec .slider-container:active {
+    cursor: grabbing;
+}
+
+#primusinthenewsMobSec .slider-track {
+    display: flex;
+    height: 100%;
+    transition: transform 0.4s ease-out;
+    will-change: transform;
+}
+
+#primusinthenewsMobSec .slide {
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#primusinthenewsMobSec .card-top {
+    flex: 1.2;
+    background-color: #E6D1DC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+#primusinthenewsMobSec .card-top img {
+    min-height: 106px;
+}
+
+#primusinthenewsMobSec .hindustan img {
+    padding: 1rem;
+}
+
+#primusinthenewsMobSec .economic img {
+    min-height: 94px;
+    padding: 2.40rem;
+}
+
+#primusinthenewsMobSec .card-bottom {
+    flex: 0.8;
+    background-color: #E6D1DC;
+    padding: 30px;
+    box-sizing: border-box;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+#primusinthenewsMobSec .hindustan-bottom {
+    min-height: 110px;
+}
+
+#primusinthenewsMobSec .common-card-bottom {
+    min-height: 122px;
+}
+
+#primusinthenewsMobSec #card-bottom {
+    margin-bottom: 2rem;
+}
+
+#primusinthenewsMobSec .card-bottom p {
+    color: #333;
+    font-family: var(--primary-para-font);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 1rem;
+}
+
+.readmore {
+    font-family: var(--primary-heading-font);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    text-decoration: underline;
+    color: #801B53;
+}
+
+/* primusinthenewsMob sec end */
+
+#primusprideMobSec {
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    margin: 0;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+#primusprideMobSec .slider-container {
+    width: 90%;
+    max-width: 768px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 30px;
+    background: #fff;
+    box-shadow: none;
+    cursor: grab;
+    user-select: none;
+    position: relative;
+    margin: 0 auto;
+}
+
+#primusprideMobSec .slider-container:active {
+    cursor: grabbing;
+}
+
+#primusprideMobSec .slider-track {
+    display: flex;
+    height: 100%;
+    transition: transform 0.4s ease-out;
+    will-change: transform;
+}
+
+#primusprideMobSec .slide {
+    min-width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+#primusprideMobSec .card-top {
+    flex: 1.2;
+    background-color: #f9f9fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+#primusprideMobSec .card-top img {
+    width: 14rem;
+    object-fit: contain;
+    pointer-events: none;
+}
+
+#primusprideMobSec .card-bottom {
+    flex: 0.8;
+    background-color: #e6dae3;
+    padding: 30px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#primusprideMobSec .card-bottom p {
+    color: #333;
+    font-family: var(--primary-para-font);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0%;
+
+}
+
+/* primusprideMobSec style end */
 
 /* 480px */
 @media (max-width: 480px) {
@@ -1119,8 +1266,13 @@
     }
 
     .herobannerdwn {
-        padding: 4rem 3rem 3rem 3rem;
+        padding: 4rem 2rem 2rem 2rem;
         margin: -40px 15px;
+    }
+
+    .howitbegin {
+        line-height: 25px;
+        font-size: 2rem;
     }
 
     #ledbypioneersec .profile-content h1 {
@@ -1144,77 +1296,77 @@
         width: 130px;
         height: 130px;
         margin-bottom: 20px;
-        margin-left: -16rem;
+        margin-left: -12rem;
     }
 
     #profilesmobSec .name {
         font-size: 22px;
         margin-bottom: 8px;
-        margin-left: -12rem;
+        margin-left: -7rem;
     }
 
     #profilesmobSec .slideMobName2 {
         font-size: 1.5rem;
         line-height: 25px;
-        margin-left: -14rem;
+        margin-left: -9rem;
     }
 
     #profilesmobSec .nameDev {
         font-size: 1.5rem;
-        margin-left: -16rem;
+        margin-left: -12rem;
     }
 
     #profilesmobSec .nameVibha {
         font-size: 1.5rem;
         line-height: 25px;
-        margin-left: -14rem;
+        margin-left: -10rem;
     }
 
     #profilesmobSec .title {
         font-size: 15px;
         margin-bottom: 10px;
-        margin-left: -17rem;
+        margin-left: -12rem;
     }
 
     #profilesmobSec .slideMobTitle2 {
         font-size: 1.25rem;
         line-height: 25px;
-        margin-left: -11rem;
+        margin-left: -6rem;
     }
 
     #profilesmobSec .titleDev {
         font-size: 1.25rem;
-        margin-left: -13rem;
+        margin-left: -8rem;
     }
 
     #profilesmobSec .titleVibha {
         font-size: 1.25rem;
         line-height: 25px;
-        margin-left: -13rem;
+        margin-left: -9rem;
     }
 
     #profilesmobSec .slideMobTitle3 {
         font-size: 1.25rem;
         line-height: 25px;
-        margin-left: -11rem;
+        margin-left: -6rem;
     }
 
     #profilesmobSec .details li {
         font-size: 13px;
         margin-bottom: 10px;
-        margin-left: -6rem;
+        margin-left: -1rem;
     }
 
     #profilesmobSec .detailsDev {
         font-size: 1rem;
-        margin-left: 0.5rem;
-        padding-right: 4rem;
+        margin-left: 1rem;
+        padding-right: 1rem;
     }
 
     #profilesmobSec .detailsVibha {
         font-size: 1rem;
-        padding-right: 5rem;
-        margin-left: 0.5rem;
+        padding-right: 0rem;
+        margin-left: 0rem;
     }
 
     #profilesmobSec .profilesmobSecdots {
@@ -1228,14 +1380,15 @@
     }
 
     #trustedsec .trusted-heading {
-        font-size: 2rem;
-        line-height: 3rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
         padding-bottom: 0rem;
     }
 
     #trustedsec .construcction {
-        font-size: 12px;
+        font-size: 10px;
         line-height: 22px;
+        padding-bottom: 0rem;
     }
 
     #primusprideMobSec {
@@ -1313,33 +1466,26 @@
         pointer-events: none;
     }
 
-    #primusinthenewsMobSec .card-top {
-        padding: 0px;
-        min-height: 100px;
+    #primusinthenewsMobSec .card-bottom {
+        min-height: 136px;
     }
 
-    #primusinthenewsMobSec .card-bottom {
-        min-height: 120px;
+    #primusinthenewsMobSec .IST-top img {
+        padding: 1.55rem;
+        min-height: 0px;
+    }
+
+    #primusinthenewsMobSec .construction-top img {
+        padding: 1.68rem;
+        min-height: 0px;
     }
 
     #primusinthenewsMobSec .hindustan-bottom {
-        flex: 0.8;
-        background-color: #E6D1DC;
-        padding: 30px;
-        box-sizing: border-box;
-        text-align: left;
-        margin-bottom: 1rem;
-        min-height: 12px;
+        min-height: 123px;
     }
 
     #primusinthenewsMobSec .economic-bottom {
-        flex: 0.8;
-        background-color: #E6D1DC;
-        padding: 30px;
-        box-sizing: border-box;
-        text-align: left;
-        margin-bottom: 1rem;
-        min-height: 124px;
+        min-height: 122px;
     }
 
 }
@@ -1424,7 +1570,7 @@
     #profilesmobSec .name {
         font-size: 22px;
         margin-bottom: 8px;
-        margin-left: -6rem;
+        margin-left: -4rem;
     }
 
     #profilesmobSec .nameDev {
