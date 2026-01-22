@@ -451,6 +451,10 @@
     #builtontrustbackedbyproofsec .left-side img {
         max-width: 88%;
     }
+
+    #primussupportdivisionsec .name {
+        padding-right: 17rem;
+    }
 }
 
 /* 768px */

@@ -2157,6 +2157,7 @@ body.pm-nav-open {
     color: #1a1a1a;
     margin-bottom: 16px;
     font-family: var(--primary-heading-font);
+    padding-right: 21rem;
 }
 
 #primussupportdivisionsec .description {
