@@ -206,16 +206,23 @@
     #builtontrustbackedbyproofsec .stat-label {
         font-size: 1rem;
     }
+
+    #primussupportdivisionsec .card {
+        max-width: 29rem;
+    }
+
+    #primussupportdivisionsec .name {
+        padding-right: 18rem;
+    }
+
+    #primussupportdivisionsec .company-logo-gruhas {
+        padding-right: 17rem;
+    }
 }
 
 @media (max-width: 1320px) {
-    #primussupportdivisionsec .card {
-        /* width: 18rem; */
-        padding: 34px 14px;
-    }
-
     #primussupportdivisionsec .company-logo img {
-        width: 10rem;
+        width: 13rem;
     }
 
     #navbarsec .enquiry-btn {
@@ -445,15 +452,23 @@
     }
 
     #primussupportdivisionsec .card {
-        /* width: 22rem; */
+        width: 30rem;
     }
 
     #builtontrustbackedbyproofsec .left-side img {
         max-width: 88%;
     }
 
+    #primussupportdivisionsec .company-logo-gruhas {
+        padding-right: 20rem;
+    }
+
+    #primussupportdivisionsec .company-logo-gruhas img {
+        width: 7rem;
+    }
+
     #primussupportdivisionsec .name {
-        padding-right: 17rem;
+        padding-right: 14rem;
     }
 }
 

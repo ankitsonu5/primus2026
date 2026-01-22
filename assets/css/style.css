@@ -2170,13 +2170,17 @@ body.pm-nav-open {
 }
 
 #primussupportdivisionsec .company-logo {
-    margin-top: auto;
-    display: flex;
+    /* margin-top: auto;
+    display: flex; */
     align-items: center;
     gap: 8px;
     font-weight: 600;
     font-size: 16px;
     color: #1a1a1a;
+}
+
+#primussupportdivisionsec .company-logo-gruhas {
+    padding-right: 23rem;
 }
 
 #primussupportdivisionsec .company-logo .logo-icon {
