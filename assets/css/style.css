@@ -1191,7 +1191,7 @@ body.pm-nav-open {
 }
 
 #primuswayofMobSec .content {
-    padding: 10px 30px 45px 30px;
+    padding: 32px 30px 45px 30px;
 }
 
 #primuswayofMobSec .content h2 {
@@ -1959,9 +1959,7 @@ body.pm-nav-open {
     transform: scale(1.3);
 }
 
-#exploreourcommunitiessec .dot:hover {
-    background: rgba(107, 31, 84, 0.6);
-}
+
 
 /* exploreourcommunitiessec style end */
 
@@ -2100,8 +2098,9 @@ body.pm-nav-open {
 
 #primussupportdivisionsec .cards-wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 24px;
+    justify-items: center;
 }
 
 #primussupportdivisionsec .card {
@@ -2114,7 +2113,17 @@ body.pm-nav-open {
     text-align: center;
     min-height: 400px;
     position: relative;
+    max-width: 36rem;
 }
+
+#primussupportdivisionsec .cards-wrapper:nth-child(1) {
+    place-self: center;
+}
+
+#primussupportdivisionsec .cards-wrapper:nth-child(2) {
+    place-self: start;
+}
+
 
 #primussupportdivisionsec .profile-image {
     width: 240px;
