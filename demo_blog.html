@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senior Living Community</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            display: flex;
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+        }
+
+        .sidebar {
+            width: 280px;
+            background-color: #f4e4e4;
+            padding: 30px 20px;
+            min-height: 100vh;
+        }
+
+        .search-box {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 10px 35px 10px 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .search-box::after {
+            content: "🔍";
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .sidebar-section {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .sidebar h3 {
+            font-size: 16px;
+            margin-bottom: 15px;
+            color: #333;
+            font-weight: 600;
+        }
+
+        .sidebar ul {
+            list-style: none;
+        }
+
+        .sidebar li {
+            padding: 8px 0;
+            font-size: 14px;
+            color: #555;
+            cursor: pointer;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 40px;
+        }
+
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .article-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+        }
+
+        .article-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .article-content {
+            padding: 20px;
+        }
+
+        .article-meta {
+            font-size: 12px;
+            color: #888;
+            margin-bottom: 10px;
+        }
+
+        .article-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 12px;
+            line-height: 1.4;
+        }
+
+        .article-excerpt {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            margin-top: 40px;
+        }
+
+        .pagination button {
+            padding: 8px 12px;
+            border: 1px solid #ddd;
+            background: white;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        .pagination button.active {
+            background: #c67b7b;
+            color: white;
+            border-color: #c67b7b;
+        }
+
+        @media (max-width: 1024px) {
+            .sidebar {
+                width: 240px;
+            }
+
+            .main-content {
+                padding: 30px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                min-height: auto;
+                padding: 15px;
+            }
+
+            .sidebar-section {
+                display: none;
+            }
+
+            .search-box {
+                margin-bottom: 0;
+            }
+
+            .main-content {
+                padding: 20px 15px;
+            }
+
+            .articles-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .article-image {
+                height: 180px;
+            }
+
+            .article-content {
+                padding: 15px;
+            }
+
+            .article-title {
+                font-size: 16px;
+            }
+
+            .article-excerpt {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="search-box">
+                <input type="text" placeholder="Search...">
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Categories</h3>
+                <ul>
+                    <li>Assisted Living</li>
+                    <li>Health Advice</li>
+                    <li>Independent Living</li>
+                    <li>Lifestyle and Entertainment</li>
+                    <li>Memory Care</li>
+                    <li>Senior Living Communities</li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Tags</h3>
+                <ul>
+                    <li>Continuing Care Retirement Community</li>
+                    <li>Continuing Care Retirement Community</li>
+                    <li>50 Tips for a Thriving Independent Living</li>
+                    <li>70 Nutritious Recipes for Older Adults</li>
+                    <li>Understanding Assisted Living</li>
+                    <li>Memory Care Explained</li>
+                    <li>Exploring the Senior Housing Options</li>
+                </ul>
+
+                <h3 style="margin-top: 25px;">Popular Posts</h3>
+                <ul>
+                    <li>50 Tips for Active Independent Living</li>
+                    <li>Understanding Assisted Living</li>
+                    <li>How to Choose the Perfect Retirement Community</li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="articles-grid" id="articlesGrid">
+                <!-- Articles will be inserted here by JavaScript -->
+            </div>
+
+            <div class="pagination">
+                <button>&lt;&lt;</button>
+                <button class="active">1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button>7</button>
+                <button>&gt;&gt;</button>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        const articles = [
+            {
+                image: "https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=500&h=300&fit=crop",
+                category: "Assisted Living",
+                date: "January 15, 2026",
+                title: "Parent-Adult Family Care: Balancing Responsibilities in an Indian Family Home",
+                excerpt: "Explore the dynamics of multigenerational living in Indian families and learn strategies for maintaining harmony while providing care..."
+            },
+            {
+                image: "https://images.unsplash.com/photo-1581579438747-1dc8d17bbce4?w=500&h=300&fit=crop",
+                category: "Senior Living",
+                date: "January 14, 2026",
+                title: "100 Lifestyle Ideas With Arts And Crafts In An Independent Senior Living Home",
+                excerpt: "Discover creative activities and hobbies that enhance the quality of life for seniors in independent living communities..."
+            },
+            {
+                image: "https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?w=500&h=300&fit=crop",
+                category: "Senior Living",
+                date: "January 13, 2026",
+                title: "Multigenerational Living: Why Indian Families Choose of Urban Housing",
+                excerpt: "Understanding the cultural significance and practical benefits of multigenerational living arrangements in modern Indian society..."
+            },
+            {
+                image: "https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?w=500&h=300&fit=crop",
+                category: "Health & Wellness",
+                date: "January 12, 2026",
+                title: "Investing In Senior Housing: Tapping Into Opportunities In India's Growing Market",
+                excerpt: "Explore the expanding senior housing market in India and learn about investment opportunities in this growing sector..."
+            },
+            {
+                image: "https://images.unsplash.com/photo-1609220136736-443140cffec6?w=500&h=300&fit=crop",
+                category: "Lifestyle",
+                date: "January 11, 2026",
+                title: "A Day In The Life At Primus Senior Living: Inside The Premier Senior Lifestyle",
+                excerpt: "Take a behind-the-scenes look at daily life in a premier senior living community and discover the amenities available..."
+            },
+            {
+                image: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=500&h=300&fit=crop",
+                category: "Independent Living",
+                date: "January 10, 2026",
+                title: "Senior Living Guides: Simplifying the Transition to Senior Living",
+                excerpt: "Comprehensive guides to help families navigate the transition to senior living with confidence and peace of mind..."
+            },
+            {
+                image: "https://images.unsplash.com/photo-1516534775068-ba3e7458af70?w=500&h=300&fit=crop",
+                category: "Activities",
+                date: "January 9, 2026",
+                title: "What Lifestyle Ideas At Your Senior Home: A Guide to Active Living",
+                excerpt: "From yoga classes to cultural events, discover the diverse activities that keep senior residents engaged and active..."
+            },
+            {
+                image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=500&h=300&fit=crop",
+                category: "Healthcare",
+                date: "January 8, 2026",
+                title: "Assisted Medical Procedures: Ensuring Care Within Senior Living Communities",
+                excerpt: "Learn about the healthcare services and medical support available in modern senior living facilities..."
+            },
+            {
+                image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=500&h=300&fit=crop",
+                category: "Outdoor Activities",
+                date: "January 7, 2026",
+                title: "Senior Outdoor Wellness At Primus: How Serene Living Enhances Health",
+                excerpt: "Discover how outdoor spaces and nature-focused activities contribute to the wellbeing of senior residents..."
+            },
+            {
+                image: "https://images.unsplash.com/photo-1581579186913-45ac3e6efe93?w=500&h=300&fit=crop",
+                category: "Lifestyle",
+                date: "January 6, 2026",
+                title: "Health Space + Life Spaces: How Residents Find Purpose The Complete Senior Living Experience",
+                excerpt: "Exploring the connection between physical spaces and quality of life in senior living communities..."
+            },
+            {
+                image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=500&h=300&fit=crop",
+                category: "Culture",
+                date: "January 5, 2026",
+                title: "Care With Grace: Tailoring Solutions for Indian Seniors",
+                excerpt: "Understanding culturally-appropriate care approaches that respect Indian traditions and values..."
+            },
+            {
+                image: "https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?w=500&h=300&fit=crop",
+                category: "Celebrations",
+                date: "January 4, 2026",
+                title: "Diwali Supercalifragilistic: Let BK Living Vision Celebrate",
+                excerpt: "Experience the joy of traditional festivals celebrated with enthusiasm in senior living communities..."
+            }
+        ];
+
+        function renderArticles() {
+            const grid = document.getElementById('articlesGrid');
+            grid.innerHTML = articles.map(article => `
+                <div class="article-card">
+                    <img src="${article.image}" alt="${article.title}" class="article-image">
+                    <div class="article-content">
+                        <div class="article-meta">${article.category} • ${article.date}</div>
+                        <h2 class="article-title">${article.title}</h2>
+                        <p class="article-excerpt">${article.excerpt}</p>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        renderArticles();
+    </script>
+</body>
+
+</html>
