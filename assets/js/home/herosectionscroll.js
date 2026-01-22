@@ -5,9 +5,16 @@ const newText = document.getElementById('newText');
 const leftPanel = document.getElementById('leftPanel');
 const rightPanel = document.getElementById('rightPanel');
 const track = document.querySelector('.scroll-track');
+const scrollIndicator = document.querySelector('.scroll-indicator');
+
+/* ===== ARROW CONFIG ===== */
+const ARROW_HIDE_AFTER = 3000; // px scroll ke baad hide
+let arrowHidden = false;
 
 window.addEventListener('scroll', () => {
-    const rect = document.getElementById('hero-section-scroll').getBoundingClientRect();
+
+    const section = document.getElementById('hero-section-scroll');
+    const rect = section.getBoundingClientRect();
     const scrollPos = -rect.top;
     const windowHeight = window.innerHeight;
     const totalScroll = track.offsetHeight - windowHeight;
@@ -15,14 +22,29 @@ window.addEventListener('scroll', () => {
 
     const isDesktop = window.innerWidth > 768;
 
+    /* ===== ARROW HIDE / SHOW (NEW LOGIC) ===== */
+    if (window.scrollY > ARROW_HIDE_AFTER && !arrowHidden) {
+        scrollIndicator.style.opacity = '0';
+        scrollIndicator.style.pointerEvents = 'none';
+        arrowHidden = true;
+    }
+
+    if (window.scrollY <= ARROW_HIDE_AFTER && arrowHidden) {
+        scrollIndicator.style.opacity = '0.85';
+        scrollIndicator.style.pointerEvents = 'auto';
+        arrowHidden = false;
+    }
+
+    /* ===== DESKTOP ANIMATION ===== */
     if (isDesktop) {
-        // Desktop: Video shrinks, panels slide up from bottom
+
         let videoProgress = Math.min(scrollFraction / 0.4, 1);
         videoBox.style.width = (100 - (videoProgress * 50)) + '%';
         mainContainer.style.gap = (videoProgress * 20) + 'px';
 
         if (videoProgress >= 1) {
             let sideProgress = Math.min((scrollFraction - 0.4) / 0.5, 1);
+
             leftPanel.style.width = '25%';
             rightPanel.style.width = '25%';
             leftPanel.style.opacity = '1';
@@ -31,18 +53,20 @@ window.addEventListener('scroll', () => {
             let ty = 100 - (sideProgress * 100);
             leftPanel.style.transform = `translateY(${ty}vh)`;
             rightPanel.style.transform = `translateY(${ty}vh)`;
+
         } else {
             leftPanel.style.width = '0%';
             rightPanel.style.width = '0%';
             leftPanel.style.opacity = '0';
-            leftPanel.style.transform = `translateY(100vh)`;
-            rightPanel.style.transform = `translateY(100vh)`;
+            rightPanel.style.opacity = '0';
+            leftPanel.style.transform = 'translateY(100vh)';
+            rightPanel.style.transform = 'translateY(100vh)';
         }
+
     } else {
-        // Mobile: Sequential Card Animation
+        /* ===== MOBILE ANIMATION (UNCHANGED) ===== */
         videoBox.style.width = '100%';
 
-        // Left Panel Slide (25% to 60%)
         let leftProgress = Math.max(0, Math.min((scrollFraction - 0.25) / 0.35, 1));
         if (leftProgress > 0) {
             leftPanel.style.opacity = '1';
@@ -50,10 +74,9 @@ window.addEventListener('scroll', () => {
             leftPanel.style.transform = `translate(-50%, calc(-50% + ${transY}vh))`;
         } else {
             leftPanel.style.opacity = '0';
-            leftPanel.style.transform = `translate(-50%, 100vh)`;
+            leftPanel.style.transform = 'translate(-50%, 100vh)';
         }
 
-        // Right Panel Slide (60% to 95%)
         let rightProgress = Math.max(0, Math.min((scrollFraction - 0.6) / 0.35, 1));
         if (rightProgress > 0) {
             rightPanel.style.opacity = '1';
@@ -61,11 +84,11 @@ window.addEventListener('scroll', () => {
             rightPanel.style.transform = `translate(-50%, calc(-50% + ${transY}vh))`;
         } else {
             rightPanel.style.opacity = '0';
-            rightPanel.style.transform = `translate(-50%, 100vh)`;
+            rightPanel.style.transform = 'translate(-50%, 100vh)';
         }
     }
 
-    // Common Text Fade
+    /* ===== TEXT FADE (UNCHANGED) ===== */
     if (scrollFraction > 0.18) {
         oldText.style.opacity = '0';
         newText.style.opacity = '1';
