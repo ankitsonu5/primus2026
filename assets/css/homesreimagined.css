@@ -22,7 +22,7 @@ html {
     overflow: hidden;
     position: relative;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
-        url('../images/homesreimagined/banner-bg.png') center/cover;
+        url('../images/homesreimagined/homereimaginedbanner.png') center/cover;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
@@ -124,6 +124,10 @@ html {
     line-height: 25px;
     max-width: 435px;
     width: 100%;
+}
+
+#activelivingofyourlifesec .header h1 {
+    padding: 0 26rem;
 }
 
 /* Responsive Design */
