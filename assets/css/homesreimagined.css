@@ -43,14 +43,15 @@ html {
     font-weight: 700;
     font-size: 86.05px;
     line-height: 96.81px;
+    max-width: 40rem;
+    width: 100%;
 }
 
 #heroreimaginesec .banner-content p {
-    opacity: 0.95;
-    font-family: var(--primary-para-font);
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 25px;
+    font-family: var(--primary-heading-font);
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 96.81px;
 }
 
 /* The living well hub section start */
@@ -116,6 +117,10 @@ html {
 #thelivinghub .center-content h1 {
     margin-bottom: 30px;
     line-height: 90px;
+    font-family: var(--primary-heading-font);
+    font-weight: 700;
+    color: #801B53;
+    font-size: 5rem;
 }
 
 #thelivinghub .center-content p {
@@ -124,10 +129,35 @@ html {
     line-height: 25px;
     max-width: 435px;
     width: 100%;
+    font-family: var(--primary-para-font);
+    font-weight: 400;
+    color: #000000;
 }
 
 #activelivingofyourlifesec .header h1 {
     padding: 0 26rem;
+    font-family: var(--primary-heading-font);
+    font-weight: 700;
+    color: #801B53;
+    font-size: 5rem;
+    line-height: 90px;
+    margin-bottom: 1rem;
+}
+
+#activelivingofyourlifesec .header p {
+    font-family: var(--primary-para-font);
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 25px;
+}
+
+#smarthome .smarthometxt h1 {
+    font-family: var(--primary-heading-font);
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 90px;
+    text-align: center;
+    color: #801B53;
 }
 
 /* Responsive Design */
@@ -226,7 +256,7 @@ html {
 }
 
 #smarthome .voice-card {
-    font-family: Montserrat;
+    font-family: var(--primary-para-font);
     font-weight: 700;
     font-size: 28px;
     line-height: 40px;
@@ -246,20 +276,12 @@ html {
     padding-bottom: 2rem;
 }
 
-/* Smart Home & Smart Living section end */
-
-/* Designed for safety section start */
-
-/* Designed for safety section end */
-
 /* activelivingofyourlifesec style start */
 #activelivingofyourlifesec .activelivingpara {
     font-family: var(--primary-heading-font);
     font-weight: 600;
-    font-style: Semibold;
     font-size: 25px;
     line-height: 25px;
-    letter-spacing: 0%;
 }
 
 /* activelivingofyourlifesec style end */
@@ -270,8 +292,13 @@ html {
     padding-bottom: 10rem;
 }
 
-#kitchenwork .kitchenworktxt {
+#kitchenwork .kitchenworktxt h1 {
+    font-family: var(--primary-heading-font);
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 90px;
     text-align: center;
+    color: #801B53;
 }
 
 #kitchenwork .kitchenwork-cards {
@@ -297,17 +324,22 @@ html {
     padding-bottom: 1rem;
 }
 
-#kitchenwork .ergonomic-card-txt {
+#kitchenwork .ergonomic-card-txt h1 {
+    font-family: var(--primary-heading-font);
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 40px;
     text-align: center;
 }
 
-#kitchenwork .ergonomic-card-para {
+#kitchenwork .ergonomic-card-txt p {
     font-size: 20px;
     line-height: 25px;
     max-width: 330px;
     width: 100%;
     padding-left: 12%;
     padding-bottom: 2rem;
+    text-align: center;
 }
 
 /*Kitchens work section end */
@@ -334,20 +366,20 @@ html {
 }
 
 #bathroomsthatthinkheadsec .header h1 {
-    padding: 0;
-}
-
-#bathroomsthatthinkheadsec .activelivingpara {
     font-family: var(--primary-heading-font);
-    font-weight: 600;
-    font-style: Semibold;
-    font-size: 25px;
-    line-height: 25px;
-    letter-spacing: 0%;
+    color: #801B53;
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 90px;
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 #bathroomsthatthinkheadsec .header p {
-    padding: 0;
+    font-family: var(--primary-heading-font);
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 25px;
 }
 
 #bathroomsthatthinkheadsec .carousel-wrapper {
@@ -413,7 +445,7 @@ html {
     margin-bottom: 30px;
 }
 
-.content-section h2 {
+#bathroomsthatthinkheadsec .content-section h2 {
     font-size: 32px;
     font-weight: 700;
 }
@@ -450,7 +482,12 @@ html {
     padding-bottom: 10rem;
 }
 
-#morethanhome .morethanhometxt {
+#morethanhome .morethanhometxt h1 {
+    font-family: var(--primary-heading-font);
+    color: #801B53;
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 90px;
     text-align: center;
 }
 
@@ -469,15 +506,12 @@ html {
     border-radius: 20px;
 }
 
-#morethanhome .hobby-card {
-    font-family: Montserrat;
+#morethanhome .hobby-card-txt h1 {
+    font-family: var(--primary-heading-font);
     font-weight: 700;
     font-size: 28px;
     line-height: 40px;
     padding-bottom: 1rem;
-}
-
-#morethanhome .hobby-card-txt {
     text-align: center;
 }
 
@@ -513,7 +547,12 @@ html {
 }
 
 #typicalamenitiessec .header h1 {
-    padding: 0;
+    font-family: var(--primary-heading-font);
+    font-weight: 700;
+    font-size: 5rem;
+    line-height: 90px;
+    text-align: center;
+    color: #801B53;
 }
 
 #typicalamenitiessec .activelivingpara {
@@ -626,8 +665,14 @@ html {
 @media (max-width: 1366px) {
 
     #heroreimaginesec .banner-content h1 {
-        font-size: 3rem;
-        line-height: 3rem;
+        font-size: 4rem;
+        line-height: 5rem;
+        max-width: 29.5rem;
+    }
+
+    #heroreimaginesec .banner-content p {
+        font-size: 1.5rem;
+        line-height: 2rem;
     }
 
     #heroreimaginesec .banner-content {
@@ -643,6 +688,8 @@ html {
     #thelivinghub .center-content p {
         max-width: 330px;
         width: 100%;
+        font-size: 17px;
+        line-height: 22px;
     }
 
     #thelivinghub .right-image.visible {
@@ -654,13 +701,354 @@ html {
     }
 
     #thelivinghub .center-content h1 {
-        font-size: 1.8rem;
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+    #smarthome .smarthometxt h1 {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+
+    #smarthome .smarthome-cards {
+        flex-wrap: nowrap;
+        gap: 1rem;
+    }
+
+    #smarthome .voice-card-image img {
+        width: 100%;
+    }
+
+    #smarthome .voice-card {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    #smarthome .voice-card-para {
+        font-size: 18px;
+        line-height: 20px;
+        max-width: 300px;
+        padding-left: 6%;
+        padding-bottom: 2rem;
+    }
+
+    #activelivingofyourlifesec .header h1 {
+        padding: 0 16rem;
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+
+    #activelivingofyourlifesec .header p {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    #kitchenwork .kitchenworktxt h1 {
+        font-size: 4rem;
+        text-align: center;
+    }
+
+    #kitchenwork .kitchenwork-cards {
+        flex-wrap: nowrap;
+        gap: 1rem;
+    }
+
+    .ergonomic-card-image img {
+        width: 100%;
+    }
+
+    #kitchenwork .ergonomic-card-txt h1 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    #kitchenwork .ergonomic-card-txt p {
+        font-size: 18px;
+        line-height: 25px;
+        padding-left: 2%;
+    }
+
+    #bathroomsthatthinkheadsec .header h1 {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+
+    #bathroomsthatthinkheadsec .header p {
+        font-size: 22px;
+        line-height: 25px;
+    }
+
+    #morethanhome .morethanhometxt h1 {
+        font-size: 4rem;
+        line-height: 5rem;
+    }
+
+    #morethanhome .morethanhome-cards {
+        flex-wrap: nowrap;
+        gap: 1rem;
+    }
+
+    #morethanhome .hobby-card-image img {
+        width: 100%;
+    }
+
+    #morethanhome .hobby-card-txt h1 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    #morethanhome .hobby-card-para {
+        font-size: 18px;
+        line-height: 25px;
+        padding-left: 9%;
+    }
+
+    #typicalamenitiessec .header h1 {
+        font-size: 4rem;
+        line-height: 5rem;
     }
 
 }
 
+/* 1320px */
+@media (max-width: 1320px) {
+    #smarthome .smarthometxt h1 {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+    #smarthome .voice-card {
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        padding-bottom: .5rem;
+    }
+
+    #smarthome .voice-card-para {
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+    #activelivingofyourlifesec .header h1 {
+        padding: 0 20rem;
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+
+    #activelivingofyourlifesec .header p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    #activelivingofyourlifesec .dot {
+        width: 15px;
+        height: 15px;
+    }
+
+    #activelivingofyourlifesec .content-section h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    #activelivingofyourlifesec .content-section p {
+        font-size: 22px;
+        line-height: 25px;
+    }
+
+    #kitchenwork .kitchenworktxt h1 {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+    #kitchenwork .ergonomic-card-txt h1 {
+        font-size: 18px;
+        line-height: 35px;
+    }
+
+    #kitchenwork .ergonomic-card-txt p {
+        font-size: 16px;
+        line-height: 22px;
+        padding-left: 2%;
+    }
+
+    #bathroomsthatthinkheadsec .header h1 {
+        font-size: 3rem;
+        line-height: 4rem;
+        margin-bottom: .5rem;
+    }
+
+    #bathroomsthatthinkheadsec .header p {
+        font-size: 22px;
+        line-height: 25px;
+    }
+
+    #bathroomsthatthinkheadsec .content-section h2 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    #morethanhome .morethanhometxt h1 {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+    #morethanhome .hobby-card-txt h1 {
+        font-size: 20px;
+        line-height: 35px;
+    }
+
+    #morethanhome .hobby-card-para {
+        font-size: 15px;
+        line-height: 22px;
+        padding-left: 5%;
+    }
+
+    #typicalamenitiessec .header h1 {
+        font-size: 3rem;
+        line-height: 4rem;
+    }
+
+    #typicalamenitiessec .content-section h2 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+}
+
 /* 1024px */
-@media (max-width: 1024px) {}
+@media (max-width: 1024px) {
+
+    #heroreimaginesec .banner-container {
+        height: 499px;
+    }
+
+    #heroreimaginesec .banner-content h1 {
+        font-size: 3.5rem;
+        line-height: 4rem;
+        max-width: 26rem;
+    }
+
+    #heroreimaginesec .banner-content p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #thelivinghub {
+        padding-top: 10rem;
+    }
+
+    #thelivinghub .center-content {
+        max-width: 265px;
+    }
+
+    #thelivinghub .center-content h1 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    #thelivinghub .center-content p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    #smarthome {
+        margin-top: 13rem;
+    }
+
+    #smarthome .voice-card {
+        font-size: 1rem;
+        line-height: 1.75rem;
+        padding-bottom: .5rem;
+    }
+
+    #smarthome .voice-card-para {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    #activelivingofyourlifesec .header h1 {
+        padding: 0 15rem;
+        font-size: 2.5rem;
+        line-height: 3rem;
+        margin-bottom: .8rem;
+    }
+
+    #activelivingofyourlifesec .header p {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    #activelivingofyourlifesec .content-section h2 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    #activelivingofyourlifesec .content-section p {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    #activelivingofyourlifesec .dot {
+        width: 12px;
+        height: 12px;
+    }
+
+    #kitchenwork {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    #kitchenwork .kitchenworktxt h1 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    #kitchenwork .ergonomic-card-txt h1 {
+        font-size: 15px;
+        line-height: 30px;
+    }
+
+    #bathroomsthatthinkheadsec .header h1 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+        margin-bottom: .5rem;
+    }
+
+    #bathroomsthatthinkheadsec .header p {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    #bathroomsthatthinkheadsec .content-section h2 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    #morethanhome {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+
+    #morethanhome .morethanhometxt h1 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    #morethanhome .hobby-card-txt h1 {
+        font-size: 15px;
+        line-height: 30px;
+        padding-bottom: .5rem;
+    }
+
+    #typicalamenitiessec .header h1 {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+
+    #typicalamenitiessec .content-section h2 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+}
 
 /* 768px */
 @media (max-width: 768px) {}
