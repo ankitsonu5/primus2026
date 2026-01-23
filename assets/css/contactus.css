@@ -26,6 +26,21 @@ html {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
+#herolifestysec .banner-content {
+    max-width: 700px;
+}
+
+#herolifestysec .banner-content h1 {
+    margin-bottom: 36px;
+    font-family: var(--primary-heading-font);
+}
+
+herolifestysec .banner-content p {
+    opacity: 1;
+    line-height: 31px;
+    font-family: var(--primary-para-font);
+}
+
 /* contactussec style start */
 #contactussec {
     font-family: var(--primary-para-font);
@@ -34,24 +49,28 @@ html {
     align-items: center;
     padding: 1.5rem;
     margin-top: -5rem;
+    margin-bottom: 5rem;
 }
 
 #contactussec .container {
     background: #E6D1DC;
     border-radius: 0 0 30px 30px;
-    padding: 80px 50px 50px 50px;
+    padding: 120px 50px 80px 50px;
 }
 
 #contactussec h1 {
-    color: #7d2e68;
-    font-size: 3rem;
+    color: #821A52;
     margin-bottom: 40px;
-    font-weight: 700;
+    padding-left: 9rem;
     font-family: var(--primary-heading-font);
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 4rem;
+    line-height: 90px;
+    letter-spacing: -1px;
 }
 
 #contactussec #contactForm {
-    width: 1366px;
     margin: 0 auto;
 }
 
@@ -61,7 +80,7 @@ html {
     gap: 30px;
     margin-bottom: 30px;
     /* width: 1200px; */
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -81,7 +100,7 @@ html {
     padding: 18px 25px;
     border: none;
     border-radius: 50px;
-    background: #f5f5f5;
+    background: #ffffff;
     font-size: 1rem;
     color: #333;
     outline: none;
@@ -90,11 +109,13 @@ html {
 
 #contactussec .input-field:focus {
     background: #fff;
-    box-shadow: 0 0 0 2px #7d2e68;
+    box-shadow: 0 0 0 2px #801B53;
 }
 
 #contactussec .input-field::placeholder {
-    color: #666;
+    color: #801B53;
+    font-weight: 400;
+    font-size: 20px;
 }
 
 #contactussec textarea.input-field {
@@ -110,7 +131,7 @@ html {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     padding-top: 3rem;
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
 }
 
@@ -118,7 +139,7 @@ html {
     padding: 18px 40px;
     border: none;
     border-radius: 50px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -126,31 +147,19 @@ html {
 }
 
 #contactussec .btn-submit {
-    background: #7d2e68;
+    background: #801B53;
     color: white;
-}
-
-#contactussec .btn-submit:hover {
-    background: #5f2250;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 20px rgba(125, 46, 104, 0.3);
 }
 
 #contactussec .btn-reset {
-    background: #7d2e68;
+    background: #801B53;
     color: white;
-}
-
-#contactussec .btn-reset:hover {
-    background: #5f2250;
-    transform: translateY(-2px);
-    box-shadow: 0 5px 20px rgba(125, 46, 104, 0.3);
 }
 
 /* visitussec style start */
 #visitussec {
     font-family: var(--primary-heading-font);
-    background-color: #8B1E5C;
+    background-color: #801B53;
     color: white;
     padding: 3rem 0;
 }
@@ -171,7 +180,6 @@ html {
     width: 100%;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
 }
 
 #visitussec .content-section {
@@ -297,24 +305,29 @@ html {
 }
 
 #partnerwithussec .container {
-    background: #e8d4e8;
+    background: #E6D1DC;
     border-radius: 30px;
     padding: 10rem;
     width: 100%;
 }
 
 #partnerwithussec h1 {
-    color: #7d2e68;
-    font-size: 3em;
-    font-weight: 700;
+    color: #821A52;
     margin-bottom: 40px;
+    padding-left: 10rem;
+    font-family: var(--primary-heading-font);
+    font-weight: 700;
+    font-size: 4rem;
+    line-height: 90px;
+    letter-spacing: -1px;
 }
 
 #partnerwithussec .form-grid {
     display: grid;
-    grid-template-columns: 1fr 1.3fr;
+    grid-template-columns: 1fr 1.2fr;
     gap: 30px;
-    margin-bottom: 30px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 #partnerwithussec .left-column {
@@ -333,9 +346,8 @@ html {
     padding: 18px 25px;
     border: none;
     border-radius: 50px;
-    /* background: #f5f0f5; */
-    font-size: 1em;
-    color: #7d2e68;
+    font-size: 1rem;
+    color: #801B53;
     outline: none;
     transition: all 0.3s ease;
 }
@@ -344,35 +356,37 @@ html {
     border-radius: 30px;
     resize: none;
     height: 100%;
-    min-height: 300px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--primary-para-font);
 }
 
 #partnerwithussec input::placeholder,
 #partnerwithussec textarea::placeholder {
-    color: #a66b94;
+    color: #801B53;
 }
 
 #partnerwithussec input:focus,
 #partnerwithussec textarea:focus {
     background: #fff;
     box-shadow: 0 5px 15px rgba(125, 46, 104, 0.1);
+    outline: 2px solid #801B53;
 }
 
 #partnerwithussec .button-group {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
-    margin-top: 30px;
+    padding-top: 48px;
+    width: 80%;
+    margin: 0 auto;
 }
 
 #partnerwithussec button {
     padding: 18px 40px;
     border: none;
     border-radius: 50px;
-    background: #7d2e68;
+    background: #801B53;
     color: white;
-    font-size: 1.2em;
+    font-size: 1.5rem;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -380,13 +394,8 @@ html {
 
 #partnerwithussec button:hover {
     background: #5f2350;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(125, 46, 104, 0.3);
 }
 
-#partnerwithussec button:active {
-    transform: translateY(0);
-}
 
 /* partnerwithussec style end */
 
@@ -403,7 +412,7 @@ html {
 }
 
 #locationscrossindiasec .tab {
-    background-color: #E8D4E8;
+    background-color: #E6D1DC;
     color: #000;
     border: none;
     padding: 15px 40px;
@@ -416,14 +425,10 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    min-width: 200px;
+    min-width: 285px;
 }
 
-#locationscrossindiasec .tab:hover {
-    background-color: #821A52;
-    color: white;
-}
-
+#locationscrossindiasec .tab:hover,
 #locationscrossindiasec .tab.active {
     background-color: #821A52;
     color: white;
@@ -431,12 +436,7 @@ html {
 
 #locationscrossindiasec .tab-arrow {
     margin-left: 15px;
-    font-size: 20px;
     transition: transform 0.3s ease;
-}
-
-#locationscrossindiasec .tab.active .tab-arrow {
-    transform: rotate(90deg);
 }
 
 #locationscrossindiasec .dropdown {
@@ -445,7 +445,6 @@ html {
     top: 100%;
     left: 0;
     right: 0;
-    /* margin-top: 5px; */
     background-color: #E6D1DC;
     border-radius: 8px;
     overflow: hidden;
@@ -472,33 +471,37 @@ html {
     border-radius: 10px;
 }
 
+/* stacked style */
 #locationscrossindiasec .dropdown-item:nth-child(1) {
-    z-index: 20 !important;
+    z-index: 20;
     position: relative;
     margin-top: -5px;
-
 }
 
 #locationscrossindiasec .dropdown-item:nth-child(2) {
-    z-index: 19 !important;
+    z-index: 19;
     position: relative;
     margin-top: -5px;
 }
 
 #locationscrossindiasec .dropdown-item:nth-child(3) {
-    z-index: 18 !important;
+    z-index: 18;
     position: relative;
     margin-top: -5px;
 }
 
 #locationscrossindiasec .dropdown-item:nth-child(4) {
-    z-index: 17 !important;
+    z-index: 17;
     position: relative;
     margin-top: -5px;
 }
 
 #locationscrossindiasec .dropdown-item:hover {
     background-color: #D4C4D4;
+}
+
+#locationscrossindiasec .tab-wrapper {
+    position: relative;
 }
 
 #locationscrossindiasec .content-section {
@@ -509,106 +512,125 @@ html {
     display: block;
 }
 
-#locationscrossindiasec .tab-wrapper {
-    position: relative;
-}
-
 #locationscrossindiasec .map-container {
     background: white;
-    border-radius: 12px;
+    border-radius: 1rem;
     overflow: hidden;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    position: relative;
     height: 500px;
+    width: 90%;
+    margin: 0 auto;
 }
 
-#locationscrossindiasec .map-svg {
+#locationscrossindiasec iframe {
     width: 100%;
     height: 100%;
-}
-
-#locationscrossindiasec .road {
-    fill: none;
-    stroke: #B8D4E8;
-    stroke-width: 8;
-}
-
-#locationscrossindiasec .highway {
-    fill: #7A9FBF;
-    stroke: #5A7F9F;
-    stroke-width: 2;
-}
-
-#locationscrossindiasec .lake {
-    fill: #A8D8EA;
-}
-
-#locationscrossindiasec .building {
-    fill: #E8E8E8;
-    stroke: #D0D0D0;
-    stroke-width: 1;
-}
-
-#locationscrossindiasec .marker {
-    fill: #DC3545;
-}
-
-#locationscrossindiasec .marker-label {
-    fill: #000;
-    font-size: 16px;
-    font-weight: 600;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-#locationscrossindiasec .highway-label {
-    fill: #000;
-    font-size: 14px;
-    font-weight: 700;
-    background-color: #FFD700;
-    padding: 2px 6px;
-}
-
-#locationscrossindiasec .location-label {
-    fill: #555;
-    font-size: 12px;
-}
-
-#locationscrossindiasec .highway-badge {
-    fill: #FFD700;
+    border: 0;
 }
 
 #locationscrossindiasec .locationscrossindiaheading {
-    font-family: Montserrat;
-    font-weight: 700;
-    font-style: Bold;
-    font-size: 80px;
-    line-height: 65px;
-    letter-spacing: -5%;
     text-align: center;
+    font-size: 64px;
+    font-weight: 700;
     color: #801B53;
     padding-bottom: 3rem;
+    font-family: var(--primary-heading-font);
 }
 
 #locationscrossindiasec .locationformorecities {
     text-align: center;
     padding-top: 4rem;
-    color: #000;
-    font-family: Montserrat;
-    font-weight: 600;
-    font-style: SemiBold;
     font-size: 20px;
-    line-height: 25px;
-    letter-spacing: 0%;
+    font-weight: 600;
 }
 
 /* location across india section style end  */
 
 /* All responsive style code */
 /* Responsive for 1366px */
-@media screen and (max-width: 1366px) {}
+@media screen and (max-width: 1440px) {
+    #partnerwithussec h1 {
+        padding-left: 8rem;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    #herolifestysec .banner-content h1 {
+        padding-right: 17rem;
+        line-height: 58.81px;
+    }
+
+    #herolifestysec .banner-content p {
+        font-size: 18px;
+        padding-right: 17rem;
+    }
+
+    #partnerwithussec .container {
+        padding: 4rem;
+        width: 100%;
+    }
+
+    #partnerwithussec h1 {
+        padding-left: 8rem;
+    }
+}
 
 /* Responsive for 1024px */
-@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 1024px) {
+    #herolifestysec .banner-container {
+        height: 499px;
+    }
+
+    #herolifestysec .banner-content h1 {
+        padding-right: 23rem;
+    }
+
+    #contactussec .form-container {
+        width: 90%;
+    }
+
+    #contactussec h1 {
+        padding-left: 3rem;
+    }
+
+    #contactussec .button-container {
+        width: 90%;
+    }
+
+    .content-section h1 {
+        font-size: 3rem;
+    }
+
+    #contactdetailssec .contact-card h2 {
+        font-size: 1.8rem;
+    }
+
+    #contactdetailssec .contact-details {
+        font-size: 16px;
+    }
+
+    #partnerwithussec .form-grid {
+        width: 90%;
+    }
+
+    #partnerwithussec .container {
+        padding: 3rem;
+    }
+
+    #partnerwithussec h1 {
+        margin-bottom: 17px;
+        padding-left: 3rem;
+        font-size: 3rem;
+    }
+
+    #partnerwithussec .button-group {
+        width: 90%;
+    }
+
+    #locationscrossindiasec .tab {
+        min-width: 176px !important;
+    }
+}
 
 /* Additional responsive for smaller screens */
 @media screen and (max-width: 768px) {
