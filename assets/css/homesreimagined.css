@@ -13,6 +13,7 @@ html {
 /* herolifestysec style start */
 #heroreimaginesec {
     font-family: var(--primary-para-font);
+    margin-top: -7rem;
 }
 
 #heroreimaginesec .banner-container {

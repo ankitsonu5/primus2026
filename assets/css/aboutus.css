@@ -13,6 +13,10 @@ body {
 }
 
 /* hero section design style start */
+#herolifestysec {
+    margin-top: -7rem;
+}
+
 .banner {
     position: relative;
 }
@@ -1270,7 +1274,7 @@ body {
 }
 
 #primusprideMobSec .timesBusinessAward {
-        background-color: #010101;
+    background-color: #010101;
 }
 
 #primusprideMobSec .card-top img {
