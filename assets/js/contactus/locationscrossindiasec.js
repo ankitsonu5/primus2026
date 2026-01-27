@@ -4,72 +4,50 @@
 let currentDropdown = null;
 
 function toggleDropdown(index) {
-    const dropdown = document.getElementById(`dropdown-${index}`);
-    const tabs = document.querySelectorAll('.tab');
-    const dropdowns = document.querySelectorAll('.dropdown');
+    const wrappers = document.querySelectorAll('#locationscrossindiasec .tab-wrapper');
 
-    // Close all other dropdowns
-    dropdowns.forEach((dd, i) => {
-        if (i !== index) {
-            dd.classList.remove('show');
-        }
-    });
+    wrappers.forEach((wrapper, i) => {
+        const tab = wrapper.querySelector('.tab');
+        const dropdown = wrapper.querySelector('.dropdown');
 
-    // Remove active class from all tabs
-    tabs.forEach((tab, i) => {
-        if (i !== index) {
+        if (i === index) {
+            const isOpen = dropdown.classList.contains('show');
+            dropdown.classList.toggle('show', !isOpen);
+            tab.classList.toggle('active', !isOpen);
+            currentDropdown = !isOpen ? index : null;
+        } else {
+            dropdown.classList.remove('show');
             tab.classList.remove('active');
         }
     });
-
-    // Toggle current dropdown and tab
-    if (dropdown.classList.contains('show')) {
-        dropdown.classList.remove('show');
-        tabs[index].classList.remove('active');
-        currentDropdown = null;
-    } else {
-        dropdown.classList.add('show');
-        tabs[index].classList.add('active');
-        currentDropdown = index;
-    }
 }
 
-function selectLocation(city, location) {
-    // Hide all content sections
-    const allSections = document.querySelectorAll('.content-section');
-    allSections.forEach(section => {
-        section.classList.remove('active');
+function selectLocation(id) {
+    document.querySelectorAll('.content-section').forEach(sec => {
+        sec.classList.remove('active');
     });
-
-    // Show selected content section
-    const locationKey = location.toLowerCase().replace(/\s+/g, '-').replace('primus-', '');
-    const contentId = `content-${city}-${locationKey}`;
-    const selectedSection = document.getElementById(contentId);
-
-    if (selectedSection) {
-        selectedSection.classList.add('active');
-    }
-
-    // Close all dropdowns
-    document.querySelectorAll('.dropdown').forEach(dd => dd.classList.remove('show'));
-    document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
-    currentDropdown = null;
+    document.getElementById(id).classList.add('active');
+    closeAllDropdowns();
 }
 
-// Close dropdown when clicking outside
-document.addEventListener('click', function (event) {
-    const tabWrappers = document.querySelectorAll('.tab-wrapper');
-    let clickedInside = false;
+/* OUTSIDE CLICK CLOSE */
+document.addEventListener('click', function (e) {
+    const section = document.getElementById('locationscrossindiasec');
+    if (!section.contains(e.target)) {
+        closeAllDropdowns();
+        return;
+    }
 
-    tabWrappers.forEach(wrapper => {
-        if (wrapper.contains(event.target)) {
-            clickedInside = true;
+    if (currentDropdown !== null) {
+        const wrappers = document.querySelectorAll('#locationscrossindiasec .tab-wrapper');
+        if (!wrappers[currentDropdown].contains(e.target)) {
+            closeAllDropdowns();
         }
-    });
-
-    if (!clickedInside && currentDropdown !== null) {
-        document.querySelectorAll('.dropdown').forEach(dd => dd.classList.remove('show'));
-        document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
-        currentDropdown = null;
     }
 });
+
+function closeAllDropdowns() {
+    document.querySelectorAll('#locationscrossindiasec .dropdown').forEach(d => d.classList.remove('show'));
+    document.querySelectorAll('#locationscrossindiasec .tab').forEach(t => t.classList.remove('active'));
+    currentDropdown = null;
+}
