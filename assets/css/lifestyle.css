@@ -1401,6 +1401,19 @@
         line-height: 20px;
         margin-top: 1rem;
     }
+
+    #bluezonelivingsec .zone-card {
+        border-right: 2px solid black;
+        border-radius: 0;
+    }
+
+    #bluezonelivingsec .zone-card p {
+        font-size: 13px;
+    }
+
+    #bluezonelivingsec {
+        padding: 0;
+    }
 }
 
 
