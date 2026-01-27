@@ -151,7 +151,7 @@ body {
     border-radius: 20px;
     max-width: 340px;
     width: 100%;
-    height: 550px;
+    min-height: 485px;
 }
 
 #profilessec .profiles-card-image {
@@ -166,27 +166,27 @@ body {
 #profilessec .profiles-main-text {
     font-family: var(--primary-para-font);
     font-weight: 700;
-    font-size: 2rem;
-    line-height: 40px;
+    font-size: 1.5rem;
+    line-height: 30px;
     color: white;
-    padding-left: 20px;
+    text-align: center;
 }
 
 #profilessec .profiles-head {
     font-family: var(--primary-para-font);
     font-weight: 400;
-    font-size: 23px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 25px;
     color: white;
     padding-left: 20px;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
 }
 
 #profilessec .profiles-about {
     font-family: var(--primary-para-font);
     font-weight: 400;
-    font-size: 23px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 25px;
     color: white;
     padding-left: 40px;
 }
@@ -321,7 +321,7 @@ body {
 
 #slidersec2 .card-image {
     width: 100%;
-    height: 250px;
+    min-height: 250px;
     object-fit: cover;
 }
 
@@ -360,7 +360,7 @@ body {
 
 #slidersec2 .dotes {
     width: 12px;
-    height: 12px;
+    min-height: 12px;
     border-radius: 50%;
     border: 2px solid #999;
     background: transparent;
@@ -392,7 +392,7 @@ body {
 
     .arrow {
         width: 50px;
-        height: 50px;
+        min-height: 50px;
         font-size: 40px;
     }
 
@@ -428,7 +428,7 @@ body {
 
 #profilesmobSec .profile-img {
     width: 180px;
-    height: 180px;
+    min-height: 180px;
     border-radius: 50%;
     margin: 0 auto 30px;
     object-fit: cover;
@@ -469,7 +469,7 @@ body {
 
 #profilesmobSec .profilesmobSecdot {
     width: 14px;
-    height: 14px;
+    min-height: 14px;
     border-radius: 50%;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -556,7 +556,7 @@ body {
     }
 
     #profilessec .profiles-card {
-        height: 480px;
+        min-height: 435px;
     }
 
     #trustedsec {
@@ -597,7 +597,7 @@ body {
     }
 
     #slidersec2 .card-image {
-        height: 225px;
+        min-height: 225px;
     }
 
     #slidersec2 .carousel-container {
@@ -651,8 +651,50 @@ body {
     .herobannerdwn p {
         width: 41%;
     }
+
+    #slidersec2 .left-arrow {
+        left: -5rem;
+    }
+
+    #slidersec2 .right-arrow {
+        right: -5rem;
+    }
 }
 
+/* 1280px */
+@media (max-width: 1280px) {
+
+    #profilessec .profiles-card {
+        min-height: 400px;
+    }
+
+    #profilessec .profiles-main-text {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    #profilessec .profiles-about {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    #profilessec .profiles-head {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    #slidersec2 .left-arrow {
+        left: -4.5rem;
+    }
+
+    #slidersec2 .slide-group {
+        gap: 20px;
+    }
+
+    #slidersec2 .right-arrow {
+        right: -4.5rem;
+    }
+}
 
 /* 1024px */
 @media (max-width: 1024px) {
@@ -729,7 +771,7 @@ body {
     }
 
     #profilessec .profiles-card {
-        height: 355px;
+        min-height: 325px;
     }
 
     #profilessec {
@@ -737,7 +779,7 @@ body {
     }
 
     #slidersec2 .hindustan-times2 {
-        padding: 22px;
+        padding: 17px;
     }
 
     #slidersec2 .hindustan-times {
@@ -745,29 +787,50 @@ body {
     }
 
     #slidersec2 .realty-logo {
-        padding: 0px;
+        padding: 3px;
     }
 
     #slidersec2 .carousel-container {
-        max-width: 865px;
+        max-width: 830px;
     }
 
     #slidersec2 .card-title {
-        font-size: 18px;
-        line-height: 23px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    #slidersec2 .read-more {
+        font-size: 15px;
+        line-height: 10px;
     }
 
     #slidersec2 .left-arrow {
-        left: -4rem;
+        left: -4.5rem;
     }
 
     #slidersec2 .slide-group {
-        width: 67px;
-        gap: 20px;
+        width: 65px;
+        gap: 15px;
     }
 
     #slidersec2 .right-arrow {
-        right: -4rem;
+        right: -4.5rem;
+    }
+
+    #slidersec2 .logo img {
+        width: 80%;
+    }
+
+    #slidersec2 .economic-times {
+        padding: 1.8rem 0;
+    }
+
+    #slidersec2 .business-standard {
+        padding: .2rem 0;
+    }
+
+    #slidersec2 .theprint-logo {
+        padding: 28px 0px;
     }
 
     #primusprideranksec {
@@ -921,7 +984,7 @@ body {
 
 #profilesmobSec .profile-img {
     width: 150px;
-    height: 150px;
+    min-height: 150px;
     margin-left: -30rem;
 }
 
@@ -930,7 +993,7 @@ body {
     font-weight: 700;
     font-size: 1.75rem;
     line-height: 25px;
-    margin-left: -24rem;
+    /* margin-left: -24rem; */
 }
 
 #profilesmobSec .nameDev {
@@ -938,7 +1001,7 @@ body {
     font-weight: 700;
     font-size: 1.75rem;
     line-height: 25px;
-    margin-left: -30rem;
+    /* margin-left: -30rem; */
     padding-bottom: 0.5rem;
 }
 
@@ -947,7 +1010,7 @@ body {
     font-weight: 700;
     font-size: 1.75rem;
     line-height: 25px;
-    margin-left: -28rem;
+    /* margin-left: -28rem; */
     padding-bottom: 0.5rem;
 }
 
@@ -956,7 +1019,7 @@ body {
     font-weight: 700;
     font-size: 1.75rem;
     line-height: 25px;
-    margin-left: -26rem;
+    /* margin-left: -26rem; */
     padding-bottom: 0.5rem;
 }
 
@@ -1029,7 +1092,7 @@ body {
 
 #profilesmobSec .profilesmobSecdot {
     width: 12px;
-    height: 12px;
+    min-height: 12px;
 }
 
 /* profiles mob Section end */
@@ -1167,7 +1230,7 @@ body {
 #primusprideMobSec .slider-container {
     width: 90%;
     max-width: 768px;
-    height: 500px;
+    min-height: 500px;
     overflow: hidden;
     border-radius: 30px;
     background: #fff;
@@ -1204,6 +1267,10 @@ body {
     align-items: center;
     padding: 40px;
     box-sizing: border-box;
+}
+
+#primusprideMobSec .timesBusinessAward {
+        background-color: #010101;
 }
 
 #primusprideMobSec .card-top img {
@@ -1298,7 +1365,7 @@ body {
 
     #profilesmobSec .profile-img {
         width: 130px;
-        height: 130px;
+        min-height: 130px;
         margin-bottom: 20px;
         margin-left: -12rem;
     }
@@ -1380,7 +1447,7 @@ body {
 
     #profilesmobSec .profilesmobSecdot {
         width: 10px;
-        height: 10px;
+        min-height: 10px;
     }
 
     #trustedsec .trusted-heading {
@@ -1402,7 +1469,7 @@ body {
     }
 
     #primusprideMobSec .slider-container {
-        height: 350px;
+        min-height: 350px;
         box-shadow: none;
     }
 
@@ -1446,6 +1513,7 @@ body {
         align-items: center;
         padding: 40px;
         box-sizing: border-box;
+        background-color: #010101;
     }
 
     #primusprideMobSec .timesBusinessAward img {
