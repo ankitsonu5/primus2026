@@ -470,6 +470,10 @@
     #primussupportdivisionsec .name {
         padding-right: 14rem;
     }
+
+    #navbarsec .navbar.sticky {
+        height: 64px;
+    }
 }
 
 /* 768px */
@@ -810,7 +814,8 @@
     #primuswayofMobSec,
     #activelivingofMobSec,
     #primusSupportMobSec,
-    #primusprideMobSec {
+    #primusprideMobSec,
+    #preventiveteststableMob {
         display: none;
     }
 }

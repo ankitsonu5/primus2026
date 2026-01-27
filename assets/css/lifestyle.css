@@ -35,7 +35,7 @@
 #herolifestysec .banner-content h1 {
     margin-bottom: 15px;
     line-height: 1.2;
-    font-family: Montserrat;
+    font-family: var(--primary-heading-font);
     font-weight: 700;
     font-size: 86.05px;
     line-height: 96.81px;
@@ -72,7 +72,7 @@
     margin-bottom: 15px;
     font-family: var(--primary-heading-font);
     font-weight: 700;
-    font-size: 80px;
+    font-size: 70px;
     line-height: 90px;
     text-align: center;
     padding-inline: 10rem;
@@ -84,7 +84,6 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 25px;
-    letter-spacing: 0%;
     text-align: center;
 }
 
@@ -171,16 +170,16 @@
 }
 
 #corelivingservicessec .container {
-    max-width: 1366px;
+    max-width: 1150px;
     border-radius: 8px;
 }
 
 #corelivingservicessec h1 {
     font-family: var(--primary-heading-font);
     text-align: center;
-    color: #7d2e68;
+    color: #801B53;
     margin-bottom: 40px;
-    font-size: 3.5rem;
+    font-size: 70px;
     font-weight: 700;
 }
 
@@ -196,7 +195,7 @@
 
 #corelivingservicessec .services-table td {
     padding: 25px 20px;
-    vertical-align: top;
+    vertical-align: baseline;
     border-right: 2px solid #d0d0d0;
 }
 
@@ -213,21 +212,21 @@
     color: #801B53;
     font-family: var(--primary-heading-font);
     font-weight: 700;
-    font-size: 28px;
+    font-size: 22px;
     line-height: 40px;
     padding-left: 4rem;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    vertical-align: middle;
 }
 
 #corelivingservicessec .services-table td:last-child {
     width: 70%;
     color: #000000;
     font-family: var(--primary-para-font);
-    font-weight: 300;
-    font-size: 24px;
+    font-weight: 400;
+    font-size: 22px;
     line-height: 40px;
-    letter-spacing: 0%;
 }
 
 /* corelivingservicessec end */
@@ -263,7 +262,7 @@
     margin-bottom: 24px;
     font-family: var(--primary-heading-font);
     font-weight: 700;
-    font-size: 80px;
+    font-size: 70px;
     line-height: 90px;
 }
 
@@ -291,7 +290,7 @@
 /* primuscelebrationsec style start*/
 #primuscelebrationsec {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #9C3375 0%, #7A2558 100%);
+    background-color: #801B53;
     /* min-height: 100vh; */
     overflow-x: hidden;
 }
@@ -442,7 +441,7 @@
     font-family: var(--primary-heading-font);
     font-family: Montserrat;
     font-weight: 700;
-    font-size: 80px;
+    font-size: 70px;
     line-height: 90px;
 }
 
@@ -616,7 +615,7 @@
     font-family: var(--primary-para-font);
     font-weight: 900;
     font-size: 24px;
-    line-height: 60px;
+    line-height: 36px;
 }
 
 /* Desktop column divider */
@@ -625,6 +624,61 @@
 }
 
 /* preventiveteststable style end */
+/* preventiveteststableMob style start */
+/* Section Wrapper Styles */
+#preventiveteststableMob {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 0 15px;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Heading Style - Bold & Black from reference image */
+#preventiveteststableMob h1 {
+    color: #000000;
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 25px;
+    letter-spacing: -0.5px;
+    font-family: var(--primary-heading-font);
+}
+
+/* Table Class Styling */
+#preventiveteststableMob .preventMobtable {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 1.5px solid #eecad9;
+    /* Light pink-maroon border */
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+#preventiveteststableMob .preventMobtable tr {
+    background-color: #ffffff;
+}
+
+#preventiveteststableMob .preventMobtable td {
+    padding: 10px 12px;
+    text-align: center;
+    color: #800040;
+    /* Deep maroon text color */
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.3;
+    border-bottom: 1.2px solid #f2e1e9;
+}
+
+/* Removing border from the last cell to maintain rounded corner */
+#preventiveteststableMob .preventMobtable tr:last-child td {
+    border-bottom: none;
+}
+
+/* preventiveteststableMob style end */
 
 /* All responsive style code */
 /* Responsive for 1366px */
@@ -655,6 +709,48 @@
 
     #primuscelebrationsec .left-section h1 {
         font-size: 3rem;
+    }
+
+    #lifeofaprimusresidentsec .header h1 {
+        font-size: 60px;
+        line-height: 75px;
+        padding-inline: 13rem;
+    }
+
+    #corelivingservicessec h1 {
+        font-size: 60px;
+    }
+
+    #corelivingservicessec .services-table td:first-child {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    #bluezonelivingsec .header h1 {
+        font-size: 60px;
+    }
+
+    #bluezonelivingsec .right-section h2 {
+        font-size: 40px;
+    }
+
+    #bluezonelivingsec .right-section h4 {
+        font-size: 24px;
+    }
+
+    #preventiveteststable h1 {
+        font-size: 48px;
+    }
+
+
+    #preventiveteststable .cell {
+        font-size: 18px;
+        line-height: 23px;
+        font-weight: 700;
+    }
+
+    #preventiveteststable {
+        width: 920px;
     }
 }
 
@@ -769,7 +865,7 @@
     }
 
     #lifeofaprimusresidentsec .card-title {
-        font-size: 16px;
+        font-size: 13px;
     }
 
     #preventiveteststable h1 {
@@ -781,10 +877,40 @@
         padding: 0.5rem 0.5rem 0.5rem 2rem;
         font-size: 20px;
     }
+
+    #lifeofaprimusresidentsec .header h1 {
+        font-size: 46px;
+        line-height: 55px;
+        padding-inline: 12rem;
+    }
+
+    #corelivingservicessec h1 {
+        font-size: 46px;
+    }
+
+    #primuscelebrationsec .container {
+
+        padding: 0 20px;
+    }
+
+    #bluezonelivingsec .header h1 {
+        font-size: 46px;
+    }
+
+    #bluezonelivingsec .header p {
+        font-family: var(--primary-heading-font);
+        line-height: 30px;
+        margin-top: 1rem;
+    }
+
 }
 
 /* Additional responsive for smaller screens */
 @media screen and (max-width: 768px) {
+    #herolifestysec {
+        margin-top: 6rem;
+    }
+
     #herolifestysec .banner-container {
         height: 350px;
         border-radius: 15px;
@@ -910,5 +1036,15 @@
 
     #lifeofaprimusresident .services-table td:first-child {
         font-size: 1.05rem;
+    }
+
+    #preventiveteststableMob h1 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    #preventiveteststableMob .preventMobtable td {
+        font-size: 14px;
+        padding: 8px 10px;
     }
 }
