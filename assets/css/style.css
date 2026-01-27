@@ -166,7 +166,8 @@
     align-items: center;
     position: relative;
     z-index: 1001;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, .05);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px;
+    /* border: 1px solid #b7b7b7; */
 }
 
 #primusMobileNav .pm-logo a img {

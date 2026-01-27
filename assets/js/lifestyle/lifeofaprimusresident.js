@@ -1,7 +1,6 @@
 // lifeofaprimusresident slider functionality
 
 (function () {
-    // 🔒 SECTION SCOPE
     const section = document.getElementById('lifeofaprimusresidentsec');
     if (!section) return;
 
@@ -11,47 +10,43 @@
 
     let currentSlide = 0;
 
-    // Safety check
-    if (!sliderWrapper || !dotsContainer || slides.length === 0) return;
+    function initSlider() {
+        dotsContainer.innerHTML = '';
 
-    // 🟢 Clear old dots (important if tabs / dynamic reload)
-    dotsContainer.innerHTML = '';
+        if (window.innerWidth > 768) {
+            // Desktop logic: Create 2 dots for 2 slides
+            slides.forEach((_, index) => {
+                const dot = document.createElement('div');
+                dot.classList.add('dot');
+                if (index === 0) dot.classList.add('active');
 
-    // 🔵 Create dots
-    slides.forEach((_, index) => {
-        const dot = document.createElement('div');
-        dot.classList.add('dot');
-        if (index === 0) dot.classList.add('active');
-
-        dot.addEventListener('click', () => {
-            goToSlide(index);
-        });
-
-        dotsContainer.appendChild(dot);
-    });
-
-    const dots = dotsContainer.querySelectorAll('.dot');
-
-    // 🔁 Slide change function
-    function goToSlide(index) {
-        if (index === currentSlide) return;
-
-        // Remove active from old dot
-        dots[currentSlide].classList.remove('active');
-
-        currentSlide = index;
-
-        // Move slider
-        sliderWrapper.style.transform = `translateX(-${currentSlide * 100}%)`;
-
-        // Add active to new dot
-        dots[currentSlide].classList.add('active');
+                dot.addEventListener('click', () => {
+                    moveSlider(index);
+                });
+                dotsContainer.appendChild(dot);
+            });
+            sliderWrapper.style.transform = `translateX(-${currentSlide * 100}%)`;
+        } else {
+            // Mobile: Clear transform so native scroll works perfectly
+            sliderWrapper.style.transform = 'none';
+        }
     }
 
-    // 🔄 Optional Auto Play
-    // const autoPlay = setInterval(() => {
-    //     const nextSlide = (currentSlide + 1) % slides.length;
-    //     goToSlide(nextSlide);
-    // }, 5000);
+    function moveSlider(index) {
+        if (window.innerWidth <= 768) return; // Mobile par click disabled
 
+        const dots = dotsContainer.querySelectorAll('.dot');
+        if (dots.length > 0) {
+            dots[currentSlide].classList.remove('active');
+            currentSlide = index;
+            sliderWrapper.style.transform = `translateX(-${currentSlide * 100}%)`;
+            dots[currentSlide].classList.add('active');
+        }
+    }
+
+    initSlider();
+
+    window.addEventListener('resize', () => {
+        initSlider();
+    });
 })();

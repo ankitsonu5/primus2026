@@ -25,7 +25,7 @@
 #herolifestysec .banner-content {
     position: absolute;
     left: 80px;
-    top: 50%;
+    top: 60%;
     transform: translateY(-50%);
     color: white;
     max-width: 900px;
@@ -50,11 +50,71 @@
 }
 
 
+/* herolifestyMobsec style start */
+#herolifestyMobsec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    padding: 15px;
+    box-sizing: border-box;
+    margin-top: 5rem;
+}
+
+#herolifestyMobsec .hero-container {
+    position: relative;
+    width: 100%;
+    max-width: 768px;
+    height: 100vh;
+    background-image: url('../images/lifestyle/livingwellhubmobbg.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    margin: 0 auto;
+}
+
+#herolifestyMobsec .hero-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 60%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 40px 25px;
+    color: #ffffff;
+    box-sizing: border-box;
+}
+
+#herolifestyMobsec .hero-content h1 {
+    font-family: var(--primary-heading-font);
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1.0;
+    margin-bottom: 12px;
+    letter-spacing: -1px;
+}
+
+#herolifestyMobsec .hero-content p {
+    font-family: var(--primary-para-font);
+    font-size: 1.1rem;
+    line-height: 1.4;
+    font-weight: 300;
+    opacity: 0.9;
+}
+
+/* herolifestyMobsec style end */
+
 /* lifeofaprimusresidentsec style start */
+/* Base Styles */
 #lifeofaprimusresidentsec {
     font-family: var(--primary-heading-font);
     background: #fff;
-    padding: 40px 20px;
+    padding: 60px 20px;
 }
 
 #lifeofaprimusresidentsec .container {
@@ -67,52 +127,29 @@
     margin-bottom: 40px;
 }
 
-#lifeofaprimusresidentsec .header h1 {
-    color: #801B53;
-    margin-bottom: 15px;
-    font-family: var(--primary-heading-font);
-    font-weight: 700;
-    font-size: 70px;
-    line-height: 90px;
-    text-align: center;
-    padding-inline: 10rem;
-}
 
 #lifeofaprimusresidentsec .header p {
-    color: #000000;
-    font-family: var(--primary-para-font);
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 25px;
-    text-align: center;
+    color: #333;
+    font-size: 18px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 #lifeofaprimusresidentsec .slider-container {
     position: relative;
     overflow: hidden;
-    margin-bottom: 40px;
 }
 
 #lifeofaprimusresidentsec .slider-wrapper {
     display: flex;
-    transition: transform 0.6s ease-in-out;
+    transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
 #lifeofaprimusresidentsec .slide {
     min-width: 100%;
     display: flex;
     gap: 20px;
-    padding: 0 10px;
-}
-
-#lifeofaprimusresidentsec .card {
-    flex: 1;
-    border-radius: 15px;
-    overflow: hidden;
-    position: relative;
-    height: 324px;
-    background-size: cover;
-    background-position: center;
+    padding: 10px;
 }
 
 #lifeofaprimusresidentsec .card-overlay {
@@ -120,26 +157,29 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
-    padding: 25px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+    padding: 30px 20px;
     color: white;
 }
 
 #lifeofaprimusresidentsec .card-time {
     background: #c2185b;
-    padding: 5px 12px;
+    padding: 6px 15px;
     border-radius: 20px;
     display: inline-block;
-    font-size: 0.85rem;
-    font-weight: bold;
-    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
 #lifeofaprimusresidentsec .card-title {
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
 }
 
+/* Dots Styling */
 #lifeofaprimusresidentsec .dots-container {
     display: flex;
     justify-content: center;
@@ -159,7 +199,6 @@
 
 #lifeofaprimusresidentsec .dot.active {
     background: #821A52;
-    border: none;
 }
 
 /* corelivingservicessec style */
@@ -235,7 +274,6 @@
 
 /* primusfestivedaymagicsec style end */
 #primusfestivedaymagicsec {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #333;
 }
@@ -408,6 +446,74 @@
 }
 
 /* primuscelebrationsec style end*/
+/* primuscelebrationMobsec style start */
+#primuscelebrationMobsec {
+    background: #801B53;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Header Container */
+#primuscelebrationMobsec .header-container {
+    text-align: center;
+    padding: 20px;
+}
+
+#primuscelebrationMobsec .header-container h1 {
+    color: #fff;
+    font-family: var(--primary-heading-font);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+    text-align: center;
+}
+
+/* Grid Container */
+#primuscelebrationMobsec .grid-container {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+}
+
+/* Card Styles */
+#primuscelebrationMobsec .celebration-card {
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border: 1px solid #A23672;
+    border-radius: 20px;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    min-height: 180px;
+}
+
+#primuscelebrationMobsec .card-icon {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+}
+
+#primuscelebrationMobsec .card-icon img {
+    width: 5rem;
+}
+
+#primuscelebrationMobsec .card-title {
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.3;
+    font-family: var(--primary-para-font);
+}
+
+/* primuscelebrationMobsec style end */
 
 
 /* bluezonelivingsec style start */
@@ -448,7 +554,6 @@
 #bluezonelivingsec .header p {
     color: #000000;
     font-family: var(--primary-para-font);
-    font-family: Montserrat;
     font-weight: 500;
     font-size: 28px;
     line-height: 40px;
@@ -624,61 +729,112 @@
 }
 
 /* preventiveteststable style end */
-/* preventiveteststableMob style start */
-/* Section Wrapper Styles */
-#preventiveteststableMob {
-    width: 100%;
-    max-width: 500px;
-    margin: 20px auto;
-    padding: 0 15px;
-    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-    box-sizing: border-box;
-}
 
-/* Heading Style - Bold & Black from reference image */
-#preventiveteststableMob h1 {
-    color: #000000;
-    font-size: 32px;
-    font-weight: 800;
-    text-align: center;
-    margin-bottom: 25px;
-    letter-spacing: -0.5px;
+/* lifeofaprimusresidentsec style start */
+#lifeofaprimusresidentsec {
     font-family: var(--primary-heading-font);
+    background: #fff;
+    padding: 40px 20px;
 }
 
-/* Table Class Styling */
-#preventiveteststableMob .preventMobtable {
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 0;
-    border: 1.5px solid #eecad9;
-    /* Light pink-maroon border */
-    border-radius: 12px;
-    overflow: hidden;
-    background-color: #ffffff;
+#lifeofaprimusresidentsec .container {
+    max-width: 1366px;
+    margin: 0 auto;
 }
 
-#preventiveteststableMob .preventMobtable tr {
-    background-color: #ffffff;
-}
-
-#preventiveteststableMob .preventMobtable td {
-    padding: 10px 12px;
-    text-align: center;
-    color: #800040;
-    /* Deep maroon text color */
+#lifeofaprimusresidentsec .header h1 {
+    color: #801B53;
+    margin-bottom: 15px;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 1.3;
-    border-bottom: 1.2px solid #f2e1e9;
+    font-size: 70px;
+    line-height: 90px;
+    text-align: center;
+    padding-inline: 10rem;
 }
 
-/* Removing border from the last cell to maintain rounded corner */
-#preventiveteststableMob .preventMobtable tr:last-child td {
-    border-bottom: none;
+#lifeofaprimusresidentsec .header p {
+    color: #000000;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
 }
 
-/* preventiveteststableMob style end */
+#lifeofaprimusresidentsec .slider-container {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+#lifeofaprimusresidentsec .slider-wrapper {
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+}
+
+#lifeofaprimusresidentsec .slide {
+    min-width: 100%;
+    display: flex;
+    gap: 20px;
+    padding: 0 10px;
+}
+
+/* --- Desktop Height (Aapka Original) --- */
+#lifeofaprimusresidentsec .card {
+    flex: 1;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    height: 324px;
+    background-size: cover;
+    background-position: center;
+}
+
+#lifeofaprimusresidentsec .card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    padding: 25px;
+    color: white;
+}
+
+#lifeofaprimusresidentsec .card-time {
+    background: #c2185b;
+    padding: 5px 12px;
+    border-radius: 20px;
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+#lifeofaprimusresidentsec .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* --- Pagination (Aapka Original Design) --- */
+#lifeofaprimusresidentsec .dots-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+#lifeofaprimusresidentsec .dot {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+    border: 2px solid #821A52;
+}
+
+#lifeofaprimusresidentsec .dot.active {
+    background: #821A52;
+}
+
+/* lifeofaprimusresidentsec style end */
 
 /* All responsive style code */
 /* Responsive for 1366px */
@@ -903,6 +1059,9 @@
         margin-top: 1rem;
     }
 
+    #preventiveteststable {
+        width: 768px;
+    }
 }
 
 /* Additional responsive for smaller screens */
@@ -930,17 +1089,68 @@
         font-size: 14px;
     }
 
+    #lifeofaprimusresidentsec .slider-container {
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    #lifeofaprimusresidentsec .slider-wrapper {
+        display: flex;
+        gap: 16px;
+        width: 86%;
+    }
+
     #lifeofaprimusresidentsec .slide {
-        flex-wrap: wrap;
+        display: contents;
     }
 
     #lifeofaprimusresidentsec .card {
-        min-width: calc(50% - 10px);
-        height: 250px;
+        flex: 0 0 82%;
+        height: 364px;
+        border-radius: 18px;
+        background-size: cover;
+        background-position: center;
+        scroll-snap-align: start;
+        position: relative;
+    }
+
+    #lifeofaprimusresidentsec .card-overlay {
+        padding: 16px;
+        background: linear-gradient(to top,
+                rgba(0, 0, 0, 0.75),
+                rgba(0, 0, 0, 0.15),
+                transparent);
+    }
+
+    #lifeofaprimusresidentsec .card-time {
+        font-size: 12px;
+        padding: 5px 12px;
+        border-radius: 14px;
+        background: #c2185b;
+        display: inline-block;
+        margin-bottom: 6px;
+    }
+
+    #lifeofaprimusresidentsec .card-title {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+    }
+
+    #lifeofaprimusresidentsec .dots-container {
+        display: none;
     }
 
     #lifeofaprimusresidentsec .header h1 {
-        font-size: 1.8rem;
+        padding-inline: 0;
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+    #lifeofaprimusresidentsec .header p {
+        font-size: 16px;
+        line-height: 22px;
     }
 
     #lifeofaprimusresident h1 {
@@ -1005,7 +1215,194 @@
     #preventiveteststable .row:last-child .cell:last-child {
         border-bottom: none;
     }
+
+    #corelivingservicesMobsec {
+        padding: 16px;
+        background: #fff;
+    }
+
+    #corelivingservicesMobsec h2 {
+        text-align: center;
+        font-size: 32px;
+        font-weight: 700;
+        color: #801B53;
+        margin-bottom: 12px;
+        font-family: var(--primary-heading-font);
+    }
+
+    #corelivingservicesMobsec .resident-card {
+        width: 100%;
+    }
+
+    #corelivingservicesMobsec .resident-card h3 {
+        width: 100%;
+        text-align: center;
+        padding: 10px 12px;
+        margin: 0 0;
+        font-size: 20px;
+        font-weight: 600;
+        color: #801B53;
+        border: 1px solid #f2c6d9;
+        border-radius: 14px 14px 0 0;
+        background: #fff;
+        box-sizing: border-box;
+        font-family: var(--primary-heading-font);
+    }
+
+    #corelivingservicesMobsec .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #corelivingservicesMobsec .cell:nth-child(1) {
+        border-radius: 0 0 14px 14px !important;
+    }
+
+    #corelivingservicesMobsec .cell:nth-child(2) {
+        border-radius: 0 0 14px 14px !important;
+    }
+
+    #corelivingservicesMobsec .cell {
+        border: 1px solid #f2c6d9;
+        border-radius: 14px;
+        padding: 14px;
+        font-size: 12px;
+        line-height: 1.45;
+        color: #333;
+        background: #fff;
+    }
+
+    #corelivingservicesMobsec .cell h4 {
+        margin: 0 0 6px;
+        padding-bottom: 6px;
+        font-size: 13px;
+        font-weight: 600;
+        color: #8b1d5a;
+        border-bottom: 1px solid #f2c6d9;
+        margin-left: -14px;
+        margin-right: -14px;
+        padding-left: 14px;
+        padding-right: 14px;
+        font-family: var(--primary-heading-font);
+    }
+
+    #corelivingservicesMobsec .cell h5 {
+        margin: 0 0 6px;
+        padding-bottom: 6px;
+        color: #000000;
+        font-family: var(--primary-heading-font);
+        font-weight: 500;
+        font-style: Medium;
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    #corelivingservicesMobsec .cell.full {
+        grid-column: 1;
+    }
+
+    #primusfestivedaymagicsec .container {
+        align-items: center;
+        justify-content: center;
+        gap: 28px;
+        padding: 1rem;
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+
+    #primusfestivedaymagicsec .content {
+        flex: 1;
+        max-width: 800px;
+        text-align: center;
+    }
+
+    #primuscelebrationMobsec .card-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 2rem;
+    }
+
+    #bluezonelivingsec .main-content {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    #bluezonelivingsec .right-section {
+        text-align: center;
+    }
+
+    #bluezonelivingsec .blue-zones {
+        justify-items: center;
+    }
+
+    /* preventiveteststableMob style start */
+    #preventiveteststableMob {
+        padding: 20px 15px;
+        background-color: #ffffff;
+    }
+
+    #preventiveteststableMob h1 {
+        color: #000000;
+        margin-bottom: 20px;
+        text-align: center;
+        font-family: var(--primary-heading-font);
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 36px;
+    }
+
+    .preventMobtable {
+        width: 100%;
+        border-collapse: collapse;
+        border: 3px solid #801B53;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+    }
+
+    .preventMobtable tbody tr {
+        border-bottom: 1px solid #E6D1DC;
+    }
+
+    .preventMobtable tbody tr:last-child {
+        border-bottom: none;
+    }
+
+    .preventMobtable tbody tr td {
+        padding: 12px 20px;
+        font-size: 12px;
+        font-weight: 900;
+        color: #801B53;
+        text-align: center;
+        font-family: var(--primary-para-font);
+    }
+
+    .preventMobtable tbody tr:hover td {
+        background-color: #f9f5fa;
+    }
+
+    /* preventiveteststableMob style end */
+    #bluezonelivingsec .right-section h2 {
+        font-size: 28px;
+    }
+
+    #bluezonelivingsec .right-section h4 {
+        font-size: 14px;
+        margin-bottom: 1.5rem;
+    }
+
+    #bluezonelivingsec .header h1 {
+        font-size: 34px;
+        line-height: 47px;
+    }
+
+    #bluezonelivingsec .header p {
+        font-size: 20px;
+        line-height: 20px;
+        margin-top: 1rem;
+    }
 }
+
 
 @media screen and (max-width: 480px) {
     #herolifestysec .banner-container {
@@ -1038,13 +1435,36 @@
         font-size: 1.05rem;
     }
 
-    #preventiveteststableMob h1 {
-        font-size: 24px;
-        margin-bottom: 15px;
+    #primuscelebrationMobsec .grid-container {
+        gap: 0;
+        padding: 10px;
     }
 
-    #preventiveteststableMob .preventMobtable td {
-        font-size: 14px;
-        padding: 8px 10px;
+    #primuscelebrationMobsec .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 364px) {
+    #primuscelebrationMobsec .card-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1.5rem;
+    }
+}
+
+/* primuscelebrationMobsec style end */
+
+@media screen and (min-width: 769px) {
+
+    #herolifestyMobsec,
+    #corelivingservicesMobsec,
+    #primuscelebrationMobsec,
+    #preventiveteststableMob {
+        display: none;
+    }
+
+    #lifeofaprimusresidentsec .slider-container {
+        overflow: hidden;
     }
 }
