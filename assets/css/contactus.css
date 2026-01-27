@@ -636,13 +636,123 @@ herolifestysec .banner-content p {
 @media screen and (max-width: 768px) {
 
     #partnerwithussec .container {
-        padding: 2rem;
+        padding: 1rem;
     }
 
     #locationscrossindiasec .locationscrossindiaheading {
         font-size: 48px;
         padding-bottom: 2rem;
     }
+
+    #contactussec .form-container {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    #contactussec textarea.input-field {
+        min-height: 300px;
+    }
+
+    #contactussec .container {
+        padding: 120px 12px 40px 12px;
+    }
+
+    #contactussec .button-container {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    #contactussec .btn-reset {
+        background: rgb(0, 0, 0, 10%);
+        color: #000;
+    }
+
+    #visitussec .container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    #contactdetailssec .contact-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+        padding: 10px 0;
+    }
+
+    #contactdetailssec .contact-details {
+        font-size: 11px;
+        font-weight: 700;
+    }
+
+    #contactdetailssec .contact-card {
+        padding: 5px;
+    }
+
+    #contactdetailssec .phone-number,
+    #contactdetailssec .email {
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    #partnerwithussec .form-grid {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    #partnerwithussec h1 {
+        padding-left: 0rem;
+        font-size: 2rem;
+    }
+
+    #partnerwithussec .button-group {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    #partnerwithussec .btn-reset {
+        background: rgb(0, 0, 0, 10%);
+        color: #000;
+    }
+
+    #partnerwithussec textarea {
+        height: 350px;
+    }
+
+    #contactussec h1 {
+        font-size: 3rem;
+        padding-left: 1rem;
+    }
+
+    #herolifestysec .banner-content h1 {
+        padding-right: 0;
+    }
+
+    #herolifestysec .banner-content p {
+        font-size: 18px;
+        padding-right: 2rem;
+    }
+
+    #locationscrossindiasec .tabs-container {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #locationscrossindiasec .tab {
+        min-width: 248px !important;
+    }
 }
 
-@media screen and (max-width: 480px) {}
+
+@media screen and (max-width: 480px) {
+    #herolifestysec .container {
+        max-width: 90%;
+        padding: 0;
+    }
+
+    #locationscrossindiasec .locationscrossindiaheading {
+        font-size: 36px;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+}
