@@ -328,11 +328,19 @@ html {
 }
 
 #kitchenwork.ergonomic-card {
-    font-family: Montserrat;
+    font-family: var(--primary-heading-font);
     font-weight: 700;
     font-size: 28px;
     line-height: 40px;
     padding-bottom: 1rem;
+}
+
+#kitchenwork .grip-card-image img {
+    width: 25rem;
+    min-height: 31rem;
+    border-radius: 30px;
+    object-fit: cover;
+
 }
 
 #kitchenwork .ergonomic-card-txt h1 {
@@ -771,6 +779,11 @@ html {
         width: 100%;
     }
 
+    #kitchenwork .grip-card-image img {
+        width: 19rem;
+        min-height: 24.5rem;
+    }
+
     #kitchenwork .ergonomic-card-txt h1 {
         font-size: 22px;
         line-height: 30px;
@@ -899,6 +912,10 @@ html {
         padding-left: 2%;
     }
 
+    #kitchenwork .grip-card-image img {
+        min-height: 23.5rem;
+    }
+
     #bathroomsthatthinkheadsec .header h1 {
         font-size: 3rem;
         line-height: 4rem;
@@ -949,6 +966,13 @@ html {
     #typicalamenitiessec .dot {
         width: 12px;
         height: 12px;
+    }
+}
+
+/* 1280 */
+@media (max-width: 1280px) {
+    #kitchenwork .grip-card-image img {
+        min-height: 22.5rem;
     }
 }
 
@@ -1020,6 +1044,11 @@ html {
 
     #kitchenwork .ergonomic-card-txt {
         min-height: 10rem;
+    }
+
+    #kitchenwork .grip-card-image img {
+        width: 15rem;
+        min-height: 17.5rem;
     }
 
     #activelivingofyourlifesec .header h1 {
@@ -1274,6 +1303,12 @@ html {
         width: 15rem;
     }
 
+    #kitchenwork .grip-card-image img {
+        width: 15rem;
+        min-height: 18rem;
+        border-radius: 15px;
+    }
+
     #kitchenwork .ergonomic-card-txt h1 {
         font-size: 20px;
         line-height: 24px;
@@ -1388,6 +1423,11 @@ html {
         line-height: 20px;
     }
 
+    #kitchenwork .grip-card-image img {
+        width: 13rem;
+        min-height: 16rem;
+    }
+
     #morethanhome .morethanhometxt h1 {
         font-size: 2rem;
         line-height: 2.5rem;
@@ -1494,6 +1534,12 @@ html {
 
     #kitchenwork .ergonomic-card-txt p {
         max-width: 160px;
+    }
+
+    #kitchenwork .grip-card-image img {
+        width: 10rem;
+        min-height: 12rem;
+        border-radius: 10px;
     }
 
     #activelivingofMobSec .main-heading {
