@@ -21,7 +21,7 @@ html {
     border-radius: 30px;
     overflow: hidden;
     position: relative;
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)),
+    background: linear-gradient(to right, rgba(54, 54, 54, 0.5), rgba(40, 40, 40, 0.1)),
         url('../images/contactus/contact_us_bg.png') center/cover;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
@@ -99,7 +99,7 @@ herolifestysec .banner-content p {
     width: 100%;
     padding: 18px 25px;
     border: none;
-    border-radius: 50px;
+    border-radius: 24px;
     background: #ffffff;
     font-size: 1rem;
     color: #333;
@@ -345,7 +345,7 @@ herolifestysec .banner-content p {
     width: 100%;
     padding: 18px 25px;
     border: none;
-    border-radius: 50px;
+    border-radius: 24px;
     font-size: 1rem;
     color: #801B53;
     outline: none;
@@ -675,7 +675,7 @@ herolifestysec .banner-content p {
     #contactdetailssec .contact-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
-        padding: 10px 0;
+        padding: 10px 20px;
     }
 
     #contactdetailssec .contact-details {
@@ -685,6 +685,14 @@ herolifestysec .banner-content p {
 
     #contactdetailssec .contact-card {
         padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    #contactdetailssec .contact-card h2 {
+        text-align: start;
+        margin-bottom: 0;
     }
 
     #contactdetailssec .phone-number,
@@ -719,11 +727,13 @@ herolifestysec .banner-content p {
 
     #contactussec h1 {
         font-size: 3rem;
-        padding-left: 1rem;
+        padding-left: 0;
+        text-align: center;
     }
 
     #herolifestysec .banner-content h1 {
         padding-right: 0;
+        line-height: 36px;
     }
 
     #herolifestysec .banner-content p {
@@ -753,6 +763,14 @@ herolifestysec .banner-content p {
         font-size: 36px;
         padding-left: 0.5rem;
         padding-right: 0.5rem;
+    }
+
+    #contactussec .input-field::placeholder {
+        font-size: 1rem;
+    }
+
+    #contactdetailssec .contact-card img {
+        width: 3rem;
     }
 
 }
