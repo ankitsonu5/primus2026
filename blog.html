@@ -16,6 +16,50 @@
 </head>
 
 <body>
+    <!-- serachFilterprimusconsec start-->
+    <section id="serachFilterprimusconsec">
+        <!-- Category Panel -->
+        <div class="category-panel" id="categoryPanel">
+            <div class="category-header">
+                <h3>Categories</h3>
+                <button class="close" id="closeCat">×</button>
+            </div>
+            <ul class="category-list">
+                <li>Senior Living & Housing</li>
+                <li>Health & Wellness</li>
+                <li>Mental Health & Social Connection</li>
+                <li>Lifestyle, Hobbies & Travel</li>
+                <li>Financial Planning & Policy</li>
+                <li>Caregiving & Family</li>
+                <li>Design, Infrastructure & Technology</li>
+            </ul>
+        </div>
+
+        <!-- Bottom Search -->
+        <div class="search-container">
+            <div class="search-wrapper">
+                <img src="./assets/images/blog/moblenssearch.png" alt="search" class="icon" />
+                <input type="text" placeholder="Search..." />
+            </div>
+            <button class="filter-btn" id="filterBtn">
+                <img src="./assets/images/blog/filterbtn.png" alt="filter" class="icon" />
+            </button>
+        </div>
+
+        <script>
+            const filterBtn = document.getElementById('filterBtn');
+            const panel = document.getElementById('categoryPanel');
+            const closeBtn = document.getElementById('closeCat');
+
+            filterBtn.onclick = () => {
+                panel.classList.toggle('active');
+            }
+
+            closeBtn.onclick = () => panel.classList.remove('active');
+        </script>
+
+    </section>
+    <!-- serachFilterprimusconsec start-->
     <!-- navbarsec start -->
     <section id="navbarsec" class="only-desktop">
         <!-- spacer (layout jump fix) -->
@@ -86,7 +130,7 @@
     <!-- navbarMobSec section end -->
 
     <!-- hero section start -->
-    <section id="herolifestysec">
+    <section id="herolifestysec" class="only-desktop">
         <div class="container">
             <div class="banner-container">
                 <div class="banner-content">
@@ -97,6 +141,18 @@
         </div>
     </section>
     <!-- hero section end -->
+
+    <!-- hero section Mobile start -->
+    <section id="herolifestyMobsec">
+        <div class="hero-container">
+            <div class="hero-overlay">
+                <div class="hero-content">
+                    <h1>Good Reads For <br>A Good Life</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- hero section Mobile end -->
     <!-- blogcontainersec blogs container start -->
     <section id="blogcontainerSec">
         <div class="container">
