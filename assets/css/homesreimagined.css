@@ -999,8 +999,27 @@ html {
     }
 
     #smarthome .voice-card-para {
-        font-size: 15px;
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    #smarthome .voice-card-txt {
+        min-height: 0rem;
+    }
+
+    #kitchenwork .ergonomic-card-txt p {
+        font-size: 14px;
         line-height: 18px;
+    }
+
+    #morethanhome .hobby-card-para {
+        font-size: 13px;
+        line-height: 18px;
+        padding-left: 0%;
+    }
+
+    #kitchenwork .ergonomic-card-txt {
+        min-height: 10rem;
     }
 
     #activelivingofyourlifesec .header h1 {
@@ -1089,10 +1108,416 @@ html {
 }
 
 /* 768px */
-@media (max-width: 768px) {}
+@media (max-width: 768px) {
+    #heroreimagineMobsec .banner-tagline {
+        top: 125%;
+        left: 12%;
+        padding-right: 27.5rem;
+        position: absolute;
+        z-index: 1;
+    }
+
+    #heroreimagineMobsec .bannerimg img {
+        margin-top: 5.5rem;
+        width: 100%;
+    }
+
+    #heroreimagineMobsec .banner-tagline h1 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        color: #FFFFFF;
+        font-family: var(--primary-heading-font);
+        font-weight: 700;
+    }
+
+    #heroreimagineMobsec .banner-para {
+        top: 142%;
+        left: 12%;
+        padding-right: 10rem;
+        position: absolute;
+        z-index: 1;
+    }
+
+    #heroreimagineMobsec .banner-para p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+        color: #FFFFFF;
+        font-family: var(--primary-para-font);
+        font-weight: 700;
+    }
+
+    #thelivinghubMobSec .thelivinghumMob-txt h1 {
+        font-family: var(--primary-heading-font);
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 32px;
+        color: #801B53;
+        text-align: center;
+        padding-top: 5rem;
+    }
+
+    #thelivinghubMobSec .thelivinghumMob-txt p {
+        font-family: var(--primary-para-font);
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        padding-top: 2rem;
+    }
+
+    #thelivinghubMobSec .thelivinghubMob-images {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        padding-top: 2rem;
+    }
+
+    #smarthome {
+        margin-top: 3rem;
+    }
+
+    #smarthome .smarthometxt h1 {
+        font-size: 2rem;
+        line-height: 2rem;
+        padding-right: 11rem;
+        padding-left: 13rem;
+    }
+
+    #smarthome .smarthome-cards {
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 1rem 0rem;
+    }
+
+    #smarthome .voice-card-image img {
+        width: 15rem;
+    }
+
+    #smarthome .voice-card-para {
+        max-width: 230px;
+    }
+
+    #smarthome .voice-card {
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+    }
+
+    #activelivingofyourlifesec .header h1 {
+        padding: 0 10rem;
+        font-size: 2rem;
+        line-height: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    #activelivingofMobSec {
+        background: url(../images/home/activeLivingLife/bgmain.png);
+        min-height: 100vh;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5rem 0;
+    }
+
+    #activelivingofMobSec .main-heading {
+        font-family: var(--primary-heading-font);
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 26px;
+        line-height: 36px;
+        padding: 0 200px;
+    }
+
+    #activelivingofMobSec .main-para {
+        font-family: var(--primary-para-font);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        text-align: center;
+        margin-bottom: 30px;
+        /* padding: 0 190px; */
+    }
+
+    #activelivingofMobSec .title {
+        font-family: var(--primary-heading-font);
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 25px;
+        text-align: center;
+        padding: 1rem 0rem;
+    }
+
+    #activelivingofMobSec .description {
+        font-family: var(--primary-para-font);
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        padding: 1rem 0rem;
+    }
+
+    #kitchenwork .kitchenworktxt h1 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        padding-right: 12rem;
+        padding-left: 14rem;
+    }
+
+    #kitchenwork .kitchenwork-cards {
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 2rem 0rem;
+    }
+
+    .ergonomic-card-image img {
+        width: 15rem;
+    }
+
+    #kitchenwork .ergonomic-card-txt h1 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    #kitchenwork .ergonomic-card-txt p {
+        max-width: 235px;
+    }
+
+    #kitchenwork .ergonomic-card-txt {
+        min-height: 9rem;
+    }
+
+    #morethanhome .morethanhometxt h1 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        padding-right: 12rem;
+        padding-left: 12rem;
+    }
+
+    #morethanhome .morethanhome-cards {
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 2rem 0rem;
+    }
+
+    #morethanhome .hobby-card-image img {
+        width: 15rem;
+    }
+
+    #morethanhome .hobby-card-para {
+        max-width: 240px;
+    }
+}
+
 
 /* 480px */
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+    .banner {
+        padding: 0px 15px 0px 15px;
+    }
+
+    #heroreimagineMobsec .banner-tagline {
+        top: 83%;
+        padding-right: 11.5rem;
+    }
+
+    #heroreimagineMobsec .banner-para {
+        top: 100%;
+    }
+
+    #thelivinghubMobSec .thelivinghumMob-txt p {
+        font-size: 14px;
+        padding: 35px 97px 0px 90px;
+    }
+
+    #thelivinghubMobSec .thelivinghubMob-img1 img,
+    .thelivinghubMob-img2 img {
+        width: 13rem;
+    }
+
+    #smarthome .smarthometxt h1 {
+        padding-right: 6rem;
+        padding-left: 7rem;
+    }
+
+    #smarthome .voice-card-image img {
+        width: 13rem;
+    }
+
+    #smarthome .voice-card {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #smarthome .voice-card-para {
+        max-width: 200px;
+    }
+
+    #activelivingofMobSec .main-heading {
+        padding: 0 75px;
+    }
+
+    #activelivingofMobSec .main-para {
+        padding: 0 95px;
+    }
+
+    #activelivingofMobSec .description {
+        font-family: var(--primary-para-font);
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        padding: 0rem 5rem 0rem 7rem;
+    }
+
+    #kitchenwork .kitchenworktxt h1 {
+        padding-right: 5rem;
+        padding-left: 5rem;
+    }
+
+    .ergonomic-card-image img {
+        width: 13rem;
+    }
+
+    #kitchenwork .ergonomic-card-txt p {
+        max-width: 200px;
+    }
+
+    #kitchenwork .ergonomic-card-txt h1 {
+        font-size: 17px;
+        line-height: 20px;
+    }
+
+    #morethanhome .morethanhometxt h1 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        padding-right: 4rem;
+        padding-left: 5rem;
+    }
+
+    #morethanhome .hobby-card-image img {
+        width: 13rem;
+    }
+
+    #morethanhome .hobby-card-para {
+        max-width: 205px;
+    }
+}
 
 /* 345px */
-@media (max-width: 364px) {}
+@media (max-width: 364px) {
+    #heroreimagineMobsec .banner-tagline {
+        top: 65%;
+        padding-right: 9rem;
+    }
+
+    #heroreimagineMobsec .banner-tagline h1 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    #heroreimagineMobsec .banner-para {
+        top: 80%;
+        padding-right: 7rem;
+    }
+
+    #heroreimagineMobsec .banner-para p {
+        font-size: .8rem;
+        line-height: 1rem;
+    }
+
+    #thelivinghubMobSec .thelivinghumMob-txt h1 {
+        font-size: 25px;
+        line-height: 30px;
+        padding-top: 5rem;
+    }
+
+    #thelivinghubMobSec .thelivinghumMob-txt p {
+        font-size: 14px;
+        padding: 35px 46px 0px 51px;
+    }
+
+    #thelivinghubMobSec .thelivinghubMob-img1 img,
+    .thelivinghubMob-img2 img {
+        width: 10rem;
+    }
+
+    #smarthome .smarthometxt h1 {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+    #smarthome .voice-card-image img {
+        width: 10rem;
+    }
+
+    #smarthome .voice-card {
+        font-size: .8rem;
+        line-height: 1.25rem;
+    }
+
+    #smarthome .voice-card-para {
+        max-width: 160px;
+    }
+
+    #activelivingofMobSec {
+        min-height: 0vh;
+    }
+
+    #activelivingofMobSec .main-heading {
+        font-size: 25px;
+        line-height: 30px;
+        padding: 0 20px;
+    }
+
+    #activelivingofMobSec .main-para {
+        padding: 0 35px;
+    }
+
+    #activelivingofMobSec .description {
+        padding: 0rem 2rem 0rem 4rem;
+    }
+
+    #kitchenwork .kitchenworktxt h1 {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+
+    .ergonomic-card-image img {
+        width: 10rem;
+    }
+
+    #kitchenwork .ergonomic-card-txt h1 {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    #kitchenwork .ergonomic-card-txt p {
+        max-width: 160px;
+    }
+
+    #activelivingofMobSec .main-heading {
+        padding: 0 25px;
+    }
+
+    #morethanhome .morethanhometxt h1 {
+        font-size: 2rem;
+        line-height: 2rem;
+        padding-right: 0rem;
+        padding-left: 1rem;
+    }
+
+    #morethanhome .hobby-card-image img {
+        width: 10rem;
+    }
+
+    #morethanhome .hobby-card-para {
+        max-width: 161px;
+    }
+
+    #morethanhome .hobby-card-txt h1 {
+        font-size: 13px;
+        line-height: 30px;
+        padding-bottom: .5rem;
+    }
+}

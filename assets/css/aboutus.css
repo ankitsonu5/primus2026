@@ -57,6 +57,7 @@ body {
 .bannerimg img {
     width: 100%;
     max-width: 100%;
+    border-radius: 30px;
 }
 
 .herobannerdwn {
@@ -182,8 +183,8 @@ body {
     font-size: 18px;
     line-height: 25px;
     color: white;
-    padding-left: 20px;
     margin-bottom: .5rem;
+    text-align: center;
 }
 
 #profilessec .profiles-about {
@@ -382,6 +383,7 @@ body {
 }
 
 @media (max-width: 768px) {
+
     .carousel-container {
         padding: 0 60px;
     }
@@ -854,6 +856,10 @@ body {
 /* 768px */
 @media (max-width: 768px) {
 
+    #header {
+        margin-top: 7rem;
+    }
+
     .banner-tagline {
         top: 70%;
         padding-right: 15rem;
@@ -1032,7 +1038,6 @@ body {
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 25px;
-    margin-left: -28rem;
 }
 
 #profilesmobSec .titleDev {
@@ -1040,7 +1045,7 @@ body {
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 25px;
-    margin-left: -26rem;
+    /* margin-left: -26rem; */
     padding-bottom: 1rem;
 }
 
@@ -1049,7 +1054,7 @@ body {
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 25px;
-    margin-left: -26rem;
+    /* margin-left: -26rem; */
     padding-bottom: 1rem;
 }
 
@@ -1058,7 +1063,7 @@ body {
     font-weight: 400;
     font-size: 1.25rem;
     line-height: 25px;
-    margin-left: -25rem;
+    /* margin-left: -25rem; */
     padding-bottom: 1rem;
 }
 
@@ -1067,7 +1072,7 @@ body {
     font-weight: 400;
     font-size: 1.25rem;
     line-height: 25px;
-    margin-left: -26rem;
+    /* margin-left: -26rem; */
     padding-bottom: 1rem;
 }
 
@@ -1084,6 +1089,8 @@ body {
     font-size: 1.25rem;
     line-height: 25px;
     margin-left: 1rem;
+    width: 393px;
+
 }
 
 #profilesmobSec .detailsVibha {
@@ -1091,7 +1098,8 @@ body {
     font-size: 1.25rem;
     line-height: 25px;
     margin-left: 0rem;
-    padding-right: 8rem;
+    padding-right: 7rem;
+    width: 455px;
 }
 
 #profilesmobSec .profilesmobSecdot {
@@ -1310,7 +1318,7 @@ body {
 @media (max-width: 480px) {
 
     .banner {
-        margin-top: 2.5rem;
+        margin-top: 9rem;
         padding: 0px 15px 0px 15px;
     }
 
@@ -1355,6 +1363,10 @@ body {
         text-align: center;
     }
 
+    #ledbypioneersec .profile-content {
+        text-align: center;
+    }
+
     #backedbyvisionariesmobsec .backedByVisionaries {
         font-size: 1.5rem;
     }
@@ -1377,71 +1389,75 @@ body {
     #profilesmobSec .name {
         font-size: 22px;
         margin-bottom: 8px;
-        margin-left: -7rem;
+        text-align: center;
     }
 
     #profilesmobSec .slideMobName2 {
         font-size: 1.5rem;
         line-height: 25px;
-        margin-left: -9rem;
+        text-align: center;
     }
 
     #profilesmobSec .nameDev {
         font-size: 1.5rem;
-        margin-left: -12rem;
+        text-align: center;
     }
 
     #profilesmobSec .nameVibha {
         font-size: 1.5rem;
         line-height: 25px;
-        margin-left: -10rem;
+        text-align: center;
     }
 
     #profilesmobSec .title {
-        font-size: 15px;
+        font-size: 1.25rem;
+        line-height: 25px;
         margin-bottom: 10px;
-        margin-left: -12rem;
+        /* margin-left: -12rem; */
     }
 
     #profilesmobSec .slideMobTitle2 {
         font-size: 1.25rem;
         line-height: 25px;
-        margin-left: -6rem;
+        /* margin-left: -6rem; */
     }
 
     #profilesmobSec .titleDev {
         font-size: 1.25rem;
-        margin-left: -8rem;
+        /* margin-left: -8rem; */
     }
 
     #profilesmobSec .titleVibha {
         font-size: 1.25rem;
         line-height: 25px;
-        margin-left: -9rem;
+        /* margin-left: -9rem; */
     }
 
     #profilesmobSec .slideMobTitle3 {
         font-size: 1.25rem;
         line-height: 25px;
-        margin-left: -6rem;
+        /* margin-left: -6rem; */
     }
 
     #profilesmobSec .details li {
         font-size: 13px;
-        margin-bottom: 10px;
+        /* margin-bottom: 10px; */
         margin-left: -1rem;
+        line-height: 15px;
     }
 
     #profilesmobSec .detailsDev {
-        font-size: 1rem;
+        font-size: .8rem;
+        line-height: 20px;
         margin-left: 1rem;
-        padding-right: 1rem;
+        width: 245px;
     }
 
     #profilesmobSec .detailsVibha {
-        font-size: 1rem;
-        padding-right: 0rem;
-        margin-left: 0rem;
+        font-size: .8rem;
+        margin-left: 1rem;
+        width: 320px;
+        line-height: 20px;
     }
 
     #profilesmobSec .profilesmobSecdots {
@@ -1620,19 +1636,18 @@ body {
 
     #profilesmobSec .slideMobName2 {
         font-size: 1.5rem;
-        margin-left: -7rem;
     }
 
     #profilesmobSec .slideMobTitle2 {
         font-size: 1rem;
         line-height: 15px;
-        margin-left: -7rem;
+        /* margin-left: -7rem; */
     }
 
     #profilesmobSec .slideMobTitle3 {
         font-size: 1rem;
         line-height: 15px;
-        margin-left: -7rem;
+        /* margin-left: -7rem; */
     }
 
     #profilesmobSec {
@@ -1646,41 +1661,39 @@ body {
     #profilesmobSec .name {
         font-size: 22px;
         margin-bottom: 8px;
-        margin-left: -4rem;
     }
 
     #profilesmobSec .nameDev {
         font-size: 1.5rem;
-        margin-left: -10rem;
     }
 
     #profilesmobSec .nameVibha {
         font-size: 1.25rem;
-        margin-left: -9rem;
     }
 
     #profilesmobSec .title {
         font-size: 15px;
         margin-bottom: 15px;
-        margin-left: -9rem;
+        /* margin-left: -9rem; */
     }
 
     #profilesmobSec .titleDev {
         font-size: 1rem;
         line-height: 15px;
-        margin-left: -8rem;
+        /* margin-left: -8rem; */
     }
 
     #profilesmobSec .titleVibha {
         font-size: 1rem;
         line-height: 15px;
-        margin-left: -8rem;
+        /* margin-left: -8rem; */
     }
 
     #profilesmobSec .details li {
         font-size: 12px;
         margin-bottom: 0px;
         margin-left: 0rem;
+        line-height: 18px;
     }
 
     #profilesmobSec .detailsDev {
@@ -1688,7 +1701,11 @@ body {
     }
 
     #profilesmobSec .detailsVibha {
-        padding-right: 2rem;
+        padding-right: 8rem;
+    }
+
+    #profilesmobSec .slide {
+        padding: 15px 20px 15px 20px;
     }
 
     #trustedsec .trusted-heading {
