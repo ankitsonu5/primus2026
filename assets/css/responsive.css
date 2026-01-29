@@ -97,7 +97,8 @@
     }
 
     #primuswayoflifesec .nav-button {
-        margin-top: 12%;
+        margin-top: 0;
+        transform: translateY(-50%);
     }
 
     #activelivingofyourlifesec .carousel-item img {
@@ -215,14 +216,11 @@
         padding-right: 18rem;
     }
 
-    #primussupportdivisionsec .company-logo-gruhas {
-        padding-right: 17rem;
-    }
 }
 
 @media (max-width: 1320px) {
     #primussupportdivisionsec .company-logo img {
-        width: 13rem;
+        width: 18rem;
     }
 
     #navbarsec .enquiry-btn {
@@ -457,10 +455,6 @@
 
     #builtontrustbackedbyproofsec .left-side img {
         max-width: 88%;
-    }
-
-    #primussupportdivisionsec .company-logo-gruhas {
-        padding-right: 20rem;
     }
 
     #primussupportdivisionsec .company-logo-gruhas img {
@@ -813,7 +807,6 @@
     #primushealthMobsec,
     #primuswayofMobSec,
     #activelivingofMobSec,
-    #primusSupportMobSec,
     #herolifestyMobsec,
     #corelivingservicesMobsec {
         display: none;

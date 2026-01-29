@@ -1,82 +1,47 @@
 document.addEventListener("DOMContentLoaded", () => {
     const section = document.getElementById("primuswayoflifesec");
-    if (!section) return; // safety check
+    const sliderTrack = section.querySelector("#sliderTrack");
+    const slides = section.querySelectorAll(".slide");
+    const prevBtn = section.querySelector("#prevBtn");
+    const nextBtn = section.querySelector("#nextBtn");
 
-    const sliderTrack = section.querySelector('#sliderTrack');
-    const prevBtn = section.querySelector('#prevBtn');
-    const nextBtn = section.querySelector('#nextBtn');
-    const slides = section.querySelectorAll('.slide-group');
+    let currentIndex = 0;
 
-    let currentSlide = 0;
-    const totalSlides = slides.length;
+    function updateSlider(animate = true) {
+        const slideWidth = slides[0].offsetWidth;
 
-    function updateSlider() {
-        const translateX = -currentSlide * 100;
-        sliderTrack.style.transform = `translateX(${translateX}%)`;
-        updateButtons();
+        sliderTrack.style.transition = animate
+            ? "transform 0.5s ease-in-out"
+            : "none";
+
+        sliderTrack.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
     }
 
-    function updateButtons() {
-        if (currentSlide === 0) {
-            prevBtn.classList.add('disabled');
-        } else {
-            prevBtn.classList.remove('disabled');
-        }
+    nextBtn.addEventListener("click", () => {
+        const maxIndex = slides.length - 2;
 
-        if (currentSlide === totalSlides - 1) {
-            nextBtn.classList.add('disabled');
+        if (currentIndex < maxIndex) {
+            currentIndex++;
+            updateSlider();
         } else {
-            nextBtn.classList.remove('disabled');
-        }
-    }
-
-    prevBtn.addEventListener('click', () => {
-        if (currentSlide > 0) {
-            currentSlide--;
+            currentIndex = 0;
             updateSlider();
         }
     });
 
-    nextBtn.addEventListener('click', () => {
-        if (currentSlide < totalSlides - 1) {
-            currentSlide++;
+    prevBtn.addEventListener("click", () => {
+        const maxIndex = slides.length - 2;
+
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateSlider();
+        } else {
+            currentIndex = maxIndex;
             updateSlider();
         }
     });
 
-    // Keyboard navigation (only when this section is focused/visible)
-    document.addEventListener('keydown', (e) => {
-        if (!section.matches(':hover')) return;
+    window.addEventListener("resize", () => updateSlider(false));
 
-        if (e.key === 'ArrowLeft') {
-            prevBtn.click();
-        } else if (e.key === 'ArrowRight') {
-            nextBtn.click();
-        }
-    });
-
-    // Touch swipe support
-    let touchStartX = 0;
-    let touchEndX = 0;
-
-    sliderTrack.addEventListener('touchstart', (e) => {
-        touchStartX = e.changedTouches[0].screenX;
-    });
-
-    sliderTrack.addEventListener('touchend', (e) => {
-        touchEndX = e.changedTouches[0].screenX;
-        handleSwipe();
-    });
-
-    function handleSwipe() {
-        if (touchEndX < touchStartX - 50) {
-            nextBtn.click();
-        }
-        if (touchEndX > touchStartX + 50) {
-            prevBtn.click();
-        }
-    }
-
-    // Initialize
-    updateButtons();
+    updateSlider();
 });
