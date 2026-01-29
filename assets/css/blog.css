@@ -568,8 +568,10 @@
 /* 345px */
 @media (max-width: 364px) {}
 
-@media screen and (min-width: 768px) {
-    .sidebar {
+@media screen and (min-width: 769px) {
+
+    .sidebar,
+    #serachFilterprimusconsec {
         display: none;
     }
 }
