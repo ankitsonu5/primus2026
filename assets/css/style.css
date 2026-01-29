@@ -56,14 +56,15 @@
 
 #navbarsec .nav-menu li a {
     text-decoration: none;
-    color: #4a4a4a;
+    color: #53103C;
     font-size: 1.2rem;
     font-weight: 500;
     transition: color 0.3s ease;
+    font-family: var(--primary-para-font);
 }
 
 #navbarsec .nav-menu li a:hover {
-    color: #8b2f5c;
+    color: #410c2e;
 }
 
 #navbarsec .enquiry-container {
