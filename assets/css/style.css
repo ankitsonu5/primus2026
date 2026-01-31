@@ -1756,13 +1756,9 @@ body.pm-nav-open {
     position: absolute;
     top: 100%;
     right: 0;
-    background: white;
-    border: 2px solid #6b1f54;
     border-radius: 8px;
-    margin-top: 10px;
     min-width: 250px;
     display: none;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
     z-index: 100;
     width: 100%;
     left: 0;
@@ -1781,6 +1777,9 @@ body.pm-nav-open {
     border-bottom: 1px solid #f0e4f0;
     color: #333;
     font-weight: 500;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #fff;
 }
 
 #exploreourcommunitiessec .region-item:last-child {
@@ -1982,13 +1981,17 @@ body.pm-nav-open {
     font-family: var(--primary-heading-font);
 }
 
+#builtontrustbackedbyproofsec .stat-number-text {
+    font-size: 2rem;
+}
+
 #builtontrustbackedbyproofsec .stat-label {
-    color: #666;
     text-transform: lowercase;
     font-family: var(--primary-para-font);
     font-weight: 400;
     font-size: 2rem;
     color: #6b1b44;
+    padding-left: 1rem;
 }
 
 #builtontrustbackedbyproofsec .legend {
