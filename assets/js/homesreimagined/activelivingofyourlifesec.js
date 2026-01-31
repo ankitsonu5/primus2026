@@ -3,7 +3,7 @@
 (function () {
 
     // 🔒 SECTION SCOPE
-    const section = document.getElementById("activelivingofyourlifesec");
+    const section = document.getElementById("#activelivingofyourlifesec");
     if (!section) return;
 
     // ELEMENTS (ONLY INSIDE THIS SECTION)

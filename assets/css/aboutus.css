@@ -166,6 +166,7 @@ body {
 #profilessec .profiles-card-image img {
     width: 100%;
     padding: 20px;
+    margin-left: 2.5rem;
 }
 
 #profilessec .profiles-main-text {
@@ -193,7 +194,8 @@ body {
     font-size: 18px;
     line-height: 25px;
     color: white;
-    padding-left: 40px;
+    text-align: center;
+    padding-left: 30px;
 }
 
 /*Profiles section end*/
@@ -665,6 +667,10 @@ body {
     #slidersec2 .right-arrow {
         right: -5rem;
     }
+
+    #profilessec .profiles-card-image img {
+        margin-left: 2rem;
+    }
 }
 
 /* 1280px */
@@ -672,6 +678,10 @@ body {
 
     #profilessec .profiles-card {
         min-height: 400px;
+    }
+
+    #profilessec .profiles-card-image img {
+        margin-left: 1.5rem;
     }
 
     #profilessec .profiles-main-text {
@@ -995,7 +1005,7 @@ body {
 #profilesmobSec .profile-img {
     width: 150px;
     min-height: 150px;
-    margin-left: -30rem;
+    /* margin-left: -30rem; */
 }
 
 #profilesmobSec .name {
@@ -1081,15 +1091,16 @@ body {
     font-weight: 400;
     font-size: 1.5rem;
     line-height: 25px;
-    margin-left: -7rem;
+    /* margin-left: -7rem; */
+    text-align: center;
 }
 
 #profilesmobSec .detailsDev {
     font-family: var(--primary-para-font);
     font-size: 1.25rem;
     line-height: 25px;
-    margin-left: 1rem;
-    width: 393px;
+    /* margin-left: 1rem;
+    width: 393px; */
 
 }
 
@@ -1097,9 +1108,9 @@ body {
     font-family: var(--primary-para-font);
     font-size: 1.25rem;
     line-height: 25px;
-    margin-left: 0rem;
+    /* margin-left: 0rem;
     padding-right: 7rem;
-    width: 455px;
+    width: 455px; */
 }
 
 #profilesmobSec .profilesmobSecdot {
@@ -1383,7 +1394,7 @@ body {
         width: 130px;
         min-height: 130px;
         margin-bottom: 20px;
-        margin-left: -12rem;
+        /* margin-left: -12rem; */
     }
 
     #profilesmobSec .name {
@@ -1442,21 +1453,21 @@ body {
     #profilesmobSec .details li {
         font-size: 13px;
         /* margin-bottom: 10px; */
-        margin-left: -1rem;
+        /* margin-left: -1rem; */
         line-height: 15px;
     }
 
     #profilesmobSec .detailsDev {
         font-size: .8rem;
         line-height: 20px;
-        margin-left: 1rem;
-        width: 245px;
+        /* margin-left: 1rem;
+        width: 245px; */
     }
 
     #profilesmobSec .detailsVibha {
         font-size: .8rem;
-        margin-left: 1rem;
-        width: 320px;
+        /* margin-left: 1rem;
+        width: 320px; */
         line-height: 20px;
     }
 
@@ -1654,9 +1665,9 @@ body {
         padding: 50px 20px;
     }
 
-    #profilesmobSec .profile-img {
+    /* #profilesmobSec .profile-img {
         margin-left: -9rem;
-    }
+    } */
 
     #profilesmobSec .name {
         font-size: 22px;
@@ -1692,17 +1703,17 @@ body {
     #profilesmobSec .details li {
         font-size: 12px;
         margin-bottom: 0px;
-        margin-left: 0rem;
+        /* margin-left: 0rem; */
         line-height: 18px;
     }
 
-    #profilesmobSec .detailsDev {
+    /* #profilesmobSec .detailsDev {
         padding-right: 2rem;
-    }
+    } */
 
-    #profilesmobSec .detailsVibha {
+    /* #profilesmobSec .detailsVibha {
         padding-right: 8rem;
-    }
+    } */
 
     #profilesmobSec .slide {
         padding: 15px 20px 15px 20px;

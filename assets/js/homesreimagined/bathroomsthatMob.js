@@ -2,7 +2,7 @@
 
 // Pure script ko ek function ya block me wrap karna safety ke liye achha hai
 (function () {
-  const section = document.querySelector(".bathroomsthatthinkheadfMobSec");
+  const section = document.querySelector("#activelivingofMobSec2");
 
   // Agar section page par nahi hai toh script run nahi hogi
   if (!section) return;
